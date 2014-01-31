@@ -1,0 +1,5 @@
+[
+	"seava.mod.ad/dc/DataSourceField_Dc", 
+	"seava.mod.ad/dc/DataSource_Dc", 
+	"seava.mod.ad/dc/DataSourceRpc_Dc"
+]

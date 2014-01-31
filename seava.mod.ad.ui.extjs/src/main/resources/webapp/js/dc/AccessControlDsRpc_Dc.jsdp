@@ -1,0 +1,6 @@
+[
+	"seava.mod.ad/ds/AccessControlDsRpc_Ds", 
+	"seava.mod.ad/lov/DataSourcesDs_Lov", 
+	"seava.mod.ad/lov/AccessControls_Lov", 
+	"seava.mod.ad/lov/DataSourceRpcs_Lov"
+]

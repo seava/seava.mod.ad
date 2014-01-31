@@ -1,0 +1,45 @@
+dateFormat,mask,value
+dd-mm-yyyy,EXTJS_ALT_FORMATS,j|j-n|j-n-y|d|d-m|dm|dmy
+dd-mm-yyyy,EXTJS_DATETIMESEC_FORMAT,d-m-Y H:i:s
+dd-mm-yyyy,EXTJS_DATETIME_FORMAT,d-m-Y H:i
+dd-mm-yyyy,EXTJS_DATE_FORMAT,d-m-Y
+dd-mm-yyyy,EXTJS_MONTH_FORMAT,m-Y
+dd-mm-yyyy,EXTJS_TIME_FORMAT,H:i
+dd-mm-yyyy,JAVA_DATETIMESEC_FORMAT,dd-MM-yyyy HH:mm:ss
+dd-mm-yyyy,JAVA_DATETIME_FORMAT,dd-MM-yyyy HH:mm
+dd-mm-yyyy,JAVA_DATE_FORMAT,dd-MM-yyyy
+dd-mm-yyyy,JAVA_MONTH_FORMAT,MM-yyyy
+dd-mm-yyyy,JAVA_TIME_FORMAT,HH:mm
+dd.mm.yyyy,EXTJS_ALT_FORMATS,j|j.n|j.n.y|d|d.m|dm|dmy
+dd.mm.yyyy,EXTJS_DATETIMESEC_FORMAT,d.m.Y H:i:s
+dd.mm.yyyy,EXTJS_DATETIME_FORMAT,d.m.Y H:i
+dd.mm.yyyy,EXTJS_DATE_FORMAT,d.m.Y
+dd.mm.yyyy,EXTJS_MONTH_FORMAT,m.Y
+dd.mm.yyyy,EXTJS_TIME_FORMAT,H:i
+dd.mm.yyyy,JAVA_DATETIMESEC_FORMAT,dd.MM.yyyy HH:mm:ss
+dd.mm.yyyy,JAVA_DATETIME_FORMAT,dd.MM.yyyy HH:mm
+dd.mm.yyyy,JAVA_DATE_FORMAT,dd.MM.yyyy
+dd.mm.yyyy,JAVA_MONTH_FORMAT,yyyy-MM
+dd.mm.yyyy,JAVA_TIME_FORMAT,MM.yyyy
+mm/dd/yyyy,EXTJS_ALT_FORMATS,j|n/j|d|m/d
+mm/dd/yyyy,EXTJS_DATETIMESEC_FORMAT,m/d/Y H:i:s
+mm/dd/yyyy,EXTJS_DATETIME_FORMAT,m/d/Y H:i
+mm/dd/yyyy,EXTJS_DATE_FORMAT,m/d/Y
+mm/dd/yyyy,EXTJS_MONTH_FORMAT,m/Y
+mm/dd/yyyy,EXTJS_TIME_FORMAT,H:i
+mm/dd/yyyy,JAVA_DATETIMESEC_FORMAT,MM/dd/yyyy HH:mm:ss
+mm/dd/yyyy,JAVA_DATETIME_FORMAT,MM/dd/yyyy HH:mm
+mm/dd/yyyy,JAVA_DATE_FORMAT,MM/dd/yyyy
+mm/dd/yyyy,JAVA_MONTH_FORMAT,MM/yyyy
+mm/dd/yyyy,JAVA_TIME_FORMAT,HH:mm
+yyyy-mm-dd,EXTJS_ALT_FORMATS,j|j-n|d|d-m
+yyyy-mm-dd,EXTJS_DATETIMESEC_FORMAT,Y-m-d H:i:s
+yyyy-mm-dd,EXTJS_DATETIME_FORMAT,Y-m-d H:i
+yyyy-mm-dd,EXTJS_DATE_FORMAT,Y-m-d
+yyyy-mm-dd,EXTJS_MONTH_FORMAT,m-d
+yyyy-mm-dd,EXTJS_TIME_FORMAT,H:i
+yyyy-mm-dd,JAVA_DATETIMESEC_FORMAT,yyyy-MM-dd HH:mm:ss
+yyyy-mm-dd,JAVA_DATETIME_FORMAT,yyyy-MM-dd HH:mm
+yyyy-mm-dd,JAVA_DATE_FORMAT,yyyy-MM-dd
+yyyy-mm-dd,JAVA_MONTH_FORMAT,yyyy-MM
+yyyy-mm-dd,JAVA_TIME_FORMAT,HH:mm

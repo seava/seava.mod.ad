@@ -1,0 +1,16 @@
+<package>
+<sets>
+	<set>
+		<files> 
+			<file>
+		 		<ds>DateFormat_Ds</ds>
+		 		<file>data-sys/DateFormat.csv</file>
+		    </file>
+		    <file>
+		 		<ds>DateFormatMask_Ds</ds>
+		 		<file>data-sys/DateFormatMask.csv</file>
+		     </file>
+		</files>
+	</set>
+</sets>
+</package>

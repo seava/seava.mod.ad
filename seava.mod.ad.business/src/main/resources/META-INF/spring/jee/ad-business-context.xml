@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="paramValueProvider" scope="singleton" lazy-init="true"
+		class="ro.seava.ad.business.ext.system.ParamValueProvider" />
+
+	<bean id="clientInfoProvider" scope="singleton" lazy-init="true"
+		class="ro.seava.ad.business.ext.system.ClientInfoProvider" />
+
+	<bean id="persistableLogService" scope="singleton" lazy-init="true"
+		class="ro.seava.ad.business.ext.PersistableJobLogService" />
+
+	<bean id="importDataPackageService" scope="singleton" lazy-init="true"
+		class="ro.seava.j4e.business.service.other.ImportDataPackageService" />	
+ 
+	<import resource="../beans/ad-system-business.xml" />
+	<import resource="../beans/ad-security-business.xml" />
+	<import resource="../beans/ad-scheduler-business.xml" />
+</beans>

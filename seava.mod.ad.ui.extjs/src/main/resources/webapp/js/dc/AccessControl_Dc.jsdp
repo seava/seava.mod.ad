@@ -1,0 +1,5 @@
+[
+	"seava.mod.ad/ds/AccessControl_Ds", 
+	"seava.mod.ad/lov/AccessControls_Lov", 
+	"seava.mod.ad/lov/Roles_Lov"
+]

@@ -1,0 +1,7 @@
+[
+	"seava.mod.ad/dc/AccessControlDs_Dc", 
+	"seava.mod.ad/asgn/AccessControl_Role_Asgn", 
+	"seava.mod.ad/dc/AccessControlAsgn_Dc", 
+	"seava.mod.ad/dc/AccessControlDsRpc_Dc", 
+	"seava.mod.ad/dc/AccessControl_Dc"
+]

@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>ro.seava.commons</groupId>
+		<artifactId>seava.parent.oss</artifactId>
+		<version>2.0.0-SNAPSHOT</version>
+	</parent>
+	<groupId>ro.seava.mod</groupId>
+	<artifactId>seava.mod.ad</artifactId>
+	<name>AD: Administration</name>
+	<description>Administration module.</description>
+	<packaging>pom</packaging>
+	<url>http://www.seava.ro</url>
+	
+	<scm>
+		<url>https://github.com/seava/seava.mod.ad</url>
+		<connection>scm:git:https://github.com/seava/seava.mod.ad.git</connection>
+		<developerConnection>scm:git:https://github.com/seava/seava.mod.ad.git</developerConnection>
+	</scm>
+	
+	<!-- ========================== Modules ========================== -->
+	
+	<modules>
+		<module>../seava.mod.ad.db</module>
+		<module>../seava.mod.ad.domain</module>
+		<module>../seava.mod.ad.business.api</module>
+		<module>../seava.mod.ad.business</module>
+		<module>../seava.mod.ad.presenter</module>
+		<module>../seava.mod.ad.ui.extjs</module>
+		<module>../seava.mod.ad.data</module>
+		<module>../seava.mod.ad.security.authentic</module>
+		<module>../seava.mod.ad.security.authoriz</module>
+	</modules>
+</project>

@@ -1,0 +1,6 @@
+[
+	"seava.mod.ad/ds/JobLog_Ds", 
+	"seava.mod.ad/lov/Jobs_Lov", 
+	"seava.mod.ad/lov/JobContexts_Lov", 
+	"seava.mod.ad/lov/JobTimers_Lov"
+]

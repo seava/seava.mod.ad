@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="menuProvider" scope="singleton" lazy-init="true" 
+		class="ro.seava.ad.presenter.ext.ExtensionProviderMainMenu"/>
+	
+	<bean id="scriptFromDbProvider" scope="singleton" lazy-init="true" 
+		class="ro.seava.ad.presenter.ext.ExtensionProviderScriptFromDb"/>
+
+	<bean id="dummyPresenterJob" scope="prototype"
+		class="ro.seava.ad.presenter.ext.DummyPresenterJob" />
+
+	<import resource="../beans/ad-system-presenter.xml" />
+	<import resource="../beans/ad-security-presenter.xml" />
+	<import resource="../beans/ad-scheduler-presenter.xml" />
+	
+	<import resource="../beans/ad-security-asgn.xml" />
+
+</beans>

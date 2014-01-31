@@ -1,0 +1,5 @@
+code,name,active
+SUPPORT,Support staff,true
+SALES,Sales agents,true
+MANAGERS,Managers group,true
+ADMINS,Application administrators,true

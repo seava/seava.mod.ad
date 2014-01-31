@@ -1,0 +1,55 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+	version="1.0">
+	<persistence-unit name="seava_ad" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		
+		<!-- Declared -->
+		<class>ro.seava.ad.domain.impl.scheduler.JobContext</class>
+		<class>ro.seava.ad.domain.impl.scheduler.JobContextParam</class>
+		<class>ro.seava.ad.domain.impl.scheduler.JobLog</class>
+		<class>ro.seava.ad.domain.impl.scheduler.JobLogMessage</class>
+		<class>ro.seava.ad.domain.impl.scheduler.JobTimer</class>
+		<class>ro.seava.ad.domain.impl.scheduler.QuartzBlobTrigger</class>
+		<class>ro.seava.ad.domain.impl.scheduler.QuartzCalendar</class>
+		<class>ro.seava.ad.domain.impl.scheduler.QuartzCronTrigger</class>
+		<class>ro.seava.ad.domain.impl.scheduler.QuartzFiredTrigger</class>
+		<class>ro.seava.ad.domain.impl.scheduler.QuartzJobDetail</class>
+		<class>ro.seava.ad.domain.impl.scheduler.QuartzLock</class>
+		<class>ro.seava.ad.domain.impl.scheduler.QuartzPausedTriggerGroup</class>
+		<class>ro.seava.ad.domain.impl.scheduler.QuartzSchedulerState</class>
+		<class>ro.seava.ad.domain.impl.scheduler.QuartzSimpleTrigger</class>
+		<class>ro.seava.ad.domain.impl.scheduler.QuartzSimpropTrigger</class>
+		<class>ro.seava.ad.domain.impl.scheduler.QuartzTrigger</class>
+		<class>ro.seava.ad.domain.impl.security.AccessControl</class>
+		<class>ro.seava.ad.domain.impl.security.AccessControlAsgn</class>
+		<class>ro.seava.ad.domain.impl.security.AccessControlDs</class>
+		<class>ro.seava.ad.domain.impl.security.AccessControlDsRpc</class>
+		<class>ro.seava.ad.domain.impl.security.Menu</class>
+		<class>ro.seava.ad.domain.impl.security.MenuItem</class>
+		<class>ro.seava.ad.domain.impl.security.Role</class>
+		<class>ro.seava.ad.domain.impl.security.User</class>
+		<class>ro.seava.ad.domain.impl.security.UserGroup</class>
+		<class>ro.seava.ad.domain.impl.system.Client</class>
+		<class>ro.seava.ad.domain.impl.system.DataSource</class>
+		<class>ro.seava.ad.domain.impl.system.DataSourceField</class>
+		<class>ro.seava.ad.domain.impl.system.DataSourceRpc</class>
+		<class>ro.seava.ad.domain.impl.system.DateFormat</class>
+		<class>ro.seava.ad.domain.impl.system.DateFormatMask</class>
+		<class>ro.seava.ad.domain.impl.system.DbChangeLog</class>
+		<class>ro.seava.ad.domain.impl.system.FrameExtension</class>
+		<class>ro.seava.ad.domain.impl.system.Job</class>
+		<class>ro.seava.ad.domain.impl.system.JobParam</class>
+		<class>ro.seava.ad.domain.impl.system.Param</class>
+		<class>ro.seava.ad.domain.impl.system.ParamValue</class>
+		<class>ro.seava.ad.domain.impl.system.ViewState</class>
+		
+		<!-- Dependencies -->
+		
+		<exclude-unlisted-classes>true</exclude-unlisted-classes> 
+		<properties>
+			<property name="eclipselink.weaving" value="static" />
+		</properties>
+	</persistence-unit>
+</persistence>

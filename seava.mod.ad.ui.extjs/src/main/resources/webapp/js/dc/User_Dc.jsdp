@@ -1,0 +1,7 @@
+[
+	"seava.mod.ad/ds/User_Ds", 
+	"seava.mod.ad/lov/DateFormats_Lov", 
+	"seava.mod.ad/lov/Users_Lov", 
+	"seava.mod.ad/lov/Roles_Lov", 
+	"seava.mod.ad/lov/UserGroups_Lov"
+]
