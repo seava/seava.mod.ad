@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AD - Business
+Bundle-SymbolicName: seava.mod.ad.business
+Bundle-Vendor: Nan21 Electronics SRL
+Bundle-Version: 2.0.0-SNAPSHOT
