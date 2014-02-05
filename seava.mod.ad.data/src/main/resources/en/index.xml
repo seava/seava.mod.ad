@@ -12,11 +12,11 @@
 		     </file>
 		     <file>
 		 		<ds>MenuItem_Ds</ds>
-		 		<file>ad/MenuItem_Frame.csv</file>
+		 		<file>data/MenuItem_Frame.csv</file>
 		     </file>
 		     <file>
 		 		<ds>MenuItem_Ds</ds>
-		 		<file>ad/MenuItem_Parent.csv</file>
+		 		<file>data/MenuItem_Parent.csv</file>
 		 		<ukFieldName>name</ukFieldName>
 		     </file>
 		     <file>
