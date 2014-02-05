@@ -27,6 +27,12 @@
 		</dependency>
 		<dependency>
 			<groupId>ro.seava.lib.j4e</groupId>
+			<artifactId>seava.j4e.commons</artifactId>
+			<version>2.0.0-SNAPSHOT</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>ro.seava.lib.j4e</groupId>
 			<artifactId>seava.j4e.domain</artifactId>
 			<version>2.0.0-SNAPSHOT</version>
 			<type>jar</type>
