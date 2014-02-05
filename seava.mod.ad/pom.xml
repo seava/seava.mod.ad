@@ -29,6 +29,7 @@
 		<module>../seava.mod.ad.business</module>
 		<module>../seava.mod.ad.presenter</module>
 		<module>../seava.mod.ad.ui.extjs</module>
+		<module>../seava.mod.ad.i18n</module>
 		<module>../seava.mod.ad.data</module>
 		<module>../seava.mod.ad.security.authentic</module>
 		<module>../seava.mod.ad.security.authoriz</module>
