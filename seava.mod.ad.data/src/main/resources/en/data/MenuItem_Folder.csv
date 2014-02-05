@@ -8,34 +8,3 @@ sequenceNo,name,title,menu,active
 200,ad-security-acl,Access right,,true
 100,ad-impex-imp,Import,,true
 200,ad-impex-exp,Export,,true
-10,bd-currency,Currency,bd,true
-20,bd-geo,Geography,bd,true
-30,bd-uom,Unit of measure,bd,true
-40,bd-classification,Classification,bd,true
-45,bd-contact,Contact,bd,true
-50,bd-note,Note,bd,false
-60,bd-attachment,Attachment,bd,true
-70,bd-attr,Attribute,bd,true
-80,bd-elem,Element,bd,false
-10,md-base,Base,md,true
-20,md-org,Organization,md,true
-10,md-org-ivt,Inventory,,true
-20,md-org-fin,Financial,,true
-30,md-bp,Business partner,md,true
-40,md-mm,Product,md,true
-100,md-base-bank,Bank,,true
-200,md-base-doc,Document,,true
-300,md-base-period,Period,,true
-400,md-base-tax,Tax,,true
-10,md-bp-base,Base,,true
-10,md-mm-base,Base,,true
-20,md-mm-mnt,Maintenance,,true
-10,sd-account,Customer account,sd,true
-20,sd-order,Order,sd,true
-30,sd-invoice,Invoice,sd,true
-40,sd-financial,Financial,sd,true
-10,sc-account,Vendor account,sc,true
-20,sc-order,Order,sc,true
-30,sc-invoice,Invoice,sc,true
-40,sc-financial,Financial,sc,true
-10,iv-base,Base,,true

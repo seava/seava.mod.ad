@@ -1,79 +1,19 @@
 sequenceNo,name,title,frame,bundle,menuItem,active
-10,myClient_Ui,Client info,MyClient_Ui,nan21.dnet.module.ad.ui.extjs,ad-client,true
-10,dataSource_Ui,Data-sources,DataSource_Ui,nan21.dnet.module.ad.ui.extjs,ad-system,true
-20,job_Ui,Jobs,Job_Ui,nan21.dnet.module.ad.ui.extjs,ad-system,true
-30,param_Ui,Parameters,MyParam_Ui,nan21.dnet.module.ad.ui.extjs,ad-system,true
-40,paramValue_Ui,Parameter values,ParamValue_Ui,nan21.dnet.module.ad.ui.extjs,ad-system,true
-50,frameExtension_Ui,Frame extensions,FrameExtension_Ui,nan21.dnet.module.ad.ui.extjs,ad-system,true
-60,viewState_Ui,View states,ViewState_Ui,nan21.dnet.module.ad.ui.extjs,ad-system,true
-10,jobContext_Ui,Job contexts,JobContext_Ui,nan21.dnet.module.ad.ui.extjs,ad-scheduler,true
-20,jobTimer_Ui,Job schedules,JobTimer_Ui,nan21.dnet.module.ad.ui.extjs,ad-scheduler,true
-30,jobLog_Ui,Job logs,JobLog_Ui,nan21.dnet.module.ad.ui.extjs,ad-scheduler,true
-10,role_Ui,Roles,Role_Ui,nan21.dnet.module.ad.ui.extjs,ad-security-user,true
-20,userGroup_Ui,User groups,UserGroup_Ui,nan21.dnet.module.ad.ui.extjs,ad-security-user,true
-30,user_Ui,Users,User_Ui,nan21.dnet.module.ad.ui.extjs,ad-security-user,true
-40,menu_Ui,Menus,Menu_Ui,nan21.dnet.module.ad.ui.extjs,ad-security-menu,true
-10,accessControl_Ui,Access rights,AccessControl_Ui,nan21.dnet.module.ad.ui.extjs,ad-security-acl,true
-20,accessControlAsgn_Ui,Access rights - ASGN,AccessControlAsgn_Ui,nan21.dnet.module.ad.ui.extjs,ad-security-acl,true
-30,accessControlDs_Ui,Access rights - DS,AccessControlDs_Ui,nan21.dnet.module.ad.ui.extjs,ad-security-acl,true
-40,accessControlDsRpc_Ui,Access rights - Services,AccessControlDsRpc_Ui,nan21.dnet.module.ad.ui.extjs,ad-security-acl,true
-10,currency_Ui,Currencies,Currency_Ui,nan21.dnet.module.bd.ui.extjs,bd-currency,true
-20,currencyXrateProvider_Ui,Currency exchange rate providers,CurrencyXrateProvider_Ui,nan21.dnet.module.bd.ui.extjs,bd-currency,true
-30,currencyXRate_Ui,Currency exchange rates,CurrencyXRate_Ui,nan21.dnet.module.bd.ui.extjs,bd-currency,true
-10,uomType_Ui,Unit of measure types,UomType_Ui,nan21.dnet.module.bd.ui.extjs,bd-uom,true
-20,uom_Ui,Units of measure,Uom_Ui,nan21.dnet.module.bd.ui.extjs,bd-uom,true
-30,uomConversion_Ui,Unit of measure conversions,UomConversion_Ui,nan21.dnet.module.bd.ui.extjs,bd-uom,true
-10,classification_Ui,Classifications,Classification_Ui,nan21.dnet.module.bd.ui.extjs,bd-classification,true
-10,communicationMethodTypes_Ui,Communication method,CommunicationMethodTypes_Ui,nan21.dnet.module.bd.ui.extjs,bd-contact,true
-20,communicationMethod_Ui,Communications,CommunicationMethod_Ui,nan21.dnet.module.bd.ui.extjs,bd-contact,false
-10,country_Ui,Countries,Country_Ui,nan21.dnet.module.bd.ui.extjs,bd-geo,true
-20,countryMD_Ui,Country with details,CountryMD_Ui,nan21.dnet.module.bd.ui.extjs,bd-geo,true
-30,region_Ui,Regions,Region_Ui,nan21.dnet.module.bd.ui.extjs,bd-geo,true
-40,regionMD_Ui,Region with details,RegionMD_Ui,nan21.dnet.module.bd.ui.extjs,bd-geo,true
-10,attachmentType_Ui,Attachment types,AttachmentType_Ui,nan21.dnet.module.bd.ui.extjs,bd-attachment,true
-10,attributeDefinition_Ui,Attributes definition,AttributeDefinition_Ui,nan21.dnet.module.bd.ui.extjs,bd-attr,true
-20,attributeSet_Ui,Attribute sets definition,AttributeSet_Ui,nan21.dnet.module.bd.ui.extjs,bd-attr,true
-30,lookupItem_Ui,Data sets,LookupItem_Ui,nan21.dnet.module.bd.ui.extjs,bd-attr,true
-10,bank_Ui,Banks,Bank_Ui,nan21.dnet.module.md.ui.extjs,md-base-bank,true
-20,bankBranch_Ui,Bank branches,BankBranch_Ui,nan21.dnet.module.md.ui.extjs,md-base-bank,true
-10,calendar_Ui,Calendars,Calendar_Ui,nan21.dnet.module.md.ui.extjs,md-base-period,true
-20,fiscalYear_Ui,Fiscal years,FiscalYear_Ui,nan21.dnet.module.md.ui.extjs,md-base-period,true
-30,fiscalPeriod_Ui,Fiscal periods,FiscalPeriod_Ui,nan21.dnet.module.md.ui.extjs,md-base-period,true
-10,docType_Ui,Document type,DocType_Ui,nan21.dnet.module.md.ui.extjs,md-base-doc,true
-20,docSequence_Ui,Document sequence,DocSequence_Ui,nan21.dnet.module.md.ui.extjs,md-base-doc,true
-10,taxCategory_Ui,Tax categories,TaxCategory_Ui,nan21.dnet.module.md.ui.extjs,md-base-tax,true
-20,tax_Ui,Taxes,Tax_Ui,nan21.dnet.module.md.ui.extjs,md-base-tax,true
-100,orgType_Ui,Organization types,OrgType_Ui,nan21.dnet.module.md.ui.extjs,md-org,true
-110,org_Ui,Organizations,Org_Ui,nan21.dnet.module.md.ui.extjs,md-org,true
-10,financialAccount_Ui,Financial accounts,FinancialAccount_Ui,nan21.dnet.module.md.ui.extjs,md-org-fin,true
-10,inventory_Ui,Inventories,Inventory_Ui,nan21.dnet.module.md.ui.extjs,md-org-ivt,true
-10,legalForm_Ui,Company legal forms,LegalForm_Ui,nan21.dnet.module.md.ui.extjs,md-bp-base,true
-15,bpContactPosition_Ui,Contact positions,BpContactPosition_Ui,nan21.dnet.module.md.ui.extjs,md-bp-base,true
-20,bpAccountGroup_Ui,Customer/Vendor groups,BpAccountGroup_Ui,nan21.dnet.module.md.ui.extjs,md-bp-base,true
-30,bp_Ui,Business partners,Bp_Ui,nan21.dnet.module.md.ui.extjs,md-bp,true
-40,bpAccount_Ui,Business partner accounts,BpAccount_Ui,nan21.dnet.module.md.ui.extjs,md-bp,true
-10,productManufacturer_Ui,Product manufacturers,ProductManufacturer_Ui,nan21.dnet.module.md.ui.extjs,md-mm-base,true
-20,productAccountType_Ui,Product account types,ProductAccountType_Ui,nan21.dnet.module.md.ui.extjs,md-mm-base,true
-100,productCategory_Ui,Product categories,ProductCategory_Ui,nan21.dnet.module.md.ui.extjs,md-mm,true
-110,product_Ui,Products,Product_Ui,nan21.dnet.module.md.ui.extjs,md-mm,true
-120,productAccount_Ui,Product accounts,ProductAccount_Ui,nan21.dnet.module.md.ui.extjs,md-mm,true
-20,productCategorySubstitute_Ui,Category substitutes,ProductCategorySubstitute_Ui,nan21.dnet.module.md.ui.extjs,md-mm-mnt,true
-50,productMnt_Ui,Products,ProductMnt_Ui,nan21.dnet.module.md.ui.extjs,md-mm-mnt,true
-60,productSubstitute_Ui,Product substitutes,ProductSubstitute_Ui,nan21.dnet.module.md.ui.extjs,md-mm-mnt,true
-10,customerAccount_Ui,Customer accounts,CustomerAccount_Ui,nan21.dnet.module.sd.ui.extjs,sd-account,true
-10,salesOrder_Ui,Orders,SalesOrder_Ui,nan21.dnet.module.sd.ui.extjs,sd-order,true
-20,salesOrderLineOverview_Ui,Ordered items,SalesOrderLineOverview_Ui,nan21.dnet.module.sd.ui.extjs,sd-order,true
-10,salesInvoice_Ui,Invoices,SalesInvoice_Ui,nan21.dnet.module.sd.ui.extjs,sd-invoice,true
-20,salesInvoiceLineOverview_Ui,Invoiced items,SalesInvoiceLineOverview_Ui,nan21.dnet.module.sd.ui.extjs,sd-invoice,true
-10,receivable_Ui,Receivables,Receivable_Ui,nan21.dnet.module.sd.ui.extjs,sd-financial,true
-20,paymentIn_Ui,Payments in,PaymentIn_Ui,nan21.dnet.module.sd.ui.extjs,sd-financial,true
-30,paymentInAmount_Ui,Payment allocation,PaymentInAmount_Ui,nan21.dnet.module.sd.ui.extjs,sd-financial,true
-10,vendorAccount_Ui,Vendor accounts,VendorAccount_Ui,nan21.dnet.module.sc.ui.extjs,sc-account,true
-10,purchaseOrder_Ui,Orders,PurchaseOrder_Ui,nan21.dnet.module.sc.ui.extjs,sc-order,true
-20,purchaseOrderLineOverview_Ui,Ordered items,PurchaseOrderLineOverview_Ui,nan21.dnet.module.sc.ui.extjs,sc-order,true
-10,purchaseInvoice_Ui,Invoices,PurchaseInvoice_Ui,nan21.dnet.module.sc.ui.extjs,sc-invoice,true
-20,purchaseInvoiceLineOverview_Ui,Invoiced items,PurchaseInvoiceLineOverview_Ui,nan21.dnet.module.sc.ui.extjs,sc-invoice,true
-10,payable_Ui,Payables,Payable_Ui,nan21.dnet.module.sc.ui.extjs,sc-financial,true
-20,paymentOut_Ui,Payments out,PaymentOut_Ui,nan21.dnet.module.sc.ui.extjs,sc-financial,true
-30,paymentOutAmount_Ui,Payment allocation,PaymentOutAmount_Ui,nan21.dnet.module.sc.ui.extjs,sc-financial,true
-30,stock_Ui,Stocks,Stock_Ui,nan21.dnet.module.md.ui.extjs,iv-base,true
+10,myClient_Ui,Client info,MyClient_Ui,seava.mod.ad,ad-client,true
+10,dataSource_Ui,Data-sources,DataSource_Ui,seava.mod.ad,ad-system,true
+20,job_Ui,Jobs,Job_Ui,seava.mod.ad,ad-system,true
+30,param_Ui,Parameters,MyParam_Ui,seava.mod.ad,ad-system,true
+40,paramValue_Ui,Parameter values,ParamValue_Ui,seava.mod.ad,ad-system,true
+50,frameExtension_Ui,Frame extensions,FrameExtension_Ui,seava.mod.ad,ad-system,true
+60,viewState_Ui,View states,ViewState_Ui,seava.mod.ad,ad-system,true
+10,jobContext_Ui,Job contexts,JobContext_Ui,seava.mod.ad,ad-scheduler,true
+20,jobTimer_Ui,Job schedules,JobTimer_Ui,seava.mod.ad,ad-scheduler,true
+30,jobLog_Ui,Job logs,JobLog_Ui,seava.mod.ad,ad-scheduler,true
+10,role_Ui,Roles,Role_Ui,seava.mod.ad,ad-security-user,true
+20,userGroup_Ui,User groups,UserGroup_Ui,seava.mod.ad,ad-security-user,true
+30,user_Ui,Users,User_Ui,seava.mod.ad,ad-security-user,true
+40,menu_Ui,Menus,Menu_Ui,seava.mod.ad,ad-security-menu,true
+10,accessControl_Ui,Access rights,AccessControl_Ui,seava.mod.ad,ad-security-acl,true
+20,accessControlAsgn_Ui,Access rights - ASGN,AccessControlAsgn_Ui,seava.mod.ad,ad-security-acl,true
+30,accessControlDs_Ui,Access rights - DS,AccessControlDs_Ui,seava.mod.ad,ad-security-acl,true
+40,accessControlDsRpc_Ui,Access rights - Services,AccessControlDsRpc_Ui,seava.mod.ad,ad-security-acl,true

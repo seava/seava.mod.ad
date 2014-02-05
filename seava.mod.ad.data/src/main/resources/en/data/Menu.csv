@@ -1,10 +1,2 @@
 sequenceNo,name,title,description,active
 10,ad,Administration,,true
-20,bd,Base data,,true
-30,md,Master-data,,true
-40,sd,Sales/Distribution,,true
-50,sc,Purchasing,,true
-60,iv,Inventory,,false
-70,fi,Financials,,false
-80,op,Operations,,false
-90,hr,Human resources,,false
