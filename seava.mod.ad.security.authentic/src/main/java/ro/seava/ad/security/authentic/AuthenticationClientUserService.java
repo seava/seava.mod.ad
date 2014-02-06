@@ -10,6 +10,7 @@ import javax.persistence.NoResultException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
+import ro.seava.j4e.api.Constants;
 import ro.seava.j4e.api.exceptions.InvalidConfiguration;
 import ro.seava.j4e.commons.security.AppClient;
 import ro.seava.j4e.commons.security.SessionUser;
@@ -72,6 +73,11 @@ public class AuthenticationClientUserService extends AbstractSecurity implements
 			throw new UsernameNotFoundException("Invalid credentials");
 		}
 
+		if (u.getRoles().size() == 0) {
+			throw new UsernameNotFoundException(
+					"User is not allowed to connect to application.");
+		}
+
 		ISessionUser su;
 		try {
 			su = buildSessionUser(c, u, lp);
@@ -88,8 +94,13 @@ public class AuthenticationClientUserService extends AbstractSecurity implements
 		List<String> roles = new ArrayList<String>();
 
 		for (Role role : u.getRoles()) {
-			// Add the prefix required by Spring Security
-			roles.add("ROLE_" + role.getCode());
+			roles.add(role.getCode());
+
+			if (role.getCode().equals(Constants.ROLE_USER_CODE)) {
+				// Add the prefix required by Spring Security
+				roles.add("ROLE_" + role.getCode());
+			}
+
 			if (role.getCode().equals(c.getAdminRole())) {
 				isAdmin = true;
 			}
