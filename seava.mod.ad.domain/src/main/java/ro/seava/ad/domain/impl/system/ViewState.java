@@ -8,6 +8,7 @@ package ro.seava.ad.domain.impl.system;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import org.hibernate.validator.constraints.NotBlank;
 import ro.seava.j4e.domain.impl.AbstractType;
@@ -59,4 +60,10 @@ public class ViewState extends AbstractType {
 	public void prePersist() {
 		super.prePersist();
 	}
+
+	@PreUpdate
+	public void preUpdate() {
+		super.preUpdate();
+	}
+
 }

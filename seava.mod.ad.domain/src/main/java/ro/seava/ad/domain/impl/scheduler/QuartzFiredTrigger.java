@@ -10,6 +10,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
@@ -193,4 +194,9 @@ public class QuartzFiredTrigger implements Serializable {
 	@PrePersist
 	public void prePersist() {
 	}
+
+	@PreUpdate
+	public void preUpdate() {
+	}
+
 }

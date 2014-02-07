@@ -11,6 +11,7 @@ import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import org.hibernate.validator.constraints.NotBlank;
 import ro.seava.ad.domain.impl.scheduler.JobLog;
@@ -66,4 +67,10 @@ public class JobLogMessage extends AbstractAuditable {
 	public void prePersist() {
 		super.prePersist();
 	}
+
+	@PreUpdate
+	public void preUpdate() {
+		super.preUpdate();
+	}
+
 }

@@ -13,6 +13,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.QueryHint;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
@@ -94,4 +95,10 @@ public class Role extends AbstractTypeWithCode {
 	public void prePersist() {
 		super.prePersist();
 	}
+
+	@PreUpdate
+	public void preUpdate() {
+		super.preUpdate();
+	}
+
 }
