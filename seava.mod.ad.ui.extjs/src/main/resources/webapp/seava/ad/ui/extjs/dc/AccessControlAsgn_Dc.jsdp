@@ -1,0 +1,5 @@
+[
+	"seava.mod.ad/ds/seava.ad.ui.extjs.ds.AccessControlAsgn_Ds", 
+	"seava.mod.ad/lov/seava.ad.ui.extjs.lov.DataSourcesAsgn_Lov", 
+	"seava.mod.ad/lov/seava.ad.ui.extjs.lov.AccessControls_Lov"
+]

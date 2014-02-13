@@ -1,0 +1,7 @@
+[
+	"seava.mod.ad/asgn/seava.ad.ui.extjs.asgn.AccessControl_Role_Asgn", 
+	"seava.mod.ad/dc/seava.ad.ui.extjs.dc.AccessControl_Dc", 
+	"seava.mod.ad/dc/seava.ad.ui.extjs.dc.AccessControlAsgn_Dc", 
+	"seava.mod.ad/dc/seava.ad.ui.extjs.dc.AccessControlDs_Dc", 
+	"seava.mod.ad/dc/seava.ad.ui.extjs.dc.AccessControlDsRpc_Dc"
+]

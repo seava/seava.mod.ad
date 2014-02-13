@@ -12,11 +12,11 @@
 		http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 	<bean name="securityAuthenticationClientUserService" scope="singleton" lazy-init="true"
-		class="ro.seava.ad.security.authentic.AuthenticationClientUserService"/>
+		class="seava.ad.security.authentic.AuthenticationClientUserService"/>
 
 	<bean name="changePasswordService" scope="singleton" lazy-init="true"
-		class="ro.seava.ad.security.authentic.ChangePasswordService"/>
+		class="seava.ad.security.authentic.ChangePasswordService"/>
 
 	<bean name="passwordValidator" scope="singleton" lazy-init="true"
-		class="ro.seava.ad.security.authentic.DefaultPasswordValidator"/>
+		class="seava.ad.security.authentic.DefaultPasswordValidator"/>
 </beans>

@@ -3,8 +3,8 @@
 		Minimize the javascript files
     </description>
 
-	<property name="sourcePathJs" value="${basedir}/src/main/resources/webapp/js" />
-	<property name="targetPathJs" value="${basedir}/target/classes/webapp/js" />
+	<property name="sourcePathJs" value="${basedir}/src/main/resources/webapp" />
+	<property name="targetPathJs" value="${basedir}/target/classes/webapp" />
 	<property name="sourcePathResources" value="${basedir}/src/main/resources/webapp/resources" />
     <property name="targetPathResources" value="${basedir}/target/classes/webapp/resources" />
 	<property name="yui.path" value="yui.path" />

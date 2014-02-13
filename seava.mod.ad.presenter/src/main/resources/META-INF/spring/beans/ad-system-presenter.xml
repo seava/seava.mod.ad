@@ -10,18 +10,18 @@
 	<!-- ==================== Client ==================== -->
 		
 	<bean id="Client_Ds" scope="singleton" lazy-init="true"
-		class="ro.seava.ad.presenter.ext.system.service.Client_DsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.Client_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.Client"/>
-		<property name="paramClass" value="ro.seava.ad.presenter.impl.system.model.Client_DsParam"/>
+		class="seava.ad.presenter.ext.system.service.Client_DsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.Client_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.Client"/>
+		<property name="paramClass" value="seava.ad.presenter.impl.system.model.Client_DsParam"/>
 	</bean>
 	
 	<!-- ==================== ClientLov ==================== -->
 		
 	<bean id="ClientLov_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.ClientLov_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.Client"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.ClientLov_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.Client"/>
 		<property name="readOnly" value="true" />
 	</bean>
 	
@@ -29,18 +29,18 @@
 		
 	<bean id="MyClient_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.MyClient_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.Client"/>
-		<property name="queryBuilderClass" value="ro.seava.ad.presenter.impl.system.qb.MyClient_DsQb" />
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.MyClient_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.Client"/>
+		<property name="queryBuilderClass" value="seava.ad.presenter.impl.system.qb.MyClient_DsQb" />
 	</bean>
 	
 	<!-- ==================== DbChangeLog ==================== -->
 		
 	<bean id="DbChangeLog_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.DbChangeLog_Ds"/>
-		<property name="filterClass" value="ro.seava.ad.presenter.impl.system.model.DbChangeLog_DsFilter"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.DbChangeLog"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DbChangeLog_Ds"/>
+		<property name="filterClass" value="seava.ad.presenter.impl.system.model.DbChangeLog_DsFilter"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.DbChangeLog"/>
 		<property name="readOnly" value="true" />
 	</bean>
 	
@@ -48,14 +48,14 @@
 		
 	<bean id="Param_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.Param_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.Param"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.Param_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.Param"/>
 		<property name="readOnly" value="true" />
 		<property name="rpcFilter" >
 			<map>
 				<entry key="synchronizeCatalog">
 					<bean class="ro.seava.j4e.presenter.descriptor.RpcDefinition">
-						<constructor-arg name="delegateClass" value="ro.seava.ad.presenter.ext.system.delegate.Param_Pd"/>
+						<constructor-arg name="delegateClass" value="seava.ad.presenter.ext.system.delegate.Param_Pd"/>
 						<constructor-arg name="methodName" value="synchronizeCatalog" />
 					</bean>
 				</entry>
@@ -67,8 +67,8 @@
 		
 	<bean id="ParamLov_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.ParamLov_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.Param"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.ParamLov_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.Param"/>
 		<property name="readOnly" value="true" />
 	</bean>
 	
@@ -76,15 +76,15 @@
 		
 	<bean id="MyParam_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.MyParam_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.Param"/>
-		<property name="paramClass" value="ro.seava.ad.presenter.impl.system.model.MyParam_DsParam"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.MyParam_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.Param"/>
+		<property name="paramClass" value="seava.ad.presenter.impl.system.model.MyParam_DsParam"/>
 		<property name="readOnly" value="true" />
 		<property name="rpcData" >
 			<map>
 				<entry key="createInitialValues">
 					<bean class="ro.seava.j4e.presenter.descriptor.RpcDefinition">
-						<constructor-arg name="delegateClass" value="ro.seava.ad.presenter.ext.system.delegate.Param_Pd"/>
+						<constructor-arg name="delegateClass" value="seava.ad.presenter.ext.system.delegate.Param_Pd"/>
 						<constructor-arg name="methodName" value="createInitialValues" />
 					</bean>
 				</entry>
@@ -96,15 +96,15 @@
 		
 	<bean id="ParamValue_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.ParamValue_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.ParamValue"/>
-		<property name="paramClass" value="ro.seava.ad.presenter.impl.system.model.ParamValue_DsParam"/>
-		<property name="queryBuilderClass" value="ro.seava.ad.presenter.impl.system.qb.ParamValue_DsQb" />
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.ParamValue_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.ParamValue"/>
+		<property name="paramClass" value="seava.ad.presenter.impl.system.model.ParamValue_DsParam"/>
+		<property name="queryBuilderClass" value="seava.ad.presenter.impl.system.qb.ParamValue_DsQb" />
 		<property name="rpcFilter" >
 			<map>
 				<entry key="publishValues">
 					<bean class="ro.seava.j4e.presenter.descriptor.RpcDefinition">
-						<constructor-arg name="delegateClass" value="ro.seava.ad.presenter.ext.system.delegate.Param_Pd"/>
+						<constructor-arg name="delegateClass" value="seava.ad.presenter.ext.system.delegate.Param_Pd"/>
 						<constructor-arg name="methodName" value="publishValues" />
 					</bean>
 				</entry>
@@ -116,14 +116,14 @@
 		
 	<bean id="DataSource_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.DataSource_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.DataSource"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSource_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.DataSource"/>
 		<property name="readOnly" value="true" />
 		<property name="rpcFilter" >
 			<map>
 				<entry key="synchronizeCatalog">
 					<bean class="ro.seava.j4e.presenter.descriptor.RpcDefinition">
-						<constructor-arg name="delegateClass" value="ro.seava.ad.presenter.ext.system.delegate.DataSource_Pd"/>
+						<constructor-arg name="delegateClass" value="seava.ad.presenter.ext.system.delegate.DataSource_Pd"/>
 						<constructor-arg name="methodName" value="synchronizeCatalog" />
 					</bean>
 				</entry>
@@ -135,8 +135,8 @@
 		
 	<bean id="DataSourceLov_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.DataSourceLov_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.DataSource"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSourceLov_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.DataSource"/>
 		<property name="readOnly" value="true" />
 	</bean>
 	
@@ -144,8 +144,8 @@
 		
 	<bean id="DataSourceDsLov_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.DataSourceDsLov_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.DataSource"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSourceDsLov_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.DataSource"/>
 		<property name="readOnly" value="true" />
 	</bean>
 	
@@ -153,8 +153,8 @@
 		
 	<bean id="DataSourceAsgnLov_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.DataSourceAsgnLov_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.DataSource"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSourceAsgnLov_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.DataSource"/>
 		<property name="readOnly" value="true" />
 	</bean>
 	
@@ -162,8 +162,8 @@
 		
 	<bean id="DataSourceField_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.DataSourceField_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.DataSourceField"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSourceField_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.DataSourceField"/>
 		<property name="readOnly" value="true" />
 	</bean>
 	
@@ -171,8 +171,8 @@
 		
 	<bean id="DataSourceFieldLov_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.DataSourceFieldLov_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.DataSourceField"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSourceFieldLov_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.DataSourceField"/>
 		<property name="readOnly" value="true" />
 	</bean>
 	
@@ -180,8 +180,8 @@
 		
 	<bean id="DataSourceRpc_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.DataSourceRpc_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.DataSourceRpc"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSourceRpc_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.DataSourceRpc"/>
 		<property name="readOnly" value="true" />
 	</bean>
 	
@@ -189,8 +189,8 @@
 		
 	<bean id="DataSourceRpcLov_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.DataSourceRpcLov_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.DataSourceRpc"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSourceRpcLov_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.DataSourceRpc"/>
 		<property name="readOnly" value="true" />
 	</bean>
 	
@@ -198,14 +198,14 @@
 		
 	<bean id="Job_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.Job_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.Job"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.Job_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.Job"/>
 		<property name="readOnly" value="true" />
 		<property name="rpcFilter" >
 			<map>
 				<entry key="synchronizeCatalog">
 					<bean class="ro.seava.j4e.presenter.descriptor.RpcDefinition">
-						<constructor-arg name="delegateClass" value="ro.seava.ad.presenter.ext.system.delegate.Job_Pd"/>
+						<constructor-arg name="delegateClass" value="seava.ad.presenter.ext.system.delegate.Job_Pd"/>
 						<constructor-arg name="methodName" value="synchronizeCatalog" />
 					</bean>
 				</entry>
@@ -217,8 +217,8 @@
 		
 	<bean id="JobLov_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.JobLov_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.Job"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.JobLov_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.Job"/>
 		<property name="readOnly" value="true" />
 	</bean>
 	
@@ -226,8 +226,8 @@
 		
 	<bean id="JobParam_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.JobParam_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.JobParam"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.JobParam_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.JobParam"/>
 		<property name="readOnly" value="true" />
 	</bean>
 	
@@ -235,22 +235,22 @@
 		
 	<bean id="JobParamLov_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.JobParamLov_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.JobParam"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.JobParamLov_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.JobParam"/>
 		<property name="readOnly" value="true" />
 	</bean>
 	
 	<!-- ==================== DateFormat ==================== -->
 		
 	<bean id="DateFormat_Ds" scope="singleton" lazy-init="true"
-		class="ro.seava.ad.presenter.ext.system.service.DateFormat_DsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.DateFormat_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.DateFormat"/>
+		class="seava.ad.presenter.ext.system.service.DateFormat_DsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DateFormat_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.DateFormat"/>
 		<property name="rpcData" >
 			<map>
 				<entry key="synchronizeMasks">
 					<bean class="ro.seava.j4e.presenter.descriptor.RpcDefinition">
-						<constructor-arg name="delegateClass" value="ro.seava.ad.presenter.ext.system.delegate.DateFormat_Pd"/>
+						<constructor-arg name="delegateClass" value="seava.ad.presenter.ext.system.delegate.DateFormat_Pd"/>
 						<constructor-arg name="methodName" value="synchronizeMasks" />
 					</bean>
 				</entry>
@@ -262,42 +262,42 @@
 		
 	<bean id="DateFormatLov_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.DateFormatLov_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.DateFormat"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DateFormatLov_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.DateFormat"/>
 		<property name="readOnly" value="true" />
 	</bean>
 	
 	<!-- ==================== DateFormatMask ==================== -->
 		
 	<bean id="DateFormatMask_Ds" scope="singleton" lazy-init="true"
-		class="ro.seava.ad.presenter.ext.system.service.DateFormatMask_DsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.DateFormatMask_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.DateFormatMask"/>
+		class="seava.ad.presenter.ext.system.service.DateFormatMask_DsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DateFormatMask_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.DateFormatMask"/>
 	</bean>
 	
 	<!-- ==================== FrameExtension ==================== -->
 		
 	<bean id="FrameExtension_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.FrameExtension_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.FrameExtension"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.FrameExtension_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.FrameExtension"/>
 	</bean>
 	
 	<!-- ==================== ViewState ==================== -->
 		
 	<bean id="ViewState_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.ViewState_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.ViewState"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.ViewState_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.ViewState"/>
 	</bean>
 	
 	<!-- ==================== ViewStateRtLov ==================== -->
 		
 	<bean id="ViewStateRtLov_Ds" scope="singleton" lazy-init="true"
 		class="ro.seava.j4e.presenter.service.ds.DefaultEntityDsService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.system.model.ViewStateRtLov_Ds"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.system.ViewState"/>
-		<property name="paramClass" value="ro.seava.ad.presenter.impl.system.model.ViewStateRtLov_DsParam"/>
-		<property name="queryBuilderClass" value="ro.seava.ad.presenter.ext.system.qb.ViewStateRtLov_DsQb" />
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.ViewStateRtLov_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.ViewState"/>
+		<property name="paramClass" value="seava.ad.presenter.impl.system.model.ViewStateRtLov_DsParam"/>
+		<property name="queryBuilderClass" value="seava.ad.presenter.ext.system.qb.ViewStateRtLov_DsQb" />
 	</bean>
 </beans>

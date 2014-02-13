@@ -1,0 +1,7 @@
+[
+	"seava.mod.ad/ds/seava.ad.ui.extjs.ds.User_Ds", 
+	"seava.mod.ad/lov/seava.ad.ui.extjs.lov.DateFormats_Lov", 
+	"seava.mod.ad/lov/seava.ad.ui.extjs.lov.Users_Lov", 
+	"seava.mod.ad/lov/seava.ad.ui.extjs.lov.Roles_Lov", 
+	"seava.mod.ad/lov/seava.ad.ui.extjs.lov.UserGroups_Lov"
+]

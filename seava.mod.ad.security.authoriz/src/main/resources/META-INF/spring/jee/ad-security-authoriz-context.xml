@@ -11,8 +11,8 @@
 		http://www.springframework.org/schema/tx
 		http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-	<bean name="authorizationFactory" class="ro.seava.ad.security.authoriz.AuthorizationFactory"/>
-	<bean class="ro.seava.ad.security.authoriz.AuthorizationForAsgn" lazy-init="true"/>
-	<bean class="ro.seava.ad.security.authoriz.AuthorizationForDs" lazy-init="true"/>
-	<bean class="ro.seava.ad.security.authoriz.AuthorizationForJob" lazy-init="true"/>
+	<bean name="authorizationFactory" class="seava.ad.security.authoriz.AuthorizationFactory"/>
+	<bean class="seava.ad.security.authoriz.AuthorizationForAsgn" lazy-init="true"/>
+	<bean class="seava.ad.security.authoriz.AuthorizationForDs" lazy-init="true"/>
+	<bean class="seava.ad.security.authoriz.AuthorizationForJob" lazy-init="true"/>
 </beans>

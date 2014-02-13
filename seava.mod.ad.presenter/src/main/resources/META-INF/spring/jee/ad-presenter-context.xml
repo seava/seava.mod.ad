@@ -6,13 +6,13 @@
 		http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="menuProvider" scope="singleton" lazy-init="true" 
-		class="ro.seava.ad.presenter.ext.ExtensionProviderMainMenu"/>
+		class="seava.ad.presenter.ext.ExtensionProviderMainMenu"/>
 	
 	<bean id="scriptFromDbProvider" scope="singleton" lazy-init="true" 
-		class="ro.seava.ad.presenter.ext.ExtensionProviderScriptFromDb"/>
+		class="seava.ad.presenter.ext.ExtensionProviderScriptFromDb"/>
 
 	<bean id="dummyPresenterJob" scope="prototype"
-		class="ro.seava.ad.presenter.ext.DummyPresenterJob" />
+		class="seava.ad.presenter.ext.DummyPresenterJob" />
 
 	<import resource="../beans/ad-system-presenter.xml" />
 	<import resource="../beans/ad-security-presenter.xml" />

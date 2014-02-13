@@ -1,19 +1,19 @@
 sequenceNo,name,title,frame,bundle,menuItem,active
-10,myClient_Ui,Client info,MyClient_Ui,seava.mod.ad,ad-client,true
-10,dataSource_Ui,Data-sources,DataSource_Ui,seava.mod.ad,ad-system,true
-20,job_Ui,Jobs,Job_Ui,seava.mod.ad,ad-system,true
-30,param_Ui,Parameters,MyParam_Ui,seava.mod.ad,ad-system,true
-40,paramValue_Ui,Parameter values,ParamValue_Ui,seava.mod.ad,ad-system,true
-50,frameExtension_Ui,Frame extensions,FrameExtension_Ui,seava.mod.ad,ad-system,true
-60,viewState_Ui,View states,ViewState_Ui,seava.mod.ad,ad-system,true
-10,jobContext_Ui,Job contexts,JobContext_Ui,seava.mod.ad,ad-scheduler,true
-20,jobTimer_Ui,Job schedules,JobTimer_Ui,seava.mod.ad,ad-scheduler,true
-30,jobLog_Ui,Job logs,JobLog_Ui,seava.mod.ad,ad-scheduler,true
-10,role_Ui,Roles,Role_Ui,seava.mod.ad,ad-security-user,true
-20,userGroup_Ui,User groups,UserGroup_Ui,seava.mod.ad,ad-security-user,true
-30,user_Ui,Users,User_Ui,seava.mod.ad,ad-security-user,true
-40,menu_Ui,Menus,Menu_Ui,seava.mod.ad,ad-security-menu,true
-10,accessControl_Ui,Access rights,AccessControl_Ui,seava.mod.ad,ad-security-acl,true
-20,accessControlAsgn_Ui,Access rights - ASGN,AccessControlAsgn_Ui,seava.mod.ad,ad-security-acl,true
-30,accessControlDs_Ui,Access rights - DS,AccessControlDs_Ui,seava.mod.ad,ad-security-acl,true
-40,accessControlDsRpc_Ui,Access rights - Services,AccessControlDsRpc_Ui,seava.mod.ad,ad-security-acl,true
+10,myClient_Ui,Client info,seava.ad.ui.extjs.frame.MyClient_Ui,seava.mod.ad,ad-client,true
+10,dataSource_Ui,Data-sources,seava.ad.ui.extjs.frame.DataSource_Ui,seava.mod.ad,ad-system,true
+20,job_Ui,Jobs,seava.ad.ui.extjs.frame.Job_Ui,seava.mod.ad,ad-system,true
+30,param_Ui,Parameters,seava.ad.ui.extjs.frame.MyParam_Ui,seava.mod.ad,ad-system,true
+40,paramValue_Ui,Parameter values,seava.ad.ui.extjs.frame.ParamValue_Ui,seava.mod.ad,ad-system,true
+50,frameExtension_Ui,Frame extensions,seava.ad.ui.extjs.frame.FrameExtension_Ui,seava.mod.ad,ad-system,true
+60,viewState_Ui,View states,seava.ad.ui.extjs.frame.ViewState_Ui,seava.mod.ad,ad-system,true
+10,jobContext_Ui,Job contexts,seava.ad.ui.extjs.frame.JobContext_Ui,seava.mod.ad,ad-scheduler,true
+20,jobTimer_Ui,Job schedules,seava.ad.ui.extjs.frame.JobTimer_Ui,seava.mod.ad,ad-scheduler,true
+30,jobLog_Ui,Job logs,seava.ad.ui.extjs.frame.JobLog_Ui,seava.mod.ad,ad-scheduler,true
+10,role_Ui,Roles,seava.ad.ui.extjs.frame.Role_Ui,seava.mod.ad,ad-security-user,true
+20,userGroup_Ui,User groups,seava.ad.ui.extjs.frame.UserGroup_Ui,seava.mod.ad,ad-security-user,true
+30,user_Ui,Users,seava.ad.ui.extjs.frame.User_Ui,seava.mod.ad,ad-security-user,true
+40,menu_Ui,Menus,seava.ad.ui.extjs.frame.Menu_Ui,seava.mod.ad,ad-security-menu,true
+10,accessControl_Ui,Access rights,seava.ad.ui.extjs.frame.AccessControl_Ui,seava.mod.ad,ad-security-acl,true
+20,accessControlAsgn_Ui,Access rights - ASGN,seava.ad.ui.extjs.frame.AccessControlAsgn_Ui,seava.mod.ad,ad-security-acl,true
+30,accessControlDs_Ui,Access rights - DS,seava.ad.ui.extjs.frame.AccessControlDs_Ui,seava.mod.ad,ad-security-acl,true
+40,accessControlDsRpc_Ui,Access rights - Services,seava.ad.ui.extjs.frame.AccessControlDsRpc_Ui,seava.mod.ad,ad-security-acl,true

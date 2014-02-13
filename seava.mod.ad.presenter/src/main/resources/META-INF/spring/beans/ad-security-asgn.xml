@@ -11,9 +11,9 @@
 	
 	<bean id="User_Role_Asgn" scope="singleton" lazy-init="true"
 			class="ro.seava.j4e.presenter.service.asgn.DefaultAsgnService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.security.asgn.model.User_Role_Asgn"/>
-		<property name="filterClass" value="ro.seava.ad.presenter.impl.security.asgn.model.User_Role_Asgn"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.security.Role"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.security.asgn.model.User_Role_Asgn"/>
+		<property name="filterClass" value="seava.ad.presenter.impl.security.asgn.model.User_Role_Asgn"/>
+		<property name="entityClass" value="seava.ad.domain.impl.security.Role"/>
 		<property name="ctx">
 		<bean class="ro.seava.j4e.commons.descriptor.AsgnContext">
 			<property name="leftTable" value="AD_ROLE"/>
@@ -29,9 +29,9 @@
 	
 	<bean id="Role_User_Asgn" scope="singleton" lazy-init="true"
 			class="ro.seava.j4e.presenter.service.asgn.DefaultAsgnService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.security.asgn.model.Role_User_Asgn"/>
-		<property name="filterClass" value="ro.seava.ad.presenter.impl.security.asgn.model.Role_User_Asgn"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.security.User"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.security.asgn.model.Role_User_Asgn"/>
+		<property name="filterClass" value="seava.ad.presenter.impl.security.asgn.model.Role_User_Asgn"/>
+		<property name="entityClass" value="seava.ad.domain.impl.security.User"/>
 		<property name="ctx">
 		<bean class="ro.seava.j4e.commons.descriptor.AsgnContext">
 			<property name="leftTable" value="AD_USR"/>
@@ -47,9 +47,9 @@
 	
 	<bean id="User_UserGroup_Asgn" scope="singleton" lazy-init="true"
 			class="ro.seava.j4e.presenter.service.asgn.DefaultAsgnService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.security.asgn.model.User_UserGroup_Asgn"/>
-		<property name="filterClass" value="ro.seava.ad.presenter.impl.security.asgn.model.User_UserGroup_Asgn"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.security.UserGroup"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.security.asgn.model.User_UserGroup_Asgn"/>
+		<property name="filterClass" value="seava.ad.presenter.impl.security.asgn.model.User_UserGroup_Asgn"/>
+		<property name="entityClass" value="seava.ad.domain.impl.security.UserGroup"/>
 		<property name="ctx">
 		<bean class="ro.seava.j4e.commons.descriptor.AsgnContext">
 			<property name="leftTable" value="AD_USRGRP"/>
@@ -65,9 +65,9 @@
 	
 	<bean id="UserGroup_User_Asgn" scope="singleton" lazy-init="true"
 			class="ro.seava.j4e.presenter.service.asgn.DefaultAsgnService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.security.asgn.model.UserGroup_User_Asgn"/>
-		<property name="filterClass" value="ro.seava.ad.presenter.impl.security.asgn.model.UserGroup_User_Asgn"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.security.User"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.security.asgn.model.UserGroup_User_Asgn"/>
+		<property name="filterClass" value="seava.ad.presenter.impl.security.asgn.model.UserGroup_User_Asgn"/>
+		<property name="entityClass" value="seava.ad.domain.impl.security.User"/>
 		<property name="ctx">
 		<bean class="ro.seava.j4e.commons.descriptor.AsgnContext">
 			<property name="leftTable" value="AD_USR"/>
@@ -83,9 +83,9 @@
 	
 	<bean id="AccessControl_Role_Asgn" scope="singleton" lazy-init="true"
 			class="ro.seava.j4e.presenter.service.asgn.DefaultAsgnService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.security.asgn.model.AccessControl_Role_Asgn"/>
-		<property name="filterClass" value="ro.seava.ad.presenter.impl.security.asgn.model.AccessControl_Role_Asgn"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.security.Role"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.security.asgn.model.AccessControl_Role_Asgn"/>
+		<property name="filterClass" value="seava.ad.presenter.impl.security.asgn.model.AccessControl_Role_Asgn"/>
+		<property name="entityClass" value="seava.ad.domain.impl.security.Role"/>
 		<property name="ctx">
 		<bean class="ro.seava.j4e.commons.descriptor.AsgnContext">
 			<property name="leftTable" value="AD_ROLE"/>
@@ -101,9 +101,9 @@
 	
 	<bean id="Role_AccessControl_Asgn" scope="singleton" lazy-init="true"
 			class="ro.seava.j4e.presenter.service.asgn.DefaultAsgnService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.security.asgn.model.Role_AccessControl_Asgn"/>
-		<property name="filterClass" value="ro.seava.ad.presenter.impl.security.asgn.model.Role_AccessControl_Asgn"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.security.AccessControl"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.security.asgn.model.Role_AccessControl_Asgn"/>
+		<property name="filterClass" value="seava.ad.presenter.impl.security.asgn.model.Role_AccessControl_Asgn"/>
+		<property name="entityClass" value="seava.ad.domain.impl.security.AccessControl"/>
 		<property name="ctx">
 		<bean class="ro.seava.j4e.commons.descriptor.AsgnContext">
 			<property name="leftTable" value="AD_ACL"/>
@@ -119,9 +119,9 @@
 	
 	<bean id="MenuItem_Role_Asgn" scope="singleton" lazy-init="true"
 			class="ro.seava.j4e.presenter.service.asgn.DefaultAsgnService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.security.asgn.model.MenuItem_Role_Asgn"/>
-		<property name="filterClass" value="ro.seava.ad.presenter.impl.security.asgn.model.MenuItem_Role_Asgn"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.security.Role"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.security.asgn.model.MenuItem_Role_Asgn"/>
+		<property name="filterClass" value="seava.ad.presenter.impl.security.asgn.model.MenuItem_Role_Asgn"/>
+		<property name="entityClass" value="seava.ad.domain.impl.security.Role"/>
 		<property name="ctx">
 		<bean class="ro.seava.j4e.commons.descriptor.AsgnContext">
 			<property name="leftTable" value="AD_ROLE"/>
@@ -137,9 +137,9 @@
 	
 	<bean id="Role_MenuItem_Asgn" scope="singleton" lazy-init="true"
 			class="ro.seava.j4e.presenter.service.asgn.DefaultAsgnService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.security.asgn.model.Role_MenuItem_Asgn"/>
-		<property name="filterClass" value="ro.seava.ad.presenter.impl.security.asgn.model.Role_MenuItem_Asgn"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.security.MenuItem"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.security.asgn.model.Role_MenuItem_Asgn"/>
+		<property name="filterClass" value="seava.ad.presenter.impl.security.asgn.model.Role_MenuItem_Asgn"/>
+		<property name="entityClass" value="seava.ad.domain.impl.security.MenuItem"/>
 		<property name="ctx">
 		<bean class="ro.seava.j4e.commons.descriptor.AsgnContext">
 			<property name="leftTable" value="AD_MENU_ITEM"/>
@@ -155,9 +155,9 @@
 	
 	<bean id="Menu_Role_Asgn" scope="singleton" lazy-init="true"
 			class="ro.seava.j4e.presenter.service.asgn.DefaultAsgnService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.security.asgn.model.Menu_Role_Asgn"/>
-		<property name="filterClass" value="ro.seava.ad.presenter.impl.security.asgn.model.Menu_Role_Asgn"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.security.Role"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.security.asgn.model.Menu_Role_Asgn"/>
+		<property name="filterClass" value="seava.ad.presenter.impl.security.asgn.model.Menu_Role_Asgn"/>
+		<property name="entityClass" value="seava.ad.domain.impl.security.Role"/>
 		<property name="ctx">
 		<bean class="ro.seava.j4e.commons.descriptor.AsgnContext">
 			<property name="leftTable" value="AD_ROLE"/>
@@ -173,9 +173,9 @@
 	
 	<bean id="Role_Menu_Asgn" scope="singleton" lazy-init="true"
 			class="ro.seava.j4e.presenter.service.asgn.DefaultAsgnService">
-		<property name="modelClass" value="ro.seava.ad.presenter.impl.security.asgn.model.Role_Menu_Asgn"/>
-		<property name="filterClass" value="ro.seava.ad.presenter.impl.security.asgn.model.Role_Menu_Asgn"/>
-		<property name="entityClass" value="ro.seava.ad.domain.impl.security.Menu"/>
+		<property name="modelClass" value="seava.ad.presenter.impl.security.asgn.model.Role_Menu_Asgn"/>
+		<property name="filterClass" value="seava.ad.presenter.impl.security.asgn.model.Role_Menu_Asgn"/>
+		<property name="entityClass" value="seava.ad.domain.impl.security.Menu"/>
 		<property name="ctx">
 		<bean class="ro.seava.j4e.commons.descriptor.AsgnContext">
 			<property name="leftTable" value="AD_MENU"/>
