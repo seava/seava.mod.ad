@@ -8,7 +8,7 @@ package seava.ad.business.ext.scheduler.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import ro.seava.j4e.api.exceptions.BusinessException;
+import seava.j4e.api.exceptions.BusinessException;
 import seava.ad.business.api.scheduler.IJobContextParamService;
 import seava.ad.business.ext.scheduler.delegate.JobScheduler_Bd;
 import seava.ad.domain.impl.scheduler.JobContext;

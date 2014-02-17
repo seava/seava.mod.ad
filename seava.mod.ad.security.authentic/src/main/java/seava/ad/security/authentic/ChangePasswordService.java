@@ -14,8 +14,8 @@ import javax.persistence.NoResultException;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import ro.seava.j4e.api.security.IChangePasswordService;
-import ro.seava.j4e.api.security.IPasswordValidator;
+import seava.j4e.api.security.IChangePasswordService;
+import seava.j4e.api.security.IPasswordValidator;
 import seava.ad.domain.impl.security.User;
 
 public class ChangePasswordService extends AbstractSecurity implements

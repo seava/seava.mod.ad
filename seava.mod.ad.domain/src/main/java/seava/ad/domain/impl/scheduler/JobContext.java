@@ -5,6 +5,7 @@
  */
 package seava.ad.domain.impl.scheduler;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import javax.persistence.CascadeType;
@@ -23,13 +24,17 @@ import org.eclipse.persistence.annotations.CascadeOnDelete;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
-import ro.seava.j4e.domain.impl.AbstractType;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractType;
 
 @NamedQueries({@NamedQuery(name = JobContext.NQ_FIND_BY_NAME, query = "SELECT e FROM JobContext e WHERE e.clientId = :clientId and e.name = :name", hints = @QueryHint(name = QueryHints.BIND_PARAMETERS, value = HintValues.TRUE))})
 @Entity
 @Table(name = JobContext.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = JobContext.TABLE_NAME
 		+ "_UK1", columnNames = {"CLIENTID", "NAME"})})
-public class JobContext extends AbstractType {
+public class JobContext extends AbstractType
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "AD_JOBCTX";
 

@@ -7,10 +7,10 @@ package seava.ad.business.impl.system;
 
 import java.util.List;
 import javax.persistence.EntityManager;
-import ro.seava.j4e.business.service.entity.AbstractEntityService;
 import seava.ad.business.api.system.IJobParamService;
 import seava.ad.domain.impl.system.Job;
 import seava.ad.domain.impl.system.JobParam;
+import seava.j4e.business.service.entity.AbstractEntityService;
 
 /**
  * Repository functionality for {@link JobParam} domain entity. It contains

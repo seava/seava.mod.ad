@@ -6,10 +6,10 @@
 package seava.ad.presenter.impl.system.model;
 
 import java.util.Date;
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.DsField;
-import ro.seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 import seava.ad.domain.impl.system.ParamValue;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.DsField;
+import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 
 @Ds(entity = ParamValue.class)
 public class ParamValue_Ds extends AbstractAuditable_Ds<ParamValue> {

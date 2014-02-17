@@ -7,12 +7,12 @@ import javax.sql.DataSource;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import ro.seava.j4e.api.extensions.IExtensionFile;
-import ro.seava.j4e.api.extensions.IExtensionProvider;
-import ro.seava.j4e.api.extensions.IExtensions;
-import ro.seava.j4e.api.session.Session;
-import ro.seava.j4e.presenter.extensions.ExtensionFile;
-import ro.seava.j4e.presenter.service.AbstractPresenterBaseService;
+import seava.j4e.api.extensions.IExtensionFile;
+import seava.j4e.api.extensions.IExtensionProvider;
+import seava.j4e.api.extensions.IExtensions;
+import seava.j4e.api.session.Session;
+import seava.j4e.presenter.extensions.ExtensionFile;
+import seava.j4e.presenter.service.AbstractPresenterBaseService;
 import seava.ad.domain.impl.system.FrameExtension;
 
 /**

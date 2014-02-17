@@ -11,9 +11,9 @@ import java.util.List;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import ro.seava.j4e.api.descriptor.ISysParamDefinition;
-import ro.seava.j4e.api.descriptor.ISysParamDefinitions;
-import ro.seava.j4e.api.exceptions.BusinessException;
+import seava.j4e.api.descriptor.ISysParamDefinition;
+import seava.j4e.api.descriptor.ISysParamDefinitions;
+import seava.j4e.api.exceptions.BusinessException;
 import seava.ad.business.api.system.IParamService;
 import seava.ad.domain.impl.system.Param;
 

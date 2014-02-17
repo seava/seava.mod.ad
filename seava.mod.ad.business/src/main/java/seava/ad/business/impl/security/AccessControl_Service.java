@@ -7,12 +7,12 @@ package seava.ad.business.impl.security;
 
 import java.util.List;
 import javax.persistence.EntityManager;
-import ro.seava.j4e.api.session.Session;
-import ro.seava.j4e.business.service.entity.AbstractEntityService;
 import seava.ad.business.api.security.IAccessControlService;
 import seava.ad.domain.impl.security.AccessControl;
 import seava.ad.domain.impl.security.AccessControlDs;
 import seava.ad.domain.impl.security.Role;
+import seava.j4e.api.session.Session;
+import seava.j4e.business.service.entity.AbstractEntityService;
 
 /**
  * Repository functionality for {@link AccessControl} domain entity. It contains

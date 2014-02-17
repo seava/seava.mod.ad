@@ -6,10 +6,10 @@
 package seava.ad.business.impl.system;
 
 import javax.persistence.EntityManager;
-import ro.seava.j4e.api.session.Session;
-import ro.seava.j4e.business.service.entity.AbstractEntityService;
 import seava.ad.business.api.system.IFrameExtensionService;
 import seava.ad.domain.impl.system.FrameExtension;
+import seava.j4e.api.session.Session;
+import seava.j4e.business.service.entity.AbstractEntityService;
 
 /**
  * Repository functionality for {@link FrameExtension} domain entity. It contains

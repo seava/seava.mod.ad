@@ -6,8 +6,8 @@
 package seava.ad.business.impl.system;
 
 import javax.persistence.EntityManager;
-import ro.seava.j4e.business.service.entity.AbstractEntityService;
 import seava.ad.domain.impl.system.Param;
+import seava.j4e.business.service.entity.AbstractEntityService;
 
 /**
  * Repository functionality for {@link Param} domain entity. It contains

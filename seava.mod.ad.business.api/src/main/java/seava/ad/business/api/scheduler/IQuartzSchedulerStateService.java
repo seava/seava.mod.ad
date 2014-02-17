@@ -5,8 +5,8 @@
  */
 package seava.ad.business.api.scheduler;
 
-import ro.seava.j4e.api.service.business.IEntityService;
 import seava.ad.domain.impl.scheduler.QuartzSchedulerState;
+import seava.j4e.api.service.business.IEntityService;
 
 /**
  * Interface to expose business functions specific for {@link QuartzSchedulerState} domain

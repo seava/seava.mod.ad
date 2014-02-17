@@ -5,10 +5,10 @@
  */
 package seava.ad.presenter.impl.system.model;
 
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.SortField;
-import ro.seava.j4e.presenter.impl.model.AbstractTypeNT_Ds;
 import seava.ad.domain.impl.system.JobParam;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.SortField;
+import seava.j4e.presenter.impl.model.AbstractTypeNT_Ds;
 
 @Ds(entity = JobParam.class, sort = {@SortField(field = JobParamLov_Ds.f_name)})
 public class JobParamLov_Ds extends AbstractTypeNT_Ds<JobParam> {

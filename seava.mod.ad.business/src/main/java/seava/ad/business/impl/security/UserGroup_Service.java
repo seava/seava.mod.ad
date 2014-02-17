@@ -7,11 +7,11 @@ package seava.ad.business.impl.security;
 
 import java.util.List;
 import javax.persistence.EntityManager;
-import ro.seava.j4e.api.session.Session;
-import ro.seava.j4e.business.service.entity.AbstractEntityService;
 import seava.ad.business.api.security.IUserGroupService;
 import seava.ad.domain.impl.security.User;
 import seava.ad.domain.impl.security.UserGroup;
+import seava.j4e.api.session.Session;
+import seava.j4e.business.service.entity.AbstractEntityService;
 
 /**
  * Repository functionality for {@link UserGroup} domain entity. It contains

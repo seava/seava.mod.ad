@@ -1,10 +1,10 @@
 package seava.ad.business.ext.system;
 
-import ro.seava.j4e.commons.security.AppWorkspace;
-import ro.seava.j4e.api.session.IWorkspace;
-import ro.seava.j4e.api.service.IClientInfoProvider;
-import ro.seava.j4e.api.session.Session;
-import ro.seava.j4e.business.service.AbstractBusinessBaseService;
+import seava.j4e.commons.security.AppWorkspace;
+import seava.j4e.api.session.IWorkspace;
+import seava.j4e.api.service.IClientInfoProvider;
+import seava.j4e.api.session.Session;
+import seava.j4e.business.service.AbstractBusinessBaseService;
 import seava.ad.domain.impl.system.Client;
 
 public class ClientInfoProvider extends AbstractBusinessBaseService implements

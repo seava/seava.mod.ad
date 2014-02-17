@@ -3,7 +3,7 @@ package seava.ad.security.authentic;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import ro.seava.j4e.api.ISettings;
+import seava.j4e.api.ISettings;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;

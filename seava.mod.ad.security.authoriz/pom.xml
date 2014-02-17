@@ -6,7 +6,7 @@
 		<relativePath>../seava.mod.ad</relativePath>
 		<groupId>ro.seava.mod.ad</groupId>
 		<artifactId>seava.mod.ad</artifactId>
-		<version>2.0.0-SNAPSHOT</version>
+		<version>2.0</version>
 	</parent>
 	<artifactId>seava.mod.ad.security.authoriz</artifactId>
 	<name>AD - Security/Authorization</name>
@@ -46,13 +46,13 @@
 		<dependency>
 			<groupId>ro.seava.mod.ad</groupId>
 			<artifactId>seava.mod.ad.business.api</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<version>2.0</version>
 			<type>jar</type>
 		</dependency>
 		<dependency>
 			<groupId>ro.seava.mod.ad</groupId>
 			<artifactId>seava.mod.ad.domain</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<version>2.0</version>
 			<type>jar</type>
 		</dependency>
 	

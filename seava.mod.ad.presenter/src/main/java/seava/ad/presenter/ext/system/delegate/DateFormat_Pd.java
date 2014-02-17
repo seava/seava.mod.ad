@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import ro.seava.j4e.api.enums.DateFormatAttribute;
-import ro.seava.j4e.presenter.service.AbstractPresenterDelegate;
+import seava.j4e.api.enums.DateFormatAttribute;
+import seava.j4e.presenter.service.AbstractPresenterDelegate;
 import seava.ad.business.api.system.IDateFormatMaskService;
 import seava.ad.domain.impl.system.DateFormat;
 import seava.ad.domain.impl.system.DateFormatMask;

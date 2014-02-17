@@ -7,8 +7,8 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import ro.seava.j4e.api.annotation.JobParam;
-import ro.seava.j4e.presenter.service.job.AbstractPresenterJob;
+import seava.j4e.api.annotation.JobParam;
+import seava.j4e.presenter.service.job.AbstractPresenterJob;
 import seava.ad.domain.impl.security.Role;
 
 public class DummyPresenterJob extends AbstractPresenterJob {

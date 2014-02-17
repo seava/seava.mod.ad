@@ -9,8 +9,8 @@ import javax.persistence.EntityManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import ro.seava.j4e.api.session.Session;
-import ro.seava.j4e.presenter.service.AbstractPresenterDelegate;
+import seava.j4e.api.session.Session;
+import seava.j4e.presenter.service.AbstractPresenterDelegate;
 import seava.ad.business.api.scheduler.IJobContextService;
 import seava.ad.domain.impl.scheduler.JobContext;
 import seava.ad.domain.impl.scheduler.JobContextParam;

@@ -9,10 +9,10 @@ import javax.sql.DataSource;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import ro.seava.j4e.api.exceptions.BusinessException;
-import ro.seava.j4e.api.exceptions.InvalidDatabase;
-import ro.seava.j4e.api.service.ISysParamValueProvider;
-import ro.seava.j4e.business.service.AbstractBusinessBaseService;
+import seava.j4e.api.exceptions.BusinessException;
+import seava.j4e.api.exceptions.InvalidDatabase;
+import seava.j4e.api.service.ISysParamValueProvider;
+import seava.j4e.business.service.AbstractBusinessBaseService;
 import seava.ad.domain.impl.system.ParamValue;
 
 public class ParamValueProvider extends AbstractBusinessBaseService implements

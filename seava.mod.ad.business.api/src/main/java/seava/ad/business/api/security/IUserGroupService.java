@@ -6,9 +6,9 @@
 package seava.ad.business.api.security;
 
 import java.util.List;
-import ro.seava.j4e.api.service.business.IEntityService;
 import seava.ad.domain.impl.security.User;
 import seava.ad.domain.impl.security.UserGroup;
+import seava.j4e.api.service.business.IEntityService;
 
 /**
  * Interface to expose business functions specific for {@link UserGroup} domain

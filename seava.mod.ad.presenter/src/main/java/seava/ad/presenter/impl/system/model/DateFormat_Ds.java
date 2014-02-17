@@ -5,10 +5,10 @@
  */
 package seava.ad.presenter.impl.system.model;
 
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.SortField;
-import ro.seava.j4e.presenter.impl.model.AbstractTypeNT_Ds;
 import seava.ad.domain.impl.system.DateFormat;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.SortField;
+import seava.j4e.presenter.impl.model.AbstractTypeNT_Ds;
 
 @Ds(entity = DateFormat.class, sort = {@SortField(field = DateFormat_Ds.f_name)})
 public class DateFormat_Ds extends AbstractTypeNT_Ds<DateFormat> {

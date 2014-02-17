@@ -7,14 +7,14 @@ package seava.ad.business.impl.security;
 
 import java.util.List;
 import javax.persistence.EntityManager;
-import ro.seava.j4e.api.session.Session;
-import ro.seava.j4e.business.service.entity.AbstractEntityService;
 import seava.ad.business.api.security.IRoleService;
 import seava.ad.domain.impl.security.AccessControl;
 import seava.ad.domain.impl.security.Menu;
 import seava.ad.domain.impl.security.MenuItem;
 import seava.ad.domain.impl.security.Role;
 import seava.ad.domain.impl.security.User;
+import seava.j4e.api.session.Session;
+import seava.j4e.business.service.entity.AbstractEntityService;
 
 /**
  * Repository functionality for {@link Role} domain entity. It contains

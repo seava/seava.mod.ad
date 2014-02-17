@@ -5,7 +5,7 @@
  */
 package seava.ad.security.authoriz;
 
-import ro.seava.j4e.api.security.IAuthorization;
+import seava.j4e.api.security.IAuthorization;
 
 public class AuthorizationForJob extends AbstractSecurity implements
 		IAuthorization {

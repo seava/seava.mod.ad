@@ -7,10 +7,10 @@ package seava.ad.business.impl.scheduler;
 
 import java.util.List;
 import javax.persistence.EntityManager;
-import ro.seava.j4e.api.session.Session;
-import ro.seava.j4e.business.service.entity.AbstractEntityService;
 import seava.ad.domain.impl.scheduler.JobContext;
 import seava.ad.domain.impl.scheduler.JobContextParam;
+import seava.j4e.api.session.Session;
+import seava.j4e.business.service.entity.AbstractEntityService;
 
 /**
  * Repository functionality for {@link JobContextParam} domain entity. It contains

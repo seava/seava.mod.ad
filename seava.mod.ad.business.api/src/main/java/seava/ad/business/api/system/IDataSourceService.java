@@ -6,10 +6,10 @@
 package seava.ad.business.api.system;
 
 import java.util.List;
-import ro.seava.j4e.api.service.business.IEntityService;
 import seava.ad.domain.impl.system.DataSource;
 import seava.ad.domain.impl.system.DataSourceField;
 import seava.ad.domain.impl.system.DataSourceRpc;
+import seava.j4e.api.service.business.IEntityService;
 
 /**
  * Interface to expose business functions specific for {@link DataSource} domain

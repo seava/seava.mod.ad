@@ -5,14 +5,14 @@
  */
 package seava.ad.presenter.impl.scheduler.model;
 
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.DsField;
-import ro.seava.j4e.api.annotation.Param;
-import ro.seava.j4e.api.annotation.RefLookup;
-import ro.seava.j4e.api.annotation.RefLookups;
-import ro.seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 import seava.ad.domain.impl.scheduler.JobContext;
 import seava.ad.domain.impl.scheduler.JobContextParam;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.DsField;
+import seava.j4e.api.annotation.Param;
+import seava.j4e.api.annotation.RefLookup;
+import seava.j4e.api.annotation.RefLookups;
+import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 
 @Ds(entity = JobContextParam.class)
 @RefLookups({@RefLookup(refId = JobContextParam_Ds.f_jobContextId, namedQuery = JobContext.NQ_FIND_BY_NAME, params = {@Param(name = "name", field = JobContextParam_Ds.f_jobContext)})})

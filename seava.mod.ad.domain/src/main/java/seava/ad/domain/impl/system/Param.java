@@ -5,6 +5,7 @@
  */
 package seava.ad.domain.impl.system;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.NamedQueries;
@@ -16,7 +17,8 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
-import ro.seava.j4e.domain.impl.AbstractTypeWithCodeNT;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractTypeWithCodeNT;
 
 /**
  * Client level system parameter definitions.	 
@@ -28,7 +30,10 @@ import ro.seava.j4e.domain.impl.AbstractTypeWithCodeNT;
 @Table(name = Param.TABLE_NAME, uniqueConstraints = {
 		@UniqueConstraint(name = Param.TABLE_NAME + "_UK1", columnNames = {"CODE"}),
 		@UniqueConstraint(name = Param.TABLE_NAME + "_UK2", columnNames = {"NAME"})})
-public class Param extends AbstractTypeWithCodeNT {
+public class Param extends AbstractTypeWithCodeNT
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "SYS_PARAM";
 

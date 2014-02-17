@@ -6,12 +6,12 @@
 package seava.ad.presenter.impl.system.model;
 
 import java.util.Date;
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.DsField;
-import ro.seava.j4e.api.annotation.SortField;
-import ro.seava.j4e.api.model.IModelWithId;
-import ro.seava.j4e.presenter.model.AbstractDsModel;
 import seava.ad.domain.impl.system.DbChangeLog;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.DsField;
+import seava.j4e.api.annotation.SortField;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.presenter.model.AbstractDsModel;
 
 @Ds(entity = DbChangeLog.class, sort = {@SortField(field = DbChangeLog_Ds.f_orderExecuted, desc = true)})
 public class DbChangeLog_Ds extends AbstractDsModel<DbChangeLog>

@@ -7,13 +7,13 @@ package seava.ad.business.impl.scheduler;
 
 import java.util.List;
 import javax.persistence.EntityManager;
-import ro.seava.j4e.api.session.Session;
-import ro.seava.j4e.business.service.entity.AbstractEntityService;
 import seava.ad.business.api.scheduler.IJobLogService;
 import seava.ad.domain.impl.scheduler.JobContext;
 import seava.ad.domain.impl.scheduler.JobLog;
 import seava.ad.domain.impl.scheduler.JobLogMessage;
 import seava.ad.domain.impl.scheduler.JobTimer;
+import seava.j4e.api.session.Session;
+import seava.j4e.business.service.entity.AbstractEntityService;
 
 /**
  * Repository functionality for {@link JobLog} domain entity. It contains

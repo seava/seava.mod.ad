@@ -5,6 +5,7 @@
  */
 package seava.ad.domain.impl.scheduler;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -20,8 +21,9 @@ import javax.persistence.UniqueConstraint;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
-import ro.seava.j4e.domain.impl.AbstractAuditable;
 import seava.ad.domain.impl.scheduler.JobContext;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractAuditable;
 
 @NamedQueries({
 		@NamedQuery(name = JobContextParam.NQ_FIND_BY_NAME, query = "SELECT e FROM JobContextParam e WHERE e.clientId = :clientId and e.jobContext = :jobContext and e.paramName = :paramName", hints = @QueryHint(name = QueryHints.BIND_PARAMETERS, value = HintValues.TRUE)),
@@ -29,7 +31,10 @@ import seava.ad.domain.impl.scheduler.JobContext;
 @Entity
 @Table(name = JobContextParam.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = JobContextParam.TABLE_NAME
 		+ "_UK1", columnNames = {"CLIENTID", "JOBCONTEXT_ID", "PARAMNAME"})})
-public class JobContextParam extends AbstractAuditable {
+public class JobContextParam extends AbstractAuditable
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "AD_JOBCTX_PARAM";
 

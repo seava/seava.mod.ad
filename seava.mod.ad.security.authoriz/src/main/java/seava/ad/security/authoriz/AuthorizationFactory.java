@@ -3,8 +3,8 @@ package seava.ad.security.authoriz;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
-import ro.seava.j4e.api.security.IAuthorization;
-import ro.seava.j4e.api.security.IAuthorizationFactory;
+import seava.j4e.api.security.IAuthorization;
+import seava.j4e.api.security.IAuthorizationFactory;
 
 public class AuthorizationFactory implements IAuthorizationFactory,
 		ApplicationContextAware {

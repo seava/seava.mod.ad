@@ -6,12 +6,12 @@
 package seava.ad.business.api.security;
 
 import java.util.List;
-import ro.seava.j4e.api.service.business.IEntityService;
 import seava.ad.domain.impl.security.AccessControl;
 import seava.ad.domain.impl.security.Menu;
 import seava.ad.domain.impl.security.MenuItem;
 import seava.ad.domain.impl.security.Role;
 import seava.ad.domain.impl.security.User;
+import seava.j4e.api.service.business.IEntityService;
 
 /**
  * Interface to expose business functions specific for {@link Role} domain

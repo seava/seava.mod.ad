@@ -5,6 +5,7 @@
  */
 package seava.ad.domain.impl.scheduler;
 
+import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -24,8 +25,9 @@ import javax.validation.constraints.NotNull;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
-import ro.seava.j4e.domain.impl.AbstractType;
 import seava.ad.domain.impl.scheduler.JobContext;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractType;
 
 @NamedQueries({
 		@NamedQuery(name = JobTimer.NQ_FIND_BY_NAME, query = "SELECT e FROM JobTimer e WHERE e.clientId = :clientId and e.jobContext = :jobContext and e.name = :name", hints = @QueryHint(name = QueryHints.BIND_PARAMETERS, value = HintValues.TRUE)),
@@ -33,7 +35,10 @@ import seava.ad.domain.impl.scheduler.JobContext;
 @Entity
 @Table(name = JobTimer.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = JobTimer.TABLE_NAME
 		+ "_UK1", columnNames = {"CLIENTID", "JOBCONTEXT_ID", "NAME"})})
-public class JobTimer extends AbstractType {
+public class JobTimer extends AbstractType
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "AD_JOBTRG";
 

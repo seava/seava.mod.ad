@@ -12,9 +12,9 @@ import java.security.NoSuchAlgorithmException;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import ro.seava.j4e.api.exceptions.BusinessException;
-import ro.seava.j4e.api.security.IPasswordValidator;
-import ro.seava.j4e.api.session.Session;
+import seava.j4e.api.exceptions.BusinessException;
+import seava.j4e.api.security.IPasswordValidator;
+import seava.j4e.api.session.Session;
 import seava.ad.business.api.security.IUserService;
 import seava.ad.domain.impl.security.User;
 

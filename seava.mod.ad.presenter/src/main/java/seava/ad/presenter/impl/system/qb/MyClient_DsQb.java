@@ -5,9 +5,9 @@
  */
 package seava.ad.presenter.impl.system.qb;
 
-import ro.seava.j4e.presenter.action.query.QueryBuilderWithJpql;
 import seava.ad.presenter.impl.system.model.MyClient_Ds;
-import ro.seava.j4e.api.session.Session;
+import seava.j4e.presenter.action.query.QueryBuilderWithJpql;
+import seava.j4e.api.session.Session;
 
 public class MyClient_DsQb
 		extends

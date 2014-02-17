@@ -5,6 +5,7 @@
  */
 package seava.ad.domain.impl.system;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
@@ -18,8 +19,9 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
-import ro.seava.j4e.domain.impl.AbstractTypeNT;
 import seava.ad.domain.impl.system.DataSource;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractTypeNT;
 
 @NamedQueries({
 		@NamedQuery(name = DataSourceRpc.NQ_FIND_BY_NAME, query = "SELECT e FROM DataSourceRpc e WHERE e.dataSource = :dataSource and e.name = :name", hints = @QueryHint(name = QueryHints.BIND_PARAMETERS, value = HintValues.TRUE)),
@@ -27,7 +29,10 @@ import seava.ad.domain.impl.system.DataSource;
 @Entity
 @Table(name = DataSourceRpc.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = DataSourceRpc.TABLE_NAME
 		+ "_UK1", columnNames = {"DATASOURCE_ID", "NAME"})})
-public class DataSourceRpc extends AbstractTypeNT {
+public class DataSourceRpc extends AbstractTypeNT
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "SYS_DS_RPC";
 

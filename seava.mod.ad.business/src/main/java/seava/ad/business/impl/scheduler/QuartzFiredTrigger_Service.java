@@ -6,9 +6,9 @@
 package seava.ad.business.impl.scheduler;
 
 import javax.persistence.EntityManager;
-import ro.seava.j4e.business.service.entity.AbstractEntityService;
 import seava.ad.business.api.scheduler.IQuartzFiredTriggerService;
 import seava.ad.domain.impl.scheduler.QuartzFiredTrigger;
+import seava.j4e.business.service.entity.AbstractEntityService;
 
 /**
  * Repository functionality for {@link QuartzFiredTrigger} domain entity. It contains

@@ -9,10 +9,10 @@ import java.util.List;
 
 import javax.persistence.TypedQuery;
 
-import ro.seava.j4e.api.exceptions.NotAuthorizedRequestException;
-import ro.seava.j4e.api.security.IAuthorization;
-import ro.seava.j4e.api.session.IUser;
-import ro.seava.j4e.api.session.Session;
+import seava.j4e.api.exceptions.NotAuthorizedRequestException;
+import seava.j4e.api.security.IAuthorization;
+import seava.j4e.api.session.IUser;
+import seava.j4e.api.session.Session;
 import seava.ad.domain.impl.security.AccessControl;
 import seava.ad.domain.impl.security.AccessControlAsgn;
 

@@ -5,11 +5,11 @@
  */
 package seava.ad.presenter.impl.security.model;
 
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.DsField;
-import ro.seava.j4e.api.annotation.SortField;
-import ro.seava.j4e.presenter.impl.model.AbstractType_Ds;
 import seava.ad.domain.impl.security.MenuItem;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.DsField;
+import seava.j4e.api.annotation.SortField;
+import seava.j4e.presenter.impl.model.AbstractType_Ds;
 
 @Ds(entity = MenuItem.class, jpqlWhere = " e.active = true ", sort = {@SortField(field = MenuItemRtLov_Ds.f_sequenceNo)})
 public class MenuItemRtLov_Ds extends AbstractType_Ds<MenuItem> {

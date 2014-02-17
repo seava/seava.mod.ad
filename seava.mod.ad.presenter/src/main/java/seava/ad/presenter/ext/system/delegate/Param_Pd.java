@@ -3,8 +3,8 @@ package seava.ad.presenter.ext.system.delegate;
 import java.util.ArrayList;
 import java.util.List;
 
-import ro.seava.j4e.api.session.Session;
-import ro.seava.j4e.presenter.service.AbstractPresenterDelegate;
+import seava.j4e.api.session.Session;
+import seava.j4e.presenter.service.AbstractPresenterDelegate;
 import seava.ad.business.api.system.IParamService;
 import seava.ad.business.api.system.IParamValueService;
 import seava.ad.domain.impl.system.Param;

@@ -5,11 +5,11 @@
  */
 package seava.ad.presenter.impl.system.model;
 
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.DsField;
-import ro.seava.j4e.api.annotation.SortField;
-import ro.seava.j4e.presenter.impl.model.AbstractTypeLov_Ds;
 import seava.ad.domain.impl.system.ViewState;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.DsField;
+import seava.j4e.api.annotation.SortField;
+import seava.j4e.presenter.impl.model.AbstractTypeLov_Ds;
 
 @Ds(entity = ViewState.class, sort = {@SortField(field = ViewStateRtLov_Ds.f_name)})
 public class ViewStateRtLov_Ds extends AbstractTypeLov_Ds<ViewState> {

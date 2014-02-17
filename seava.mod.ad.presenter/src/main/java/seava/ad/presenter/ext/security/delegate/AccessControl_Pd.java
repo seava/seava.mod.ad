@@ -3,7 +3,7 @@ package seava.ad.presenter.ext.security.delegate;
 import java.util.ArrayList;
 import java.util.List;
 
-import ro.seava.j4e.presenter.service.AbstractPresenterDelegate;
+import seava.j4e.presenter.service.AbstractPresenterDelegate;
 import seava.ad.business.api.security.IAccessControlAsgnService;
 import seava.ad.business.api.security.IAccessControlDsService;
 import seava.ad.domain.impl.security.AccessControl;

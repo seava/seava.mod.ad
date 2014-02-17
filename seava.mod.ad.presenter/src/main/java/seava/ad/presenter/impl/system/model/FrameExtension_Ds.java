@@ -5,10 +5,10 @@
  */
 package seava.ad.presenter.impl.system.model;
 
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.DsField;
-import ro.seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 import seava.ad.domain.impl.system.FrameExtension;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.DsField;
+import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 
 @Ds(entity = FrameExtension.class)
 public class FrameExtension_Ds extends AbstractAuditable_Ds<FrameExtension> {

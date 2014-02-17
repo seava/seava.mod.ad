@@ -5,6 +5,7 @@
  */
 package seava.ad.domain.impl.scheduler;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -14,12 +15,16 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import org.hibernate.validator.constraints.NotBlank;
-import ro.seava.j4e.domain.impl.AbstractAuditable;
 import seava.ad.domain.impl.scheduler.JobLog;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractAuditable;
 
 @Entity
 @Table(name = JobLogMessage.TABLE_NAME)
-public class JobLogMessage extends AbstractAuditable {
+public class JobLogMessage extends AbstractAuditable
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "AD_JOBLOG_MSG";
 

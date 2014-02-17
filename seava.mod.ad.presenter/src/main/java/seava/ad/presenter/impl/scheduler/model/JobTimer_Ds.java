@@ -6,15 +6,15 @@
 package seava.ad.presenter.impl.scheduler.model;
 
 import java.util.Date;
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.DsField;
-import ro.seava.j4e.api.annotation.Param;
-import ro.seava.j4e.api.annotation.RefLookup;
-import ro.seava.j4e.api.annotation.RefLookups;
-import ro.seava.j4e.api.annotation.SortField;
-import ro.seava.j4e.presenter.impl.model.AbstractType_Ds;
 import seava.ad.domain.impl.scheduler.JobContext;
 import seava.ad.domain.impl.scheduler.JobTimer;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.DsField;
+import seava.j4e.api.annotation.Param;
+import seava.j4e.api.annotation.RefLookup;
+import seava.j4e.api.annotation.RefLookups;
+import seava.j4e.api.annotation.SortField;
+import seava.j4e.presenter.impl.model.AbstractType_Ds;
 
 @Ds(entity = JobTimer.class, sort = {@SortField(field = JobTimer_Ds.f_name)})
 @RefLookups({@RefLookup(refId = JobTimer_Ds.f_jobContextId, namedQuery = JobContext.NQ_FIND_BY_NAME, params = {@Param(name = "name", field = JobTimer_Ds.f_jobContext)})})

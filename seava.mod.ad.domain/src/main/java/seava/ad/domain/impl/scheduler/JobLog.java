@@ -5,6 +5,7 @@
  */
 package seava.ad.domain.impl.scheduler;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -22,13 +23,17 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 import org.eclipse.persistence.annotations.CascadeOnDelete;
-import ro.seava.j4e.domain.impl.AbstractAuditable;
 import seava.ad.domain.impl.scheduler.JobContext;
 import seava.ad.domain.impl.scheduler.JobTimer;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractAuditable;
 
 @Entity
 @Table(name = JobLog.TABLE_NAME)
-public class JobLog extends AbstractAuditable {
+public class JobLog extends AbstractAuditable
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "AD_JOBLOG";
 

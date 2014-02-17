@@ -5,8 +5,8 @@
  */
 package seava.ad.business.api.system;
 
-import ro.seava.j4e.api.service.business.IEntityService;
 import seava.ad.domain.impl.system.DbChangeLog;
+import seava.j4e.api.service.business.IEntityService;
 
 /**
  * Interface to expose business functions specific for {@link DbChangeLog} domain

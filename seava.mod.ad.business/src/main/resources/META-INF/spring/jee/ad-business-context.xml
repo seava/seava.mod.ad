@@ -15,7 +15,7 @@
 		class="seava.ad.business.ext.PersistableJobLogService" />
 
 	<bean id="importDataPackageService" scope="singleton" lazy-init="true"
-		class="ro.seava.j4e.business.service.other.ImportDataPackageService" />	
+		class="seava.j4e.business.service.other.ImportDataPackageService" />	
  
 	<import resource="../beans/ad-system-business.xml" />
 	<import resource="../beans/ad-security-business.xml" />

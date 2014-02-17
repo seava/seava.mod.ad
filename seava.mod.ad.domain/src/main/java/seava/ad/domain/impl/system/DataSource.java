@@ -5,6 +5,7 @@
  */
 package seava.ad.domain.impl.system;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import javax.persistence.CascadeType;
@@ -24,7 +25,8 @@ import org.eclipse.persistence.annotations.CascadeOnDelete;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
-import ro.seava.j4e.domain.impl.AbstractTypeNT;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractTypeNT;
 
 @NamedQueries({
 		@NamedQuery(name = DataSource.NQ_FIND_BY_NAME, query = "SELECT e FROM DataSource e WHERE e.name = :name", hints = @QueryHint(name = QueryHints.BIND_PARAMETERS, value = HintValues.TRUE)),
@@ -33,7 +35,10 @@ import ro.seava.j4e.domain.impl.AbstractTypeNT;
 @Table(name = DataSource.TABLE_NAME, uniqueConstraints = {
 		@UniqueConstraint(name = DataSource.TABLE_NAME + "_UK1", columnNames = {"NAME"}),
 		@UniqueConstraint(name = DataSource.TABLE_NAME + "_UK2", columnNames = {"MODEL"})})
-public class DataSource extends AbstractTypeNT {
+public class DataSource extends AbstractTypeNT
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "SYS_DS";
 

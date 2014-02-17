@@ -5,6 +5,7 @@
  */
 package seava.ad.domain.impl.security;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -20,8 +21,9 @@ import javax.persistence.UniqueConstraint;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
-import ro.seava.j4e.domain.impl.AbstractAuditable;
 import seava.ad.domain.impl.security.AccessControl;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractAuditable;
 
 @NamedQueries({
 		@NamedQuery(name = AccessControlDsRpc.NQ_FIND_BY_UNIQUE, query = "SELECT e FROM AccessControlDsRpc e WHERE e.clientId = :clientId and e.accessControl = :accessControl and e.dsName = :dsName and e.serviceMethod = :serviceMethod", hints = @QueryHint(name = QueryHints.BIND_PARAMETERS, value = HintValues.TRUE)),
@@ -30,7 +32,10 @@ import seava.ad.domain.impl.security.AccessControl;
 @Table(name = AccessControlDsRpc.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = AccessControlDsRpc.TABLE_NAME
 		+ "_UK1", columnNames = {"CLIENTID", "ACCESSCONTROL_ID", "DSNAME",
 		"SERVICEMETHOD"})})
-public class AccessControlDsRpc extends AbstractAuditable {
+public class AccessControlDsRpc extends AbstractAuditable
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "AD_ACL_DS_RPC";
 

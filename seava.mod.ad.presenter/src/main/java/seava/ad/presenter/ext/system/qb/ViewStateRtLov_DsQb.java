@@ -8,8 +8,8 @@ package seava.ad.presenter.ext.system.qb;
 
 import seava.ad.presenter.impl.system.model.ViewStateRtLov_Ds;
 import seava.ad.presenter.impl.system.model.ViewStateRtLov_DsParam;
-import ro.seava.j4e.api.session.Session;
-import ro.seava.j4e.presenter.action.query.QueryBuilderWithJpql;
+import seava.j4e.api.session.Session;
+import seava.j4e.presenter.action.query.QueryBuilderWithJpql;
 
 public class ViewStateRtLov_DsQb
 		extends

@@ -5,6 +5,7 @@
  */
 package seava.ad.domain.impl.system;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -20,8 +21,9 @@ import javax.persistence.UniqueConstraint;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
-import ro.seava.j4e.domain.impl.AbstractAuditableNT;
 import seava.ad.domain.impl.system.DateFormat;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractAuditableNT;
 
 /**
  * Format masks associated with a certain date format.
@@ -32,7 +34,10 @@ import seava.ad.domain.impl.system.DateFormat;
 @Entity
 @Table(name = DateFormatMask.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = DateFormatMask.TABLE_NAME
 		+ "_UK1", columnNames = {"DATEFORMAT_ID", "MASK"})})
-public class DateFormatMask extends AbstractAuditableNT {
+public class DateFormatMask extends AbstractAuditableNT
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "SYS_DTFMT_MASK";
 

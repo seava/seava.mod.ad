@@ -5,6 +5,7 @@
  */
 package seava.ad.domain.impl.system;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -20,8 +21,9 @@ import javax.persistence.UniqueConstraint;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
-import ro.seava.j4e.domain.impl.AbstractTypeNT;
 import seava.ad.domain.impl.system.DataSource;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractTypeNT;
 
 @NamedQueries({
 		@NamedQuery(name = DataSourceField.NQ_FIND_BY_NAME, query = "SELECT e FROM DataSourceField e WHERE e.dataSource = :dataSource and e.name = :name", hints = @QueryHint(name = QueryHints.BIND_PARAMETERS, value = HintValues.TRUE)),
@@ -29,7 +31,10 @@ import seava.ad.domain.impl.system.DataSource;
 @Entity
 @Table(name = DataSourceField.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = DataSourceField.TABLE_NAME
 		+ "_UK1", columnNames = {"DATASOURCE_ID", "NAME"})})
-public class DataSourceField extends AbstractTypeNT {
+public class DataSourceField extends AbstractTypeNT
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "SYS_DS_FLD";
 

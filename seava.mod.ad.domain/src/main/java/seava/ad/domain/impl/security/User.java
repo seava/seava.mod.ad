@@ -5,6 +5,7 @@
  */
 package seava.ad.domain.impl.security;
 
+import java.io.Serializable;
 import java.util.Collection;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -24,8 +25,9 @@ import javax.validation.constraints.NotNull;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
-import ro.seava.j4e.domain.impl.AbstractTypeWithCode;
 import seava.ad.domain.impl.system.DateFormat;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractTypeWithCode;
 
 @NamedQueries({
 		@NamedQuery(name = User.NQ_FIND_BY_CODE, query = "SELECT e FROM User e WHERE e.clientId = :clientId and e.code = :code", hints = @QueryHint(name = QueryHints.BIND_PARAMETERS, value = HintValues.TRUE)),
@@ -36,7 +38,10 @@ import seava.ad.domain.impl.system.DateFormat;
 				"CLIENTID", "CODE"}),
 		@UniqueConstraint(name = User.TABLE_NAME + "_UK2", columnNames = {
 				"CLIENTID", "LOGINNAME"})})
-public class User extends AbstractTypeWithCode {
+public class User extends AbstractTypeWithCode
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "AD_USR";
 

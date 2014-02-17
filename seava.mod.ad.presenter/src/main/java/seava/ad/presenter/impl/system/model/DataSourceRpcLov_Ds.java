@@ -5,11 +5,11 @@
  */
 package seava.ad.presenter.impl.system.model;
 
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.DsField;
-import ro.seava.j4e.api.annotation.SortField;
-import ro.seava.j4e.presenter.impl.model.AbstractTypeNTLov_Ds;
 import seava.ad.domain.impl.system.DataSourceRpc;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.DsField;
+import seava.j4e.api.annotation.SortField;
+import seava.j4e.presenter.impl.model.AbstractTypeNTLov_Ds;
 
 @Ds(entity = DataSourceRpc.class, sort = {@SortField(field = DataSourceRpcLov_Ds.f_name)})
 public class DataSourceRpcLov_Ds extends AbstractTypeNTLov_Ds<DataSourceRpc> {

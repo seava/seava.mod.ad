@@ -5,6 +5,7 @@
  */
 package seava.ad.domain.impl.security;
 
+import java.io.Serializable;
 import java.util.Collection;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
@@ -19,7 +20,8 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
-import ro.seava.j4e.domain.impl.AbstractTypeWithCode;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractTypeWithCode;
 
 @NamedQueries({
 		@NamedQuery(name = Role.NQ_FIND_BY_CODE, query = "SELECT e FROM Role e WHERE e.clientId = :clientId and e.code = :code", hints = @QueryHint(name = QueryHints.BIND_PARAMETERS, value = HintValues.TRUE)),
@@ -30,7 +32,10 @@ import ro.seava.j4e.domain.impl.AbstractTypeWithCode;
 				"CLIENTID", "CODE"}),
 		@UniqueConstraint(name = Role.TABLE_NAME + "_UK2", columnNames = {
 				"CLIENTID", "NAME"})})
-public class Role extends AbstractTypeWithCode {
+public class Role extends AbstractTypeWithCode
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "AD_ROLE";
 

@@ -5,17 +5,22 @@
  */
 package seava.ad.domain.impl.system;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import org.hibernate.validator.constraints.NotBlank;
-import ro.seava.j4e.domain.impl.AbstractType;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractType;
 
 @Entity
 @Table(name = ViewState.TABLE_NAME)
-public class ViewState extends AbstractType {
+public class ViewState extends AbstractType
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "AD_VIEW_STATE";
 

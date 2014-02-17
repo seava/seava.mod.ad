@@ -5,15 +5,15 @@
  */
 package seava.ad.presenter.impl.security.model;
 
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.DsField;
-import ro.seava.j4e.api.annotation.Param;
-import ro.seava.j4e.api.annotation.RefLookup;
-import ro.seava.j4e.api.annotation.RefLookups;
-import ro.seava.j4e.api.annotation.SortField;
-import ro.seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 import seava.ad.domain.impl.security.AccessControl;
 import seava.ad.domain.impl.security.AccessControlDs;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.DsField;
+import seava.j4e.api.annotation.Param;
+import seava.j4e.api.annotation.RefLookup;
+import seava.j4e.api.annotation.RefLookups;
+import seava.j4e.api.annotation.SortField;
+import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 
 @Ds(entity = AccessControlDs.class, sort = {@SortField(field = AccessControlDs_Ds.f_dsName)})
 @RefLookups({@RefLookup(refId = AccessControlDs_Ds.f_accessControlId, namedQuery = AccessControl.NQ_FIND_BY_NAME, params = {@Param(name = "name", field = AccessControlDs_Ds.f_accessControl)})})

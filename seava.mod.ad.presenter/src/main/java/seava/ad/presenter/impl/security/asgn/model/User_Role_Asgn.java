@@ -5,11 +5,11 @@
  */
 package seava.ad.presenter.impl.security.asgn.model;
 
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.DsField;
-import ro.seava.j4e.api.annotation.SortField;
-import ro.seava.j4e.presenter.model.AbstractAsgnModel;
 import seava.ad.domain.impl.security.Role;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.DsField;
+import seava.j4e.api.annotation.SortField;
+import seava.j4e.presenter.model.AbstractAsgnModel;
 
 @Ds(entity=Role.class, sort={@SortField(field=User_Role_Asgn.f_code)})
 public class User_Role_Asgn extends AbstractAsgnModel<Role> {

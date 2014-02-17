@@ -5,20 +5,25 @@
  */
 package seava.ad.domain.impl.system;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import org.hibernate.validator.constraints.NotBlank;
-import ro.seava.j4e.domain.impl.AbstractTypeWithCodeNT;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractTypeWithCodeNT;
 
 /**
  * Application client(tenant) definition. 
  */
 @Entity
 @Table(name = Client.TABLE_NAME)
-public class Client extends AbstractTypeWithCodeNT {
+public class Client extends AbstractTypeWithCodeNT
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "SYS_CLIENT";
 

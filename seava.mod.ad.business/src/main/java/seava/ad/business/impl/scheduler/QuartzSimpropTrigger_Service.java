@@ -6,9 +6,9 @@
 package seava.ad.business.impl.scheduler;
 
 import javax.persistence.EntityManager;
-import ro.seava.j4e.business.service.entity.AbstractEntityService;
 import seava.ad.business.api.scheduler.IQuartzSimpropTriggerService;
 import seava.ad.domain.impl.scheduler.QuartzSimpropTrigger;
+import seava.j4e.business.service.entity.AbstractEntityService;
 
 /**
  * Repository functionality for {@link QuartzSimpropTrigger} domain entity. It contains

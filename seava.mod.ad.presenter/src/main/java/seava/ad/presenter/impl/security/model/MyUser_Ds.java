@@ -5,15 +5,15 @@
  */
 package seava.ad.presenter.impl.security.model;
 
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.DsField;
-import ro.seava.j4e.api.annotation.Param;
-import ro.seava.j4e.api.annotation.RefLookup;
-import ro.seava.j4e.api.annotation.RefLookups;
-import ro.seava.j4e.api.annotation.SortField;
-import ro.seava.j4e.presenter.impl.model.AbstractTypeWithCode_Ds;
 import seava.ad.domain.impl.security.User;
 import seava.ad.domain.impl.system.DateFormat;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.DsField;
+import seava.j4e.api.annotation.Param;
+import seava.j4e.api.annotation.RefLookup;
+import seava.j4e.api.annotation.RefLookups;
+import seava.j4e.api.annotation.SortField;
+import seava.j4e.presenter.impl.model.AbstractTypeWithCode_Ds;
 
 @Ds(entity = User.class, sort = {@SortField(field = MyUser_Ds.f_code)})
 @RefLookups({@RefLookup(refId = MyUser_Ds.f_dateFormatId, namedQuery = DateFormat.NQ_FIND_BY_NAME, params = {@Param(name = "name", field = MyUser_Ds.f_dateFormat)})})

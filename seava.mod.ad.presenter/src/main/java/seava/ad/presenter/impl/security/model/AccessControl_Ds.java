@@ -5,10 +5,10 @@
  */
 package seava.ad.presenter.impl.security.model;
 
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.SortField;
-import ro.seava.j4e.presenter.impl.model.AbstractType_Ds;
 import seava.ad.domain.impl.security.AccessControl;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.SortField;
+import seava.j4e.presenter.impl.model.AbstractType_Ds;
 
 @Ds(entity = AccessControl.class, sort = {@SortField(field = AccessControl_Ds.f_name)})
 public class AccessControl_Ds extends AbstractType_Ds<AccessControl> {

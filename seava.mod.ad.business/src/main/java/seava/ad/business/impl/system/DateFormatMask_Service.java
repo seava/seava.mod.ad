@@ -7,10 +7,10 @@ package seava.ad.business.impl.system;
 
 import java.util.List;
 import javax.persistence.EntityManager;
-import ro.seava.j4e.business.service.entity.AbstractEntityService;
 import seava.ad.business.api.system.IDateFormatMaskService;
 import seava.ad.domain.impl.system.DateFormat;
 import seava.ad.domain.impl.system.DateFormatMask;
+import seava.j4e.business.service.entity.AbstractEntityService;
 
 /**
  * Repository functionality for {@link DateFormatMask} domain entity. It contains

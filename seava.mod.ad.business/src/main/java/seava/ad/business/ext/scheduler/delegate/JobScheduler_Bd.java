@@ -20,12 +20,12 @@ import org.quartz.Trigger;
 import org.quartz.TriggerKey;
 import org.springframework.beans.BeansException;
 
-import ro.seava.j4e.api.Constants;
-import ro.seava.j4e.api.exceptions.BusinessException;
-import ro.seava.j4e.api.service.job.IScheduler;
-import ro.seava.j4e.api.session.Session;
-import ro.seava.j4e.business.service.AbstractBusinessDelegate;
-import ro.seava.j4e.scheduler.JobDetailBase;
+import seava.j4e.api.Constants;
+import seava.j4e.api.exceptions.BusinessException;
+import seava.j4e.api.service.job.IScheduler;
+import seava.j4e.api.session.Session;
+import seava.j4e.business.service.AbstractBusinessDelegate;
+import seava.j4e.scheduler.JobDetailBase;
 import seava.ad.domain.impl.scheduler.JobContext;
 import seava.ad.domain.impl.scheduler.JobContextParam;
 import seava.ad.domain.impl.scheduler.JobTimer;

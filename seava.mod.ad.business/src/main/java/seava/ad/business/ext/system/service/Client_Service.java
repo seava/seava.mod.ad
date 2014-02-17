@@ -10,8 +10,8 @@ import java.io.File;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import ro.seava.j4e.api.action.impex.IImportDataPackage;
-import ro.seava.j4e.api.exceptions.BusinessException;
+import seava.j4e.api.action.impex.IImportDataPackage;
+import seava.j4e.api.exceptions.BusinessException;
 import seava.ad.business.api.system.IClientService;
 import seava.ad.business.ext.system.delegate.Client_Bd;
 import seava.ad.domain.impl.system.Client;

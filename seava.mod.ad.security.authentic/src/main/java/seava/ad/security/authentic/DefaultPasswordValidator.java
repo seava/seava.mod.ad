@@ -1,6 +1,6 @@
 package seava.ad.security.authentic;
 
-import ro.seava.j4e.api.security.IPasswordValidator;
+import seava.j4e.api.security.IPasswordValidator;
 
 /**
  * Simple password validator. Extend it according to your needs or use a a third

@@ -5,10 +5,10 @@
  */
 package seava.ad.presenter.impl.system.model;
 
-import ro.seava.j4e.api.annotation.Ds;
-import ro.seava.j4e.api.annotation.SortField;
-import ro.seava.j4e.presenter.impl.model.AbstractTypeWithCodeNTLov_Ds;
 import seava.ad.domain.impl.system.Client;
+import seava.j4e.api.annotation.Ds;
+import seava.j4e.api.annotation.SortField;
+import seava.j4e.presenter.impl.model.AbstractTypeWithCodeNTLov_Ds;
 
 @Ds(entity = Client.class, sort = {@SortField(field = ClientLov_Ds.f_code)})
 public class ClientLov_Ds extends AbstractTypeWithCodeNTLov_Ds<Client> {

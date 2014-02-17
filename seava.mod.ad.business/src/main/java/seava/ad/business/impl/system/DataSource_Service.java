@@ -7,11 +7,11 @@ package seava.ad.business.impl.system;
 
 import java.util.List;
 import javax.persistence.EntityManager;
-import ro.seava.j4e.business.service.entity.AbstractEntityService;
 import seava.ad.business.api.system.IDataSourceService;
 import seava.ad.domain.impl.system.DataSource;
 import seava.ad.domain.impl.system.DataSourceField;
 import seava.ad.domain.impl.system.DataSourceRpc;
+import seava.j4e.business.service.entity.AbstractEntityService;
 
 /**
  * Repository functionality for {@link DataSource} domain entity. It contains

@@ -6,8 +6,8 @@
 
 package seava.ad.presenter.ext.security.qb;
 
-import ro.seava.j4e.api.session.Session;
-import ro.seava.j4e.presenter.action.query.QueryBuilderWithJpql;
+import seava.j4e.api.session.Session;
+import seava.j4e.presenter.action.query.QueryBuilderWithJpql;
 import seava.ad.presenter.impl.security.model.MenuRtLov_Ds;
 
 public class MenuRtLov_DsQb extends

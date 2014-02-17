@@ -5,6 +5,7 @@
  */
 package seava.ad.domain.impl.system;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -20,8 +21,9 @@ import javax.persistence.UniqueConstraint;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
-import ro.seava.j4e.domain.impl.AbstractTypeNT;
 import seava.ad.domain.impl.system.Job;
+import seava.j4e.api.model.IModelWithId;
+import seava.j4e.domain.impl.AbstractTypeNT;
 
 @NamedQueries({
 		@NamedQuery(name = JobParam.NQ_FIND_BY_NAME, query = "SELECT e FROM JobParam e WHERE e.job = :job and e.name = :name", hints = @QueryHint(name = QueryHints.BIND_PARAMETERS, value = HintValues.TRUE)),
@@ -29,7 +31,10 @@ import seava.ad.domain.impl.system.Job;
 @Entity
 @Table(name = JobParam.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = JobParam.TABLE_NAME
 		+ "_UK1", columnNames = {"JOB_ID", "NAME"})})
-public class JobParam extends AbstractTypeNT {
+public class JobParam extends AbstractTypeNT
+		implements
+			Serializable,
+			IModelWithId {
 
 	public static final String TABLE_NAME = "SYS_JOB_PARAM";
 
