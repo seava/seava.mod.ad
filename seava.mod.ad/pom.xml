@@ -9,6 +9,7 @@
 	</parent>
 	<groupId>ro.seava.mod.ad</groupId>
 	<artifactId>seava.mod.ad</artifactId>
+	<version>2.0-SNAPSHOT</version>
 	<name>AD: Administration</name>
 	<description>Administration module.</description>
 	<packaging>pom</packaging>
