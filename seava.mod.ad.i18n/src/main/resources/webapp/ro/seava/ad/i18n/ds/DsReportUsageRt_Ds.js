@@ -4,7 +4,7 @@ Ext.define("seava.ad.i18n.ds.DsReportUsageRt_Ds", {
 	frameName__lbl: "Ecran",
 	queryBuilderClass__lbl: "Clasă construire apel",
 	reportCode__lbl: "Raport",
-	reportContextPath__lbl: "URL",
+	reportContextPath__lbl: "Cale context",
 	reportId__lbl: "Raport(ID)",
 	reportTitle__lbl: "Raport(Den)",
 	serverUrl__lbl: "URL",
