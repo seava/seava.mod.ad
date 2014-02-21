@@ -6,6 +6,12 @@
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		
 		<!-- Declared -->
+		<class>seava.ad.domain.impl.report.DsReport</class>
+		<class>seava.ad.domain.impl.report.DsReportParam</class>
+		<class>seava.ad.domain.impl.report.DsReportUsage</class>
+		<class>seava.ad.domain.impl.report.Report</class>
+		<class>seava.ad.domain.impl.report.ReportParam</class>
+		<class>seava.ad.domain.impl.report.ReportServer</class>
 		<class>seava.ad.domain.impl.scheduler.JobContext</class>
 		<class>seava.ad.domain.impl.scheduler.JobContextParam</class>
 		<class>seava.ad.domain.impl.scheduler.JobLog</class>

@@ -1,0 +1,5 @@
+[
+	"seava.mod.ad/ds/seava.ad.ui.extjs.ds.DsReportParam_Ds", 
+	"seava.mod.ad/lov/seava.ad.ui.extjs.lov.ReportParams_Lov", 
+	"seava.mod.ad/lov/seava.ad.ui.extjs.lov.DataSourceFields_Lov"
+]

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans
+				http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/context 
+				http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<!-- ==================== ReportServer ==================== -->
+		
+	<bean id="ReportServer_Ds" scope="singleton" lazy-init="true"
+		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.report.model.ReportServer_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.report.ReportServer"/>
+	</bean>
+	
+	<!-- ==================== ReportServerLov ==================== -->
+		
+	<bean id="ReportServerLov_Ds" scope="singleton" lazy-init="true"
+		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.report.model.ReportServerLov_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.report.ReportServer"/>
+		<property name="readOnly" value="true" />
+	</bean>
+	
+	<!-- ==================== Report ==================== -->
+		
+	<bean id="Report_Ds" scope="singleton" lazy-init="true"
+		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.report.model.Report_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.report.Report"/>
+	</bean>
+	
+	<!-- ==================== ReportLov ==================== -->
+		
+	<bean id="ReportLov_Ds" scope="singleton" lazy-init="true"
+		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.report.model.ReportLov_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.report.Report"/>
+		<property name="readOnly" value="true" />
+	</bean>
+	
+	<!-- ==================== ReportParam ==================== -->
+		
+	<bean id="ReportParam_Ds" scope="singleton" lazy-init="true"
+		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.report.model.ReportParam_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.report.ReportParam"/>
+	</bean>
+	
+	<!-- ==================== ReportParamRt ==================== -->
+		
+	<bean id="ReportParamRt_Ds" scope="singleton" lazy-init="true"
+		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.report.model.ReportParamRt_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.report.ReportParam"/>
+		<property name="readOnly" value="true" />
+	</bean>
+	
+	<!-- ==================== ReportParamLov ==================== -->
+		
+	<bean id="ReportParamLov_Ds" scope="singleton" lazy-init="true"
+		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.report.model.ReportParamLov_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.report.ReportParam"/>
+		<property name="readOnly" value="true" />
+	</bean>
+	
+	<!-- ==================== DsReport ==================== -->
+		
+	<bean id="DsReport_Ds" scope="singleton" lazy-init="true"
+		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.report.model.DsReport_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.report.DsReport"/>
+	</bean>
+	
+	<!-- ==================== DsReportParam ==================== -->
+		
+	<bean id="DsReportParam_Ds" scope="singleton" lazy-init="true"
+		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.report.model.DsReportParam_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.report.DsReportParam"/>
+	</bean>
+	
+	<!-- ==================== DsReportUsage ==================== -->
+		
+	<bean id="DsReportUsage_Ds" scope="singleton" lazy-init="true"
+		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.report.model.DsReportUsage_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.report.DsReportUsage"/>
+	</bean>
+	
+	<!-- ==================== DsReportUsageRt ==================== -->
+		
+	<bean id="DsReportUsageRt_Ds" scope="singleton" lazy-init="true"
+		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.report.model.DsReportUsageRt_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.report.DsReportUsage"/>
+		<property name="readOnly" value="true" />
+	</bean>
+	
+	<!-- ==================== DsReportParamRt ==================== -->
+		
+	<bean id="DsReportParamRt_Ds" scope="singleton" lazy-init="true"
+		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.report.model.DsReportParamRt_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.report.DsReportParam"/>
+		<property name="readOnly" value="true" />
+	</bean>
+</beans>

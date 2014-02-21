@@ -2,9 +2,8 @@ sequenceNo,name,title,menu,active
 10,ad-client,Client,ad,true
 20,ad-system,System,ad,true
 30,ad-security,Security,ad,true
+40,ad-report,Reports,ad,true
 50,ad-scheduler,Scheduler,ad,true
 100,ad-security-user,User/Role,,true
 200,ad-security-menu,Menu,,true
 200,ad-security-acl,Access right,,true
-100,ad-impex-imp,Import,,true
-200,ad-impex-exp,Export,,true

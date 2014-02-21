@@ -17,3 +17,5 @@ sequenceNo,name,title,frame,bundle,menuItem,active
 20,accessControlAsgn_Ui,Access rights - ASGN,seava.ad.ui.extjs.frame.AccessControlAsgn_Ui,seava.mod.ad,ad-security-acl,true
 30,accessControlDs_Ui,Access rights - DS,seava.ad.ui.extjs.frame.AccessControlDs_Ui,seava.mod.ad,ad-security-acl,true
 40,accessControlDsRpc_Ui,Access rights - Services,seava.ad.ui.extjs.frame.AccessControlDsRpc_Ui,seava.mod.ad,ad-security-acl,true
+10,reportServer_UI,Report servers,seava.ad.ui.extjs.frame.ReportServers_Ui,seava.mod.ad,ad-report,true
+20,report_UI,Reports,seava.ad.ui.extjs.frame.Report_Ui,seava.mod.ad,ad-report,true

@@ -17,7 +17,8 @@
 	<bean id="importDataPackageService" scope="singleton" lazy-init="true"
 		class="seava.j4e.business.service.other.ImportDataPackageService" />	
  
-	<import resource="../beans/ad-system-business.xml" />
-	<import resource="../beans/ad-security-business.xml" />
+	<import resource="../beans/ad-report-business.xml" />
 	<import resource="../beans/ad-scheduler-business.xml" />
+	<import resource="../beans/ad-security-business.xml" />
+	<import resource="../beans/ad-system-business.xml" />
 </beans>
