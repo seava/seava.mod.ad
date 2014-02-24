@@ -67,8 +67,8 @@ Ext.define("seava.ad.ui.extjs.frame.ParamValue_Ui", {
 	 * On-Click handler for button btnShowParamsFrame
 	 */
 	,onBtnShowParamsFrame: function() {
-		var bundle = seava.mod.ad.ui.extjs;
-		var frame = "MyParam_Ui";
-		getApplication().showFrameByName(bundle, frame);
+		var mod = "seava.mod.ad";
+		var frame = "seava.ad.ui.extjs.frame.MyParam_Ui";
+		getApplication().showFrameByName(mod, frame);
 	}
 });
