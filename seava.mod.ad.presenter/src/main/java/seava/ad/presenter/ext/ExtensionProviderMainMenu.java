@@ -20,6 +20,7 @@ public class ExtensionProviderMainMenu extends AbstractPresenterBaseService
 				this.addSystemMenus(sb);
 			} else {
 				this.addNavigationTreeMenus(sb);
+				this.addNavigationTopMenus(sb);
 			}
 			return sb.toString();
 		}
@@ -28,16 +29,6 @@ public class ExtensionProviderMainMenu extends AbstractPresenterBaseService
 
 	protected void addSystemMenus(StringBuffer sb) throws Exception {
 
-//		sb.append("Main.navigationTreeMenus = [{name:'system', title:'System', menu:[");
-//		sb.append("{\"bundle\":\"seava.mod.ad\", \"frame\":\"Client_Ui\", \"labelKey\":\"appmenuitem/clientmgmt__lbl\" },");
-//		sb.append("{\"bundle\":\"seava.mod.ad\", \"frame\":\"DataSource_Ui\", \"labelKey\":\"appmenuitem/sysds__lbl\" },");
-//		sb.append("{\"bundle\":\"seava.mod.ad\", \"frame\":\"Job_Ui\", \"labelKey\":\"appmenuitem/sysjob__lbl\" },");
-//		sb.append("{\"bundle\":\"seava.mod.ad\", \"frame\":\"Param_Ui\", \"labelKey\":\"appmenuitem/sysparam__lbl\" },");
-//		sb.append("{\"bundle\":\"seava.mod.ad\", \"frame\":\"DateFormat_Ui\", \"labelKey\":\"appmenuitem/dateformat__lbl\" },");
-//		sb.append("{\"bundle\":\"seava.mod.ad\", \"frame\":\"DateFormatMask_Ui\", \"labelKey\":\"appmenuitem/dateformatmask__lbl\" },");
-//		sb.append("{\"bundle\":\"seava.mod.ad\", \"frame\":\"DbChangeLog_Ui\", \"labelKey\":\"appmenuitem/dbchangelog__lbl\" }");
-//		sb.append("]}];");
-		
 		sb.append("Main.systemMenus = [");
 		sb.append("{\"bundle\":\"seava.mod.ad\", \"frame\":\"seava.ad.ui.extjs.frame.Client_Ui\", \"labelKey\":\"appmenuitem/clientmgmt__lbl\" },");
 		sb.append("{\"bundle\":\"seava.mod.ad\", \"frame\":\"seava.ad.ui.extjs.frame.DataSource_Ui\", \"labelKey\":\"appmenuitem/sysds__lbl\" },");
@@ -54,6 +45,7 @@ public class ExtensionProviderMainMenu extends AbstractPresenterBaseService
 				.findDsService(MenuRtLov_Ds.class.getSimpleName());
 		MenuRtLov_Ds filter = new MenuRtLov_Ds();
 		filter.setActive(true);
+		filter.setTag("left");
 		List<MenuRtLov_Ds> menus = srv.find(filter);
 		int i = 0;
 		sb.append("Main.navigationTreeMenus = [");
@@ -67,4 +59,25 @@ public class ExtensionProviderMainMenu extends AbstractPresenterBaseService
 		}
 		sb.append("];");
 	}
+
+	protected void addNavigationTopMenus(StringBuffer sb) throws Exception {
+		IDsService<MenuRtLov_Ds, MenuRtLov_Ds, Object> srv = this
+				.findDsService(MenuRtLov_Ds.class.getSimpleName());
+		MenuRtLov_Ds filter = new MenuRtLov_Ds();
+		filter.setActive(true);
+		filter.setTag("top");
+		List<MenuRtLov_Ds> menus = srv.find(filter);
+		int i = 0;
+		sb.append("Main.navigationTopMenus = [");
+		for (MenuRtLov_Ds menu : menus) {
+			if (i > 0) {
+				sb.append(",");
+			}
+			sb.append("{name:\"" + menu.getName() + "\", title:\""
+					+ menu.getTitle() + "\"}");
+			i++;
+		}
+		sb.append("];");
+	}
+
 }

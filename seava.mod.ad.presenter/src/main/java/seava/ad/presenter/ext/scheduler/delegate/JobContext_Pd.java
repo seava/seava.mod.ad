@@ -89,7 +89,7 @@ public class JobContext_Pd extends AbstractPresenterDelegate {
 				if (logger.isDebugEnabled()) {
 					logger.debug(
 							"Creating job-context parameters: job={} paramName={}.",
-							new String[] { jc.getJobName(), jp.getName() });
+							new Object[] { jc.getJobName(), jp.getName() });
 				}
 				JobContextParam cp = new JobContextParam();
 				cp.setJobContext(jc);

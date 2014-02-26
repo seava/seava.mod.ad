@@ -1,2 +1,2 @@
-sequenceNo,name,title,description,active
-10,ad,Administration,,true
+sequenceNo,name,title,description,tag,active
+10,ad,Administration,,left,true

@@ -10,6 +10,7 @@ Ext.define("seava.ad.ui.extjs.ds.MenuRtLov_Ds", {
 	fields: [
 		{name:"sequenceNo", type:"int", useNull:true},
 		{name:"title", type:"string"},
+		{name:"tag", type:"string"},
 		{name:"id", type:"string"},
 		{name:"clientId", type:"string"},
 		{name:"name", type:"string"},

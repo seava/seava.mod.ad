@@ -24,6 +24,7 @@ Ext.define("seava.ad.ui.extjs.dc.Menu_Dc$Filter", {
 		.addLov({name:"name", dataIndex:"name", xtype:"ad_Menus_Lov",
 			retFieldMapping: [{lovField:"id", dsField: "id"} ]})
 		.addTextField({ name:"title", dataIndex:"title"})
+		.addCombo({ xtype:"combo", name:"tag", dataIndex:"tag", store:[ "top", "left"]})
 		.addBooleanField({ name:"active", dataIndex:"active"})
 		
 		/* =========== containers =========== */
@@ -40,7 +41,7 @@ Ext.define("seava.ad.ui.extjs.dc.Menu_Dc$Filter", {
 		this._getBuilder_()
 		.addChildrenTo("main", ["col1", "col2"])
 		.addChildrenTo("col1", ["name", "title"])
-		.addChildrenTo("col2", ["active"]);
+		.addChildrenTo("col2", ["tag", "active"]);
 	}
 });
 
@@ -58,6 +59,8 @@ Ext.define("seava.ad.ui.extjs.dc.Menu_Dc$EditList", {
 		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", align:"right", width:70 })
 		.addTextColumn({name:"name", dataIndex:"name", width:100})
 		.addTextColumn({name:"title", dataIndex:"title", width:200})
+		.addComboColumn({name:"tag", dataIndex:"tag", width:80, 
+			editor:{xtype:"combo", mode: 'local', selectOnFocus:true, triggerAction:'all', forceSelection:true, store:[ "top", "left"]}})
 		.addTextColumn({name:"description", dataIndex:"description", width:200})
 		.addBooleanColumn({name:"active", dataIndex:"active"})
 		.addDefaults();

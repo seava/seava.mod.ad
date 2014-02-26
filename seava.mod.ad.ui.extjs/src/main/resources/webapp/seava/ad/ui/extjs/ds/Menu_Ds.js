@@ -16,6 +16,7 @@ Ext.define("seava.ad.ui.extjs.ds.Menu_Ds", {
 	fields: [
 		{name:"sequenceNo", type:"int", useNull:true},
 		{name:"title", type:"string"},
+		{name:"tag", type:"string"},
 		{name:"id", type:"string"},
 		{name:"name", type:"string"},
 		{name:"description", type:"string"},

@@ -46,6 +46,9 @@ public class Menu extends AbstractType implements Serializable, IModelWithId {
 	@Column(name = "TITLE", nullable = false, length = 255)
 	private String title;
 
+	@Column(name = "TAG", length = 32)
+	private String tag;
+
 	@ManyToMany(mappedBy = "menus")
 	private Collection<Role> roles;
 
@@ -63,6 +66,14 @@ public class Menu extends AbstractType implements Serializable, IModelWithId {
 
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public String getTag() {
+		return this.tag;
+	}
+
+	public void setTag(String tag) {
+		this.tag = tag;
 	}
 
 	public Collection<Role> getRoles() {

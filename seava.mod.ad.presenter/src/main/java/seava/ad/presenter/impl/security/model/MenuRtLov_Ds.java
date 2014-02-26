@@ -15,12 +15,16 @@ import seava.j4e.presenter.impl.model.AbstractTypeLov_Ds;
 public class MenuRtLov_Ds extends AbstractTypeLov_Ds<Menu> {
 	public static final String f_sequenceNo = "sequenceNo";
 	public static final String f_title = "title";
+	public static final String f_tag = "tag";
 
 	@DsField
 	private Integer sequenceNo;
 
 	@DsField
 	private String title;
+
+	@DsField
+	private String tag;
 
 	public MenuRtLov_Ds() {
 		super();
@@ -44,5 +48,13 @@ public class MenuRtLov_Ds extends AbstractTypeLov_Ds<Menu> {
 
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public String getTag() {
+		return this.tag;
+	}
+
+	public void setTag(String tag) {
+		this.tag = tag;
 	}
 }

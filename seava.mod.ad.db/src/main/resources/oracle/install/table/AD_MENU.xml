@@ -38,6 +38,7 @@
 	<column name="SEQUENCENO" type="number(4)">
 		<constraints nullable="false"/>
 	</column>
+	<column name="TAG" type="varchar2(32)"/>
 	<column name="TITLE" type="varchar2(255)">
 		<constraints nullable="false"/>
 	</column>
