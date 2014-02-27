@@ -54,7 +54,7 @@ public class ExtensionProviderScriptFromDb extends AbstractPresenterBaseService
 						" select e from "
 								+ FrameExtension.class.getSimpleName()
 								+ " e where "
-								+ " e.clientId = :clientId and e.frame in :frame and e.active = true",
+								+ " e.clientId = :clientId and e.frame in :frame and e.active = true order by e.sequenceNo ",
 						FrameExtension.class).setParameter("frame", targets)
 				.setParameter("clientId", Session.user.get().getClientId())
 				.getResultList();
