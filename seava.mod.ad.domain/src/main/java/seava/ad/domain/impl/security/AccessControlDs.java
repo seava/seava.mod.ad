@@ -23,7 +23,6 @@ import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
 import seava.ad.domain.impl.security.AccessControl;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractAuditable;
 
 @NamedQueries({
@@ -32,10 +31,7 @@ import seava.j4e.domain.impl.AbstractAuditable;
 @Entity
 @Table(name = AccessControlDs.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = AccessControlDs.TABLE_NAME
 		+ "_UK1", columnNames = {"CLIENTID", "ACCESSCONTROL_ID", "DSNAME"})})
-public class AccessControlDs extends AbstractAuditable
-		implements
-			Serializable,
-			IModelWithId {
+public class AccessControlDs extends AbstractAuditable implements Serializable {
 
 	public static final String TABLE_NAME = "AD_ACL_DS";
 

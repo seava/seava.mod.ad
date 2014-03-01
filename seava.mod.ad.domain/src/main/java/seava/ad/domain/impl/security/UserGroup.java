@@ -18,7 +18,6 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractTypeWithCode;
 
 @NamedQueries({
@@ -30,10 +29,7 @@ import seava.j4e.domain.impl.AbstractTypeWithCode;
 				"CLIENTID", "CODE"}),
 		@UniqueConstraint(name = UserGroup.TABLE_NAME + "_UK2", columnNames = {
 				"CLIENTID", "NAME"})})
-public class UserGroup extends AbstractTypeWithCode
-		implements
-			Serializable,
-			IModelWithId {
+public class UserGroup extends AbstractTypeWithCode implements Serializable {
 
 	public static final String TABLE_NAME = "AD_USRGRP";
 

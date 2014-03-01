@@ -16,15 +16,11 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.NotBlank;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractAuditable;
 
 @Entity
 @Table(name = ParamValue.TABLE_NAME)
-public class ParamValue extends AbstractAuditable
-		implements
-			Serializable,
-			IModelWithId {
+public class ParamValue extends AbstractAuditable implements Serializable {
 
 	public static final String TABLE_NAME = "AD_PARAMVAL";
 

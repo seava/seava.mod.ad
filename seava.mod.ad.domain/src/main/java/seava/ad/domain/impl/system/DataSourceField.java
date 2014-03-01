@@ -22,7 +22,6 @@ import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
 import seava.ad.domain.impl.system.DataSource;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractTypeNT;
 
 @NamedQueries({
@@ -31,10 +30,7 @@ import seava.j4e.domain.impl.AbstractTypeNT;
 @Entity
 @Table(name = DataSourceField.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = DataSourceField.TABLE_NAME
 		+ "_UK1", columnNames = {"DATASOURCE_ID", "NAME"})})
-public class DataSourceField extends AbstractTypeNT
-		implements
-			Serializable,
-			IModelWithId {
+public class DataSourceField extends AbstractTypeNT implements Serializable {
 
 	public static final String TABLE_NAME = "SYS_DS_FLD";
 

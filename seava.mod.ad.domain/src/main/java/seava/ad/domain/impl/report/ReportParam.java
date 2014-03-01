@@ -23,7 +23,6 @@ import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
 import seava.ad.domain.impl.report.Report;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractType;
 
 @NamedQueries({
@@ -32,10 +31,7 @@ import seava.j4e.domain.impl.AbstractType;
 @Entity
 @Table(name = ReportParam.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = ReportParam.TABLE_NAME
 		+ "_UK1", columnNames = {"CLIENTID", "REPORT_ID", "NAME"})})
-public class ReportParam extends AbstractType
-		implements
-			Serializable,
-			IModelWithId {
+public class ReportParam extends AbstractType implements Serializable {
 
 	public static final String TABLE_NAME = "AD_RPT_PRM";
 

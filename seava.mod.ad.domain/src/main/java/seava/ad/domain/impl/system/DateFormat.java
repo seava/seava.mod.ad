@@ -22,7 +22,6 @@ import javax.persistence.UniqueConstraint;
 import org.eclipse.persistence.annotations.CascadeOnDelete;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractTypeNT;
 
 /**
@@ -32,10 +31,7 @@ import seava.j4e.domain.impl.AbstractTypeNT;
 @Entity
 @Table(name = DateFormat.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = DateFormat.TABLE_NAME
 		+ "_UK1", columnNames = {"NAME"})})
-public class DateFormat extends AbstractTypeNT
-		implements
-			Serializable,
-			IModelWithId {
+public class DateFormat extends AbstractTypeNT implements Serializable {
 
 	public static final String TABLE_NAME = "SYS_DTFMT";
 

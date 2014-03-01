@@ -22,7 +22,6 @@ import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
 import seava.ad.domain.impl.system.Job;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractTypeNT;
 
 @NamedQueries({
@@ -31,10 +30,7 @@ import seava.j4e.domain.impl.AbstractTypeNT;
 @Entity
 @Table(name = JobParam.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = JobParam.TABLE_NAME
 		+ "_UK1", columnNames = {"JOB_ID", "NAME"})})
-public class JobParam extends AbstractTypeNT
-		implements
-			Serializable,
-			IModelWithId {
+public class JobParam extends AbstractTypeNT implements Serializable {
 
 	public static final String TABLE_NAME = "SYS_JOB_PARAM";
 

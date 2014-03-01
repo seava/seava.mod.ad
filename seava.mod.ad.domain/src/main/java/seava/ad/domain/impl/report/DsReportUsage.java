@@ -15,15 +15,11 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import seava.ad.domain.impl.report.DsReport;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractAuditable;
 
 @Entity
 @Table(name = DsReportUsage.TABLE_NAME)
-public class DsReportUsage extends AbstractAuditable
-		implements
-			Serializable,
-			IModelWithId {
+public class DsReportUsage extends AbstractAuditable implements Serializable {
 
 	public static final String TABLE_NAME = "AD_RPT_DS_USAGE";
 

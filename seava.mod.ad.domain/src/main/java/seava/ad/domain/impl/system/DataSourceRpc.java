@@ -20,7 +20,6 @@ import javax.persistence.UniqueConstraint;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import seava.ad.domain.impl.system.DataSource;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractTypeNT;
 
 @NamedQueries({
@@ -29,10 +28,7 @@ import seava.j4e.domain.impl.AbstractTypeNT;
 @Entity
 @Table(name = DataSourceRpc.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = DataSourceRpc.TABLE_NAME
 		+ "_UK1", columnNames = {"DATASOURCE_ID", "NAME"})})
-public class DataSourceRpc extends AbstractTypeNT
-		implements
-			Serializable,
-			IModelWithId {
+public class DataSourceRpc extends AbstractTypeNT implements Serializable {
 
 	public static final String TABLE_NAME = "SYS_DS_RPC";
 

@@ -16,7 +16,7 @@ import seava.j4e.presenter.model.AbstractDsModel;
 @Ds(entity = DbChangeLog.class, sort = {@SortField(field = DbChangeLog_Ds.f_orderExecuted, desc = true)})
 public class DbChangeLog_Ds extends AbstractDsModel<DbChangeLog>
 		implements
-			IModelWithId {
+			IModelWithId<String> {
 	public static final String f_id = "id";
 	public static final String f_txid = "txid";
 	public static final String f_author = "author";

@@ -26,7 +26,6 @@ import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
 import seava.ad.domain.impl.scheduler.JobContext;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractType;
 
 @NamedQueries({
@@ -35,10 +34,7 @@ import seava.j4e.domain.impl.AbstractType;
 @Entity
 @Table(name = JobTimer.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = JobTimer.TABLE_NAME
 		+ "_UK1", columnNames = {"CLIENTID", "JOBCONTEXT_ID", "NAME"})})
-public class JobTimer extends AbstractType
-		implements
-			Serializable,
-			IModelWithId {
+public class JobTimer extends AbstractType implements Serializable {
 
 	public static final String TABLE_NAME = "AD_JOBTRG";
 

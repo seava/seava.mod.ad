@@ -26,7 +26,6 @@ import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
 import seava.ad.domain.impl.system.DateFormat;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractTypeWithCode;
 
 @NamedQueries({
@@ -38,10 +37,7 @@ import seava.j4e.domain.impl.AbstractTypeWithCode;
 				"CLIENTID", "CODE"}),
 		@UniqueConstraint(name = User.TABLE_NAME + "_UK2", columnNames = {
 				"CLIENTID", "LOGINNAME"})})
-public class User extends AbstractTypeWithCode
-		implements
-			Serializable,
-			IModelWithId {
+public class User extends AbstractTypeWithCode implements Serializable {
 
 	public static final String TABLE_NAME = "AD_USR";
 

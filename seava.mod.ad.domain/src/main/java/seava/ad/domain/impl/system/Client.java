@@ -12,7 +12,6 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import org.hibernate.validator.constraints.NotBlank;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractTypeWithCodeNT;
 
 /**
@@ -20,10 +19,7 @@ import seava.j4e.domain.impl.AbstractTypeWithCodeNT;
  */
 @Entity
 @Table(name = Client.TABLE_NAME)
-public class Client extends AbstractTypeWithCodeNT
-		implements
-			Serializable,
-			IModelWithId {
+public class Client extends AbstractTypeWithCodeNT implements Serializable {
 
 	public static final String TABLE_NAME = "SYS_CLIENT";
 

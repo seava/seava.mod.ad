@@ -25,15 +25,11 @@ import javax.validation.constraints.NotNull;
 import org.eclipse.persistence.annotations.CascadeOnDelete;
 import seava.ad.domain.impl.scheduler.JobContext;
 import seava.ad.domain.impl.scheduler.JobTimer;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractAuditable;
 
 @Entity
 @Table(name = JobLog.TABLE_NAME)
-public class JobLog extends AbstractAuditable
-		implements
-			Serializable,
-			IModelWithId {
+public class JobLog extends AbstractAuditable implements Serializable {
 
 	public static final String TABLE_NAME = "AD_JOBLOG";
 

@@ -22,7 +22,6 @@ import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
 import seava.ad.domain.impl.security.AccessControl;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractAuditable;
 
 @NamedQueries({
@@ -34,8 +33,7 @@ import seava.j4e.domain.impl.AbstractAuditable;
 		"SERVICEMETHOD"})})
 public class AccessControlDsRpc extends AbstractAuditable
 		implements
-			Serializable,
-			IModelWithId {
+			Serializable {
 
 	public static final String TABLE_NAME = "AD_ACL_DS_RPC";
 

@@ -24,7 +24,6 @@ import org.eclipse.persistence.annotations.CascadeOnDelete;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractTypeNT;
 
 @NamedQueries({
@@ -34,7 +33,7 @@ import seava.j4e.domain.impl.AbstractTypeNT;
 @Table(name = Job.TABLE_NAME, uniqueConstraints = {
 		@UniqueConstraint(name = Job.TABLE_NAME + "_UK1", columnNames = {"NAME"}),
 		@UniqueConstraint(name = Job.TABLE_NAME + "_UK2", columnNames = {"JAVACLASS"})})
-public class Job extends AbstractTypeNT implements Serializable, IModelWithId {
+public class Job extends AbstractTypeNT implements Serializable {
 
 	public static final String TABLE_NAME = "SYS_JOB";
 

@@ -72,10 +72,10 @@ Ext.define("seava.ad.ui.extjs.frame.JobLog_Ui", {
 	 * On-Click handler for button btnShowJob
 	 */
 	,onBtnShowJob: function() {
-		var mod = "seava.mod.ad";
-		var frame = "seava.ad.ui.extjs.frame.Job_Ui";
+		var bundle = seava.mod.ad.ui.extjs;
+		var frame = "Job_Ui";
 		getApplication().showFrame(frame,{
-			url:Main.buildUiPath(mod, frame, false),
+			url:Main.buildUiPath(bundle, frame, false),
 			params: {
 				jobName: this._getDc_("log").getRecord().get("jobName")
 			},
@@ -89,10 +89,10 @@ Ext.define("seava.ad.ui.extjs.frame.JobLog_Ui", {
 	 * On-Click handler for button btnShowJobContext
 	 */
 	,onBtnShowJobContext: function() {
-		var mod = "seava.mod.ad";
-		var frame = "seava.ad.ui.extjs.frame.JobContext_Ui";
+		var bundle = seava.mod.ad.ui.extjs;
+		var frame = "JobContext_Ui";
 		getApplication().showFrame(frame,{
-			url:Main.buildUiPath(mod, frame, false),
+			url:Main.buildUiPath(bundle, frame, false),
 			params: {
 				id: this._getDc_("log").getRecord().get("jobContextId")
 			},
@@ -106,10 +106,10 @@ Ext.define("seava.ad.ui.extjs.frame.JobLog_Ui", {
 	 * On-Click handler for button btnShowJobTimer
 	 */
 	,onBtnShowJobTimer: function() {
-		var mod = "seava.mod.ad";
-		var frame = "seava.ad.ui.extjs.frame.JobTimer_Ui";
+		var bundle = seava.mod.ad.ui.extjs;
+		var frame = "JobTimer_Ui";
 		getApplication().showFrame(frame,{
-			url:Main.buildUiPath(mod, frame, false),
+			url:Main.buildUiPath(bundle, frame, false),
 			params: {
 				id: this._getDc_("log").getRecord().get("jobTimerId")
 			},

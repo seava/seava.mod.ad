@@ -19,7 +19,6 @@ import javax.validation.constraints.NotNull;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractAuditable;
 
 /**
@@ -29,10 +28,7 @@ import seava.j4e.domain.impl.AbstractAuditable;
 @Entity
 @Table(name = FrameExtension.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = FrameExtension.TABLE_NAME
 		+ "_UK1", columnNames = {"CLIENTID", "FRAME", "FILELOCATION"})})
-public class FrameExtension extends AbstractAuditable
-		implements
-			Serializable,
-			IModelWithId {
+public class FrameExtension extends AbstractAuditable implements Serializable {
 
 	public static final String TABLE_NAME = "AD_FRAME_EXT";
 

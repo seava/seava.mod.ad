@@ -22,7 +22,6 @@ import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
 import seava.ad.domain.impl.scheduler.JobContext;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractAuditable;
 
 @NamedQueries({
@@ -31,10 +30,7 @@ import seava.j4e.domain.impl.AbstractAuditable;
 @Entity
 @Table(name = JobContextParam.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = JobContextParam.TABLE_NAME
 		+ "_UK1", columnNames = {"CLIENTID", "JOBCONTEXT_ID", "PARAMNAME"})})
-public class JobContextParam extends AbstractAuditable
-		implements
-			Serializable,
-			IModelWithId {
+public class JobContextParam extends AbstractAuditable implements Serializable {
 
 	public static final String TABLE_NAME = "AD_JOBCTX_PARAM";
 

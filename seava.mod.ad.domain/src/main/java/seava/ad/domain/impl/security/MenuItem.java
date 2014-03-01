@@ -26,17 +26,13 @@ import org.eclipse.persistence.config.QueryHints;
 import org.hibernate.validator.constraints.NotBlank;
 import seava.ad.domain.impl.security.Menu;
 import seava.ad.domain.impl.security.MenuItem;
-import seava.j4e.api.model.IModelWithId;
 import seava.j4e.domain.impl.AbstractType;
 
 @NamedQueries({@NamedQuery(name = MenuItem.NQ_FIND_BY_NAME, query = "SELECT e FROM MenuItem e WHERE e.clientId = :clientId and e.name = :name", hints = @QueryHint(name = QueryHints.BIND_PARAMETERS, value = HintValues.TRUE))})
 @Entity
 @Table(name = MenuItem.TABLE_NAME, uniqueConstraints = {@UniqueConstraint(name = MenuItem.TABLE_NAME
 		+ "_UK1", columnNames = {"CLIENTID", "NAME"})})
-public class MenuItem extends AbstractType
-		implements
-			Serializable,
-			IModelWithId {
+public class MenuItem extends AbstractType implements Serializable {
 
 	public static final String TABLE_NAME = "AD_MENU_ITEM";
 
