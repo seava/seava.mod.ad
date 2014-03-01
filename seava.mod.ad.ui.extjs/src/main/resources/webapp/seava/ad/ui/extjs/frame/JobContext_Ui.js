@@ -96,8 +96,8 @@ Ext.define("seava.ad.ui.extjs.frame.JobContext_Ui", {
 	 * On-Click handler for button btnShowLog
 	 */
 	,onBtnShowLog: function() {
-		var bundle = seava.mod.ad.ui.extjs;
-		var frame = "JobLog_Ui";
+		var bundle = "seava.mod.ad";
+		var frame = "seava.ad.ui.extjs.frame.JobLog_Ui";
 		getApplication().showFrame(frame,{
 			url:Main.buildUiPath(bundle, frame, false),
 			params: {

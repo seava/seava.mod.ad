@@ -136,8 +136,8 @@ Ext.define("seava.ad.ui.extjs.frame.AccessControl_Ui", {
 	 * On-Click handler for button btnShowUiAsgnRules
 	 */
 	,onBtnShowUiAsgnRules: function() {
-		var bundle = seava.mod.ad.ui.extjs;
-		var frame = "AccessControlAsgn_Ui";
+		var bundle = "seava.mod.ad";
+		var frame = "seava.ad.ui.extjs.frame.AccessControlAsgn_Ui";
 		getApplication().showFrameByName(bundle, frame);
 	}
 	
@@ -145,8 +145,8 @@ Ext.define("seava.ad.ui.extjs.frame.AccessControl_Ui", {
 	 * On-Click handler for button btnShowUiDsRules
 	 */
 	,onBtnShowUiDsRules: function() {
-		var bundle = seava.mod.ad.ui.extjs;
-		var frame = "AccessControlDs_Ui";
+		var bundle = "seava.mod.ad";
+		var frame = "seava.ad.ui.extjs.frame.AccessControlDs_Ui";
 		getApplication().showFrameByName(bundle, frame);
 	}
 	
@@ -154,8 +154,8 @@ Ext.define("seava.ad.ui.extjs.frame.AccessControl_Ui", {
 	 * On-Click handler for button btnShowUiServiceRules
 	 */
 	,onBtnShowUiServiceRules: function() {
-		var bundle = seava.mod.ad.ui.extjs;
-		var frame = "AccessControlDsRpc_Ui";
+		var bundle = "seava.mod.ad";
+		var frame = "seava.ad.ui.extjs.frame.AccessControlDsRpc_Ui";
 		getApplication().showFrameByName(bundle, frame);
 	}
 });
