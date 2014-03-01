@@ -92,8 +92,6 @@ Ext.define("seava.ad.ui.extjs.frame.Report_Ui", {
 		.beginToolbar("tlbRepEdit", {dc: "rep"})
 			.addTitle().addSeparator().addSeparator()
 			.addBack().addSave().addNew().addCopy().addCancel().addPrevRec().addNextRec()
-			.addSeparator().addSeparator()
-			.addButtons([this._elems_.get("btnTestReport") ])
 			.addReports()
 		.end()
 		.beginToolbar("tlbParamList", {dc: "params"})
