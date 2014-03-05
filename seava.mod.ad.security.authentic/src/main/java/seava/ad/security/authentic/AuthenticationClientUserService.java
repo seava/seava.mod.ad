@@ -113,7 +113,10 @@ public class AuthenticationClientUserService extends AbstractSecurity implements
 		AppUserSettings settings = AppUserSettings.newInstance(this
 				.getSettings());
 
-		if (u.getThousandSeparator() != null && u.getDateFormat() != null) {
+		if (u.getThousandSeparator() != null
+				&& !"".equals(u.getThousandSeparator())
+				&& u.getDecimalSeparator() != null
+				&& !"".equals(u.getDecimalSeparator())) {
 			String numberFormat = "0" + u.getThousandSeparator() + "000"
 					+ u.getDecimalSeparator() + "00";
 			settings.setNumberFormat(numberFormat);
