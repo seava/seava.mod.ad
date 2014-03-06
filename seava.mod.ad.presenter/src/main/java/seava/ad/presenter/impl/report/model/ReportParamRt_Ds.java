@@ -16,10 +16,10 @@ import seava.j4e.presenter.impl.model.AbstractType_Ds;
 		@SortField(field = ReportParamRt_Ds.f_name)})
 public class ReportParamRt_Ds extends AbstractType_Ds<ReportParam> {
 	public static final String f_reportId = "reportId";
-	public static final String f_reportCode = "reportCode";
+	public static final String f_report = "report";
 	public static final String f_value = "value";
 	public static final String f_dataType = "dataType";
-	public static final String f_parameterName = "parameterName";
+	public static final String f_title = "title";
 	public static final String f_listOfValues = "listOfValues";
 	public static final String f_noEdit = "noEdit";
 	public static final String f_mandatory = "mandatory";
@@ -29,7 +29,7 @@ public class ReportParamRt_Ds extends AbstractType_Ds<ReportParam> {
 	private String reportId;
 
 	@DsField(join = "left", path = "report.code")
-	private String reportCode;
+	private String report;
 
 	@DsField(path = "defaultValue")
 	private String value;
@@ -37,8 +37,8 @@ public class ReportParamRt_Ds extends AbstractType_Ds<ReportParam> {
 	@DsField
 	private String dataType;
 
-	@DsField(path = "name")
-	private String parameterName;
+	@DsField
+	private String title;
 
 	@DsField
 	private String listOfValues;
@@ -68,12 +68,12 @@ public class ReportParamRt_Ds extends AbstractType_Ds<ReportParam> {
 		this.reportId = reportId;
 	}
 
-	public String getReportCode() {
-		return this.reportCode;
+	public String getReport() {
+		return this.report;
 	}
 
-	public void setReportCode(String reportCode) {
-		this.reportCode = reportCode;
+	public void setReport(String report) {
+		this.report = report;
 	}
 
 	public String getValue() {
@@ -92,12 +92,12 @@ public class ReportParamRt_Ds extends AbstractType_Ds<ReportParam> {
 		this.dataType = dataType;
 	}
 
-	public String getParameterName() {
-		return this.parameterName;
+	public String getTitle() {
+		return this.title;
 	}
 
-	public void setParameterName(String parameterName) {
-		this.parameterName = parameterName;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	public String getListOfValues() {

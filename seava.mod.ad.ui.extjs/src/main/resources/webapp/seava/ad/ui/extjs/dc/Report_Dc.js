@@ -21,8 +21,10 @@ Ext.define("seava.ad.ui.extjs.dc.Report_Dc$Filter", {
 		this._getBuilder_()
 		
 		/* =========== controls =========== */
-		.addTextField({ name:"name", dataIndex:"name"})
-		.addTextField({ name:"code", dataIndex:"code", caseRestriction:"uppercase"})
+		.addLov({name:"code", dataIndex:"code", xtype:"ad_Reports_Lov", caseRestriction:"uppercase",
+			retFieldMapping: [{lovField:"id", dsField: "id"} ]})
+		.addLov({name:"name", dataIndex:"name", xtype:"ad_ReportsName_Lov",
+			retFieldMapping: [{lovField:"id", dsField: "id"} ]})
 		.addLov({name:"reportServer", dataIndex:"reportServer", xtype:"ad_ReportServers_Lov",
 			retFieldMapping: [{lovField:"id", dsField: "reportServerId"} ]})
 		.addBooleanField({ name:"active", dataIndex:"active"})
@@ -31,7 +33,7 @@ Ext.define("seava.ad.ui.extjs.dc.Report_Dc$Filter", {
 		/* =========== containers =========== */
 		.addPanel({ name:"main", autoScroll:true, layout: {type:"hbox", align:'top', pack:'start', defaultMargins: {right:5, left:5}},
 		autoScroll:true, padding:"0 30 5 0"})
-		.addPanel({ name:"col1", width:210, layout:"form"})
+		.addPanel({ name:"col1", width:250, layout:"form"})
 		.addPanel({ name:"col2", width:250, layout:"form"})
 		.addPanel({ name:"col3", width:170, layout:"form"});
 	},
@@ -42,7 +44,7 @@ Ext.define("seava.ad.ui.extjs.dc.Report_Dc$Filter", {
 	_linkElements_: function() {
 		this._getBuilder_()
 		.addChildrenTo("main", ["col1", "col2", "col3"])
-		.addChildrenTo("col1", ["name", "code"])
+		.addChildrenTo("col1", ["code", "name"])
 		.addChildrenTo("col2", ["reportServer", "contextPath"])
 		.addChildrenTo("col3", ["active"]);
 	}

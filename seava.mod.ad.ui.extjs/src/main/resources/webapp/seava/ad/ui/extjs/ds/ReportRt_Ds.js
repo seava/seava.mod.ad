@@ -4,7 +4,7 @@
  * Use is subject to license terms.
  */
 	
-Ext.define("seava.ad.ui.extjs.ds.ReportParamRt_Ds", {
+Ext.define("seava.ad.ui.extjs.ds.ReportRt_Ds", {
 	extend: 'Ext.data.Model',
 	
 	validations: [
@@ -12,21 +12,17 @@ Ext.define("seava.ad.ui.extjs.ds.ReportParamRt_Ds", {
 	],
 	
 	fields: [
-		{name:"reportId", type:"string"},
-		{name:"report", type:"string"},
-		{name:"value", type:"string"},
-		{name:"dataType", type:"string"},
-		{name:"title", type:"string"},
-		{name:"listOfValues", type:"string"},
-		{name:"noEdit", type:"boolean"},
-		{name:"mandatory", type:"boolean"},
-		{name:"sequenceNo", type:"int", useNull:true},
+		{name:"reportServerId", type:"string"},
+		{name:"reportServer", type:"string"},
+		{name:"serverUrl", type:"string"},
+		{name:"queryBuilderClass", type:"string"},
+		{name:"contextPath", type:"string"},
 		{name:"id", type:"string"},
+		{name:"code", type:"string"},
 		{name:"name", type:"string"},
 		{name:"description", type:"string"},
 		{name:"notes", type:"string"},
 		{name:"active", type:"boolean"},
-		{name:"clientId", type:"string"},
 		{name:"createdAt", type:"date", dateFormat:Main.MODEL_DATE_FORMAT},
 		{name:"modifiedAt", type:"date", dateFormat:Main.MODEL_DATE_FORMAT},
 		{name:"createdBy", type:"string"},

@@ -3,9 +3,9 @@ Ext.define("seava.ad.i18n.ds.ReportParamRt_Ds", {
 	listOfValues__lbl: "Valori posibile",
 	mandatory__lbl: "Obligatoriu",
 	noEdit__lbl: "No edit",
-	parameterName__lbl: "",
-	reportCode__lbl: "Raport",
 	reportId__lbl: "Raport(ID)",
+	report__lbl: "Raport",
 	sequenceNo__lbl: "Secvenţă",
-	value__lbl: "Valoare implicită"
+	title__lbl: "Parametru",
+	value__lbl: "Valoare"
 });

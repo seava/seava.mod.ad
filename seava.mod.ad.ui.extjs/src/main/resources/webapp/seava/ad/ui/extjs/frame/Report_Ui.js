@@ -43,7 +43,7 @@ Ext.define("seava.ad.ui.extjs.frame.Report_Ui", {
 		.addDcGridView("rep", {name:"repList", xtype:"ad_Report_Dc$List"})
 		.addDcFormView("rep", {name:"repEdit", xtype:"ad_Report_Dc$Edit"})
 		.addDcEditGridView("params", {name:"paramEditList", _hasTitle_:true, xtype:"ad_ReportParam_Dc$CtxEditList", frame:true})
-		.addDcEditGridView("paramsRt", {name:"paramTest", xtype:"ad_ReportParamRt_Dc$TestRt", frame:true})
+		.addDcEditGridView("paramsRt", {name:"paramTest", xtype:"ad_ReportParamRt_Dc$List", frame:true})
 		.addDcEditGridView("dsrep", {name:"dsrepList", width:600, xtype:"ad_DsReport_Dc$ReportCtxList", frame:true})
 		.addDcEditGridView("dsparam", {name:"dsparamList", _hasTitle_:true, xtype:"ad_DsReportParam_Dc$CtxEditList", frame:true})
 		.addDcEditGridView("usage", {name:"usageList", _hasTitle_:true, xtype:"ad_DsReportUsageCtx_Dc$EditList", frame:true})

@@ -6,16 +6,18 @@
 package seava.ad.presenter.impl.report.cnv;
 
 import javax.persistence.EntityManager;
-import seava.j4e.api.action.result.IDsConverter;
-import seava.j4e.presenter.converter.AbstractDsConverter;
 import seava.ad.business.api.report.IReportService;
 import seava.ad.domain.impl.report.DsReportUsage;
 import seava.ad.domain.impl.report.Report;
 import seava.ad.presenter.impl.report.model.DsReportUsage_Ds;
+import seava.j4e.api.action.result.IDsConverter;
+import seava.j4e.presenter.converter.AbstractDsConverter;
 
-public class DsReportUsage_DsCnv extends
-		AbstractDsConverter<DsReportUsage_Ds, DsReportUsage> implements
-		IDsConverter<DsReportUsage_Ds, DsReportUsage> {
+public class DsReportUsage_DsCnv
+		extends
+			AbstractDsConverter<DsReportUsage_Ds, DsReportUsage>
+		implements
+			IDsConverter<DsReportUsage_Ds, DsReportUsage> {
 
 	protected void modelToEntityReferences(DsReportUsage_Ds ds,
 			DsReportUsage e, boolean isInsert, EntityManager em)

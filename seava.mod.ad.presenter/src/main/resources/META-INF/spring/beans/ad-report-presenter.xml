@@ -32,6 +32,15 @@
 		<property name="entityClass" value="seava.ad.domain.impl.report.Report"/>
 	</bean>
 	
+	<!-- ==================== ReportRt ==================== -->
+		
+	<bean id="ReportRt_Ds" scope="singleton" lazy-init="true"
+		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.report.model.ReportRt_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.report.Report"/>
+		<property name="readOnly" value="true" />
+	</bean>
+	
 	<!-- ==================== ReportLov ==================== -->
 		
 	<bean id="ReportLov_Ds" scope="singleton" lazy-init="true"

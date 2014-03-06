@@ -20,3 +20,4 @@ sequenceNo,name,title,frame,bundle,menuItem,active
 10,reportServer_UI,Report servers,seava.ad.ui.extjs.frame.ReportServers_Ui,seava.mod.ad,ad-report,true
 20,report_UI,Reports,seava.ad.ui.extjs.frame.Report_Ui,seava.mod.ad,ad-report,true
 30,reportUsage_UI,Reports usage,seava.ad.ui.extjs.frame.ReportUsage_Ui,seava.mod.ad,ad-report,true
+40,reportRt_UI,Runtime center,seava.ad.ui.extjs.frame.ReportRt_Ui,seava.mod.ad,ad-report,true
