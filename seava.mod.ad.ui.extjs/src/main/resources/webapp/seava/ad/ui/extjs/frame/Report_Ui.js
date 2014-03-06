@@ -17,7 +17,7 @@ Ext.define("seava.ad.ui.extjs.frame.Report_Ui", {
 		.addDc("paramsRt", Ext.create(seava.ad.ui.extjs.dc.ReportParamRt_Dc,{multiEdit:true}))	
 		.addDc("dsrep", Ext.create(seava.ad.ui.extjs.dc.DsReport_Dc,{multiEdit:true}))	
 		.addDc("dsparam", Ext.create(seava.ad.ui.extjs.dc.DsReportParam_Dc,{multiEdit:true}))	
-		.addDc("usage", Ext.create(seava.ad.ui.extjs.dc.DsReportUsage_Dc,{multiEdit:true}))
+		.addDc("usage", Ext.create(seava.ad.ui.extjs.dc.DsReportUsageCtx_Dc,{multiEdit:true}))
 		.linkDc("params", "rep",{fields:[
 			{childField:"reportId", parentField:"id"}]}
 		).linkDc("paramsRt", "rep",{fields:[
@@ -46,7 +46,7 @@ Ext.define("seava.ad.ui.extjs.frame.Report_Ui", {
 		.addDcEditGridView("paramsRt", {name:"paramTest", xtype:"ad_ReportParamRt_Dc$TestRt", frame:true})
 		.addDcEditGridView("dsrep", {name:"dsrepList", width:600, xtype:"ad_DsReport_Dc$ReportCtxList", frame:true})
 		.addDcEditGridView("dsparam", {name:"dsparamList", _hasTitle_:true, xtype:"ad_DsReportParam_Dc$CtxEditList", frame:true})
-		.addDcEditGridView("usage", {name:"usageList", _hasTitle_:true, xtype:"ad_DsReportUsage_Dc$CtxEditList", frame:true})
+		.addDcEditGridView("usage", {name:"usageList", _hasTitle_:true, xtype:"ad_DsReportUsageCtx_Dc$EditList", frame:true})
 		.addWindow({name:"wdwTestReport", _hasTitle_:true, width:450, height:350, closeAction:'hide', resizable:true, layout:"fit", modal:true,
 			items:[this._elems_.get("paramTest")], closable:false
 			, 

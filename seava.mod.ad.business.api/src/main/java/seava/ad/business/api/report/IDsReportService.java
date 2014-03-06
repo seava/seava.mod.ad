@@ -17,6 +17,16 @@ import seava.j4e.api.service.business.IEntityService;
 public interface IDsReportService extends IEntityService<DsReport> {
 
 	/**
+	 * Find by unique key
+	 */
+	public DsReport findByRep_ds(Report report, String dataSource);
+
+	/**
+	 * Find by unique key
+	 */
+	public DsReport findByRep_ds(Long reportId, String dataSource);
+
+	/**
 	 * Find by reference: report
 	 */
 	public List<DsReport> findByReport(Report report);

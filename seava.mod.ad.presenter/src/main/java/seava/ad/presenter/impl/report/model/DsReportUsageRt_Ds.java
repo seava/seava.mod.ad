@@ -8,9 +8,12 @@ package seava.ad.presenter.impl.report.model;
 import seava.ad.domain.impl.report.DsReportUsage;
 import seava.j4e.api.annotation.Ds;
 import seava.j4e.api.annotation.DsField;
+import seava.j4e.api.annotation.SortField;
 import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 
-@Ds(entity = DsReportUsage.class, jpqlWhere = " e.dsReport.report.active = true ")
+@Ds(entity = DsReportUsage.class, jpqlWhere = " e.dsReport.report.active = true ", sort = {
+		@SortField(field = DsReportUsageRt_Ds.f_sequenceNo),
+		@SortField(field = DsReportUsageRt_Ds.f_reportTitle)})
 public class DsReportUsageRt_Ds extends AbstractAuditable_Ds<DsReportUsage> {
 	public static final String f_dsReportId = "dsReportId";
 	public static final String f_reportId = "reportId";
@@ -22,6 +25,7 @@ public class DsReportUsageRt_Ds extends AbstractAuditable_Ds<DsReportUsage> {
 	public static final String f_frameName = "frameName";
 	public static final String f_toolbarKey = "toolbarKey";
 	public static final String f_dcKey = "dcKey";
+	public static final String f_sequenceNo = "sequenceNo";
 
 	@DsField(join = "left", path = "dsReport.id")
 	private String dsReportId;
@@ -52,6 +56,9 @@ public class DsReportUsageRt_Ds extends AbstractAuditable_Ds<DsReportUsage> {
 
 	@DsField
 	private String dcKey;
+
+	@DsField
+	private Integer sequenceNo;
 
 	public DsReportUsageRt_Ds() {
 		super();
@@ -139,5 +146,13 @@ public class DsReportUsageRt_Ds extends AbstractAuditable_Ds<DsReportUsage> {
 
 	public void setDcKey(String dcKey) {
 		this.dcKey = dcKey;
+	}
+
+	public Integer getSequenceNo() {
+		return this.sequenceNo;
+	}
+
+	public void setSequenceNo(Integer sequenceNo) {
+		this.sequenceNo = sequenceNo;
 	}
 }

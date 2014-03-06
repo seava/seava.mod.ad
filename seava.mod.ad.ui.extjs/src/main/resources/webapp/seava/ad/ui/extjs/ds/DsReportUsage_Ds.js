@@ -9,11 +9,14 @@ Ext.define("seava.ad.ui.extjs.ds.DsReportUsage_Ds", {
 	
 	fields: [
 		{name:"dsReportId", type:"string"},
+		{name:"dataSource", type:"string"},
 		{name:"reportId", type:"string"},
-		{name:"reportCode", type:"string"},
+		{name:"report", type:"string"},
+		{name:"reportName", type:"string"},
 		{name:"frameName", type:"string"},
 		{name:"toolbarKey", type:"string"},
 		{name:"dcKey", type:"string"},
+		{name:"sequenceNo", type:"int", useNull:true},
 		{name:"id", type:"string"},
 		{name:"clientId", type:"string"},
 		{name:"createdAt", type:"date", dateFormat:Main.MODEL_DATE_FORMAT},

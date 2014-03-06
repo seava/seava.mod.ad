@@ -96,7 +96,7 @@ Ext.define("seava.ad.ui.extjs.dc.MenuItem_Dc$EditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", align:"right", width:70 })
+		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", align:"right", width:70, allowBlank: false })
 		.addTextColumn({name:"name", dataIndex:"name", width:150})
 		.addTextColumn({name:"title", dataIndex:"title", width:150})
 		.addLov({name:"menu", dataIndex:"menu", xtype:"gridcolumn", width:80, 

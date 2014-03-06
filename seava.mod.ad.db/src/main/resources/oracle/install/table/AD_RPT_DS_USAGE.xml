@@ -33,6 +33,7 @@
 	<column name="REFID" type="varchar2(64)">
 		<constraints nullable="false"/>
 	</column>
+	<column name="SEQUENCENO" type="number(4)"/>
 	<column name="TOOLBARKEY" type="varchar2(400)"/>
 	<column name="VERSION" type="number(10)"/>
 	<column name="DSREPORT_ID" type="varchar2(64)">

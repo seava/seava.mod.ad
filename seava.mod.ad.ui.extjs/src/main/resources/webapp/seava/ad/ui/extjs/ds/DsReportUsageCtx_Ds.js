@@ -4,17 +4,13 @@
  * Use is subject to license terms.
  */
 	
-Ext.define("seava.ad.ui.extjs.ds.DsReportUsageRt_Ds", {
+Ext.define("seava.ad.ui.extjs.ds.DsReportUsageCtx_Ds", {
 	extend: 'Ext.data.Model',
 	
 	fields: [
 		{name:"dsReportId", type:"string"},
 		{name:"reportId", type:"string"},
-		{name:"reportCode", type:"string"},
-		{name:"reportTitle", type:"string"},
-		{name:"reportContextPath", type:"string"},
-		{name:"serverUrl", type:"string"},
-		{name:"queryBuilderClass", type:"string"},
+		{name:"report", type:"string"},
 		{name:"frameName", type:"string"},
 		{name:"toolbarKey", type:"string"},
 		{name:"dcKey", type:"string"},

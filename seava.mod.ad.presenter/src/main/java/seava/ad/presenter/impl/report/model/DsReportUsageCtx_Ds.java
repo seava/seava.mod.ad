@@ -5,26 +5,19 @@
  */
 package seava.ad.presenter.impl.report.model;
 
-import seava.ad.domain.impl.report.DsReport;
 import seava.ad.domain.impl.report.DsReportUsage;
 import seava.j4e.api.annotation.Ds;
 import seava.j4e.api.annotation.DsField;
-import seava.j4e.api.annotation.Param;
 import seava.j4e.api.annotation.RefLookup;
 import seava.j4e.api.annotation.RefLookups;
-import seava.j4e.api.annotation.SortField;
 import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 
-@Ds(entity = DsReportUsage.class, sort = {@SortField(field = DsReportUsage_Ds.f_report)})
-@RefLookups({@RefLookup(refId = DsReportUsage_Ds.f_dsReportId, namedQuery = DsReport.NQ_FIND_BY_REP_DS_PRIMITIVE, params = {
-		@Param(name = "reportId", field = DsReportUsage_Ds.f_reportId),
-		@Param(name = "dataSource", field = DsReportUsage_Ds.f_dataSource)})})
-public class DsReportUsage_Ds extends AbstractAuditable_Ds<DsReportUsage> {
+@Ds(entity = DsReportUsage.class)
+@RefLookups({@RefLookup(refId = DsReportUsageCtx_Ds.f_dsReportId)})
+public class DsReportUsageCtx_Ds extends AbstractAuditable_Ds<DsReportUsage> {
 	public static final String f_dsReportId = "dsReportId";
-	public static final String f_dataSource = "dataSource";
 	public static final String f_reportId = "reportId";
 	public static final String f_report = "report";
-	public static final String f_reportName = "reportName";
 	public static final String f_frameName = "frameName";
 	public static final String f_toolbarKey = "toolbarKey";
 	public static final String f_dcKey = "dcKey";
@@ -33,17 +26,11 @@ public class DsReportUsage_Ds extends AbstractAuditable_Ds<DsReportUsage> {
 	@DsField(join = "left", path = "dsReport.id")
 	private String dsReportId;
 
-	@DsField(join = "left", path = "dsReport.dataSource")
-	private String dataSource;
-
 	@DsField(join = "left", path = "dsReport.report.id")
 	private String reportId;
 
 	@DsField(join = "left", path = "dsReport.report.code")
 	private String report;
-
-	@DsField(join = "left", path = "dsReport.report.name")
-	private String reportName;
 
 	@DsField
 	private String frameName;
@@ -57,11 +44,11 @@ public class DsReportUsage_Ds extends AbstractAuditable_Ds<DsReportUsage> {
 	@DsField
 	private Integer sequenceNo;
 
-	public DsReportUsage_Ds() {
+	public DsReportUsageCtx_Ds() {
 		super();
 	}
 
-	public DsReportUsage_Ds(DsReportUsage e) {
+	public DsReportUsageCtx_Ds(DsReportUsage e) {
 		super(e);
 	}
 
@@ -71,14 +58,6 @@ public class DsReportUsage_Ds extends AbstractAuditable_Ds<DsReportUsage> {
 
 	public void setDsReportId(String dsReportId) {
 		this.dsReportId = dsReportId;
-	}
-
-	public String getDataSource() {
-		return this.dataSource;
-	}
-
-	public void setDataSource(String dataSource) {
-		this.dataSource = dataSource;
 	}
 
 	public String getReportId() {
@@ -95,14 +74,6 @@ public class DsReportUsage_Ds extends AbstractAuditable_Ds<DsReportUsage> {
 
 	public void setReport(String report) {
 		this.report = report;
-	}
-
-	public String getReportName() {
-		return this.reportName;
-	}
-
-	public void setReportName(String reportName) {
-		this.reportName = reportName;
 	}
 
 	public String getFrameName() {

@@ -7,6 +7,7 @@ Ext.define("seava.ad.i18n.ds.DsReportUsageRt_Ds", {
 	reportContextPath__lbl: "Context Path",
 	reportId__lbl: "Report(ID)",
 	reportTitle__lbl: "Report(Name)",
+	sequenceNo__lbl: "Sequence No",
 	serverUrl__lbl: "Url",
 	toolbarKey__lbl: "Toolbar Key"
 });

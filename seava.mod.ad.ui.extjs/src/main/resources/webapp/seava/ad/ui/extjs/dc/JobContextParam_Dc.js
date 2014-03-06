@@ -22,7 +22,7 @@ Ext.define("seava.ad.ui.extjs.dc.JobContextParam_Dc$CtxEditList", {
 		this._getBuilder_()	
 		.addTextColumn({name:"paramName", dataIndex:"paramName", width:200, noEdit: true})
 		.addTextColumn({name:"dataType", dataIndex:"dataType", width:150, noEdit: true})
-		.addTextColumn({name:"value", dataIndex:"value", width:200})
+		.addTextColumn({name:"value", dataIndex:"value", width:200, allowBlank: false})
 		.addDefaults();
 	}
 });

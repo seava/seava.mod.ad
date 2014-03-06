@@ -36,6 +36,30 @@ public class DsReport_Service extends AbstractEntityService<DsReport>
 		return DsReport.class;
 	}
 	/**
+	 * Find by unique key
+	 */
+	public DsReport findByRep_ds(Report report, String dataSource) {
+		return (DsReport) this
+				.getEntityManager()
+				.createNamedQuery(DsReport.NQ_FIND_BY_REP_DS)
+				.setParameter("clientId",
+						Session.user.get().getClient().getId())
+				.setParameter("report", report)
+				.setParameter("dataSource", dataSource).getSingleResult();
+	}
+	/**
+	 * Find by unique key
+	 */
+	public DsReport findByRep_ds(Long reportId, String dataSource) {
+		return (DsReport) this
+				.getEntityManager()
+				.createNamedQuery(DsReport.NQ_FIND_BY_REP_DS_PRIMITIVE)
+				.setParameter("clientId",
+						Session.user.get().getClient().getId())
+				.setParameter("reportId", reportId)
+				.setParameter("dataSource", dataSource).getSingleResult();
+	}
+	/**
 	 * Find by reference: report
 	 */
 	public List<DsReport> findByReport(Report report) {

@@ -34,6 +34,9 @@ public class DsReportUsage extends AbstractAuditable implements Serializable {
 	@Column(name = "DCKEY", length = 400)
 	private String dcKey;
 
+	@Column(name = "SEQUENCENO", precision = 4)
+	private Integer sequenceNo;
+
 	@ManyToOne(fetch = FetchType.LAZY, targetEntity = DsReport.class)
 	@JoinColumn(name = "DSREPORT_ID", referencedColumnName = "ID")
 	private DsReport dsReport;
@@ -60,6 +63,14 @@ public class DsReportUsage extends AbstractAuditable implements Serializable {
 
 	public void setDcKey(String dcKey) {
 		this.dcKey = dcKey;
+	}
+
+	public Integer getSequenceNo() {
+		return this.sequenceNo;
+	}
+
+	public void setSequenceNo(Integer sequenceNo) {
+		this.sequenceNo = sequenceNo;
 	}
 
 	public DsReport getDsReport() {

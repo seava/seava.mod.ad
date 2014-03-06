@@ -1,3 +1,7 @@
 [
-	"seava.mod.ad/ds/seava.ad.ui.extjs.ds.DsReportUsage_Ds"
+	"seava.mod.ad/ds/seava.ad.ui.extjs.ds.DsReportUsage_Ds", 
+	"seava.mod.ad/lov/seava.ad.ui.extjs.lov.Reports_Lov", 
+	"seava.mod.ad/lov/seava.ad.ui.extjs.lov.ReportsName_Lov", 
+	"seava.mod.ad/lov/seava.ad.ui.extjs.lov.DataSources_Lov", 
+	"seava.mod.ad/lov/seava.ad.ui.extjs.lov.DsReports_Lov"
 ]
