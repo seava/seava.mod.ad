@@ -14,6 +14,9 @@
 	<bean id="reportUsageProvider" scope="singleton" lazy-init="true" 
 		class="seava.ad.presenter.ext.ExtensionProviderReports"/>
 
+	<bean id="uploadAttachment"  scope="prototype"
+		class="seava.ad.presenter.ext.attachment.delegate.UploadAttachment"/>
+
 	<bean id="dummyPresenterJob" scope="prototype"
 		class="seava.ad.presenter.ext.DummyPresenterJob" />
 
@@ -21,6 +24,7 @@
 	<import resource="../beans/ad-scheduler-presenter.xml" />
 	<import resource="../beans/ad-security-presenter.xml" />
 	<import resource="../beans/ad-system-presenter.xml" />
+	<import resource="../beans/ad-attachment-presenter.xml" />
 	
 	<import resource="../beans/ad-security-asgn.xml" />
 </beans>

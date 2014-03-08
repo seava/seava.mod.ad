@@ -45,4 +45,7 @@
 	
 		<bean id="ViewState" scope="singleton" lazy-init="true"
 			class="seava.ad.business.impl.system.ViewState_Service"/>				
+	
+		<bean id="TargetRule" scope="singleton" lazy-init="true"
+			class="seava.ad.business.impl.system.TargetRule_Service"/>				
 </beans>

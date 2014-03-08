@@ -21,4 +21,5 @@
 	<import resource="../beans/ad-scheduler-business.xml" />
 	<import resource="../beans/ad-security-business.xml" />
 	<import resource="../beans/ad-system-business.xml" />
+	<import resource="../beans/ad-attachment-business.xml" />
 </beans>

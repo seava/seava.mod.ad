@@ -6,6 +6,8 @@
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		
 		<!-- Declared -->
+		<class>seava.ad.domain.impl.attachment.Attachment</class>
+		<class>seava.ad.domain.impl.attachment.AttachmentType</class>
 		<class>seava.ad.domain.impl.report.DsReport</class>
 		<class>seava.ad.domain.impl.report.DsReportParam</class>
 		<class>seava.ad.domain.impl.report.DsReportUsage</class>
@@ -49,6 +51,7 @@
 		<class>seava.ad.domain.impl.system.JobParam</class>
 		<class>seava.ad.domain.impl.system.Param</class>
 		<class>seava.ad.domain.impl.system.ParamValue</class>
+		<class>seava.ad.domain.impl.system.TargetRule</class>
 		<class>seava.ad.domain.impl.system.ViewState</class>
 		
 		<!-- Dependencies -->

@@ -300,4 +300,12 @@
 		<property name="paramClass" value="seava.ad.presenter.impl.system.model.ViewStateRtLov_DsParam"/>
 		<property name="queryBuilderClass" value="seava.ad.presenter.ext.system.qb.ViewStateRtLov_DsQb" />
 	</bean>
+	
+	<!-- ==================== TargetRule ==================== -->
+		
+	<bean id="TargetRule_Ds" scope="singleton" lazy-init="true"
+		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		<property name="modelClass" value="seava.ad.presenter.impl.system.model.TargetRule_Ds"/>
+		<property name="entityClass" value="seava.ad.domain.impl.system.TargetRule"/>
+	</bean>
 </beans>
