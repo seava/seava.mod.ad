@@ -44,7 +44,7 @@ Ext.define("seava.ad.ui.extjs.frame.ReportServer_Ui", {
 		this._getBuilder_()
 		.beginToolbar("tlbMEditList", {dc: "m"})
 			.addTitle().addSeparator().addSeparator()
-			.addQuery().addSave().addNew().addCopy().addDeleteSelected().addCancel()
+			.addQuery().addSave().addNew().addCopy().addDelete().addCancel()
 			.addReports()
 		.end();
 	}

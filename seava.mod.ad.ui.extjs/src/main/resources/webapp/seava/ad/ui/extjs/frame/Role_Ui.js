@@ -50,7 +50,7 @@ Ext.define("seava.ad.ui.extjs.frame.Role_Ui", {
 		this._getBuilder_()
 		.beginToolbar("tlbRolList", {dc: "rol"})
 			.addTitle().addSeparator().addSeparator()
-			.addQuery().addSave().addNew().addCopy().addDeleteSelected().addCancel()
+			.addQuery().addSave().addNew().addCopy().addDelete().addCancel()
 			.addSeparator().addSeparator()
 			.addButtons([this._elems_.get("btnAsgnRoleToUsers") ,this._elems_.get("btnAsgnRoleToAccessCtrl") ,this._elems_.get("btnAsgnRoleToMenu") ,this._elems_.get("btnAsgnRoleToMenuItem") ])
 			.addReports()

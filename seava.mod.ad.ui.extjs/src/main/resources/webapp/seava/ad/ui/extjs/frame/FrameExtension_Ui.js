@@ -42,7 +42,7 @@ Ext.define("seava.ad.ui.extjs.frame.FrameExtension_Ui", {
 		this._getBuilder_()
 		.beginToolbar("tlbExtensionsEditList", {dc: "extensions"})
 			.addTitle().addSeparator().addSeparator()
-			.addQuery().addSave().addNew().addCopy().addDeleteSelected().addCancel()
+			.addQuery().addSave().addNew().addCopy().addDelete().addCancel()
 			.addReports()
 		.end();
 	}

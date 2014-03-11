@@ -44,7 +44,7 @@ Ext.define("seava.ad.ui.extjs.frame.ViewState_Ui", {
 		.beginToolbar("tlbViewstateList", {dc: "viewstate"})
 			.addTitle().addSeparator().addSeparator()
 			.addQuery()
-			.addDeleteSelected()
+			.addDelete()
 			.addReports()
 		.end();
 	}

@@ -60,7 +60,7 @@ Ext.define("seava.ad.ui.extjs.frame.User_Ui", {
 		this._getBuilder_()
 		.beginToolbar("tlbUsrList", {dc: "usr"})
 			.addTitle().addSeparator().addSeparator()
-			.addQuery().addEdit().addNew().addCopy().addDeleteSelected()
+			.addQuery().addEdit().addNew().addCopy().addDelete()
 			.addReports()
 		.end()
 		.beginToolbar("tlbUsrEdit", {dc: "usr"})

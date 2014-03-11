@@ -54,7 +54,7 @@ Ext.define("seava.ad.ui.extjs.frame.JobLog_Ui", {
 		.beginToolbar("tlbLogList", {dc: "log"})
 			.addTitle().addSeparator().addSeparator()
 			.addQuery()
-			.addDeleteSelected()
+			.addDelete()
 			.addSeparator().addSeparator()
 			.addButtons([this._elems_.get("btnShowJob") ,this._elems_.get("btnShowJobContext") ,this._elems_.get("btnShowJobTimer") ])
 			.addReports()

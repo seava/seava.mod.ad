@@ -44,7 +44,7 @@ Ext.define("seava.ad.ui.extjs.frame.UserGroup_Ui", {
 		this._getBuilder_()
 		.beginToolbar("tlbGroupEditList", {dc: "dcGroup"})
 			.addTitle().addSeparator().addSeparator()
-			.addQuery().addSave().addNew().addCopy().addDeleteSelected().addCancel()
+			.addQuery().addSave().addNew().addCopy().addDelete().addCancel()
 			.addSeparator().addSeparator()
 			.addButtons([this._elems_.get("btnAsgnUsers") ])
 			.addReports()

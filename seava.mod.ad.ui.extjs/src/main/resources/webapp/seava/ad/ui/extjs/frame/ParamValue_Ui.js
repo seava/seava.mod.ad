@@ -44,7 +44,7 @@ Ext.define("seava.ad.ui.extjs.frame.ParamValue_Ui", {
 		this._getBuilder_()
 		.beginToolbar("tlbValList", {dc: "val"})
 			.addTitle().addSeparator().addSeparator()
-			.addQuery().addSave().addNew().addCopy().addDeleteSelected().addCancel()
+			.addQuery().addSave().addNew().addCopy().addDelete().addCancel()
 			.addSeparator().addSeparator()
 			.addButtons([this._elems_.get("btnPublish") ,this._elems_.get("btnShowParamsFrame") ])
 			.addReports()

@@ -49,7 +49,7 @@ Ext.define("seava.ad.ui.extjs.frame.DateFormat_Ui", {
 		this._getBuilder_()
 		.beginToolbar("tlbFmtList", {dc: "fmt"})
 			.addTitle().addSeparator().addSeparator()
-			.addQuery().addSave().addNew().addCopy().addDeleteSelected().addCancel()
+			.addQuery().addSave().addNew().addCopy().addDelete().addCancel()
 			.addReports()
 		.end()
 		.beginToolbar("tlbMaskList", {dc: "mask"})

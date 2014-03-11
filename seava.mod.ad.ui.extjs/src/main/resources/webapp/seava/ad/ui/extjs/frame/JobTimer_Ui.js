@@ -45,7 +45,7 @@ Ext.define("seava.ad.ui.extjs.frame.JobTimer_Ui", {
 		this._getBuilder_()
 		.beginToolbar("tlbTimerList", {dc: "timer"})
 			.addTitle().addSeparator().addSeparator()
-			.addQuery().addNew().addCopy().addDeleteSelected()
+			.addQuery().addNew().addCopy().addDelete()
 			.addReports()
 		.end()
 		.beginToolbar("tlbTimerEdit", {dc: "timer"})
