@@ -13,6 +13,7 @@ import java.security.NoSuchAlgorithmException;
 import org.springframework.transaction.annotation.Transactional;
 
 import seava.j4e.api.exceptions.BusinessException;
+import seava.j4e.api.exceptions.ErrorCode;
 import seava.j4e.api.security.IPasswordValidator;
 import seava.j4e.api.session.Session;
 import seava.ad.business.api.security.IUserService;
@@ -22,9 +23,8 @@ import seava.ad.domain.impl.security.User;
  * Business extensions specific for {@link User} domain entity.
  * 
  */
-public class User_Service extends
-		seava.ad.business.impl.security.User_Service implements
-		IUserService {
+public class User_Service extends seava.ad.business.impl.security.User_Service
+		implements IUserService {
 
 	@Override
 	protected void preInsert(User e) throws BusinessException {
@@ -40,14 +40,15 @@ public class User_Service extends
 
 		User u = this.findById(userId);
 		if (!u.getClientId().equals(Session.user.get().getClientId())) {
-			throw new BusinessException(
+			throw new BusinessException(ErrorCode.G_CLIENT_MISMATCH,
 					"Acces to a different client is not allowed!");
 		}
 		try {
 			this.getApplicationContext().getBean(IPasswordValidator.class)
 					.validate(newPassword);
 		} catch (Exception e) {
-			throw new BusinessException("Pasword validation failed.", e);
+			throw new BusinessException(ErrorCode.G_RUNTIME_ERROR,
+					"Pasword validation failed.", e);
 		}
 		u.setPassword(this.encryptPassword(newPassword));
 		this.getEntityManager().merge(u);
@@ -59,8 +60,8 @@ public class User_Service extends
 		try {
 			messageDigest = MessageDigest.getInstance("MD5");
 		} catch (NoSuchAlgorithmException e) {
-			throw new BusinessException(
-					"Cannot change password. No `MD5` algorithm found.");
+			throw new BusinessException(ErrorCode.G_RUNTIME_ERROR,
+					"No `MD5` algorithm found.", e);
 		}
 		messageDigest.update(password.getBytes(), 0, password.length());
 		String hashedPass = new BigInteger(1, messageDigest.digest())

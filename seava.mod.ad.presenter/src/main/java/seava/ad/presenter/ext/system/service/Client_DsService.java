@@ -12,6 +12,7 @@ import java.util.List;
 import seava.j4e.api.action.impex.IImportDataPackage;
 import seava.j4e.api.action.query.IQueryBuilder;
 import seava.j4e.api.exceptions.BusinessException;
+import seava.j4e.api.exceptions.ErrorCode;
 import seava.j4e.api.service.presenter.IDsService;
 import seava.j4e.api.session.Session;
 import seava.j4e.commons.action.impex.DataPackage;
@@ -51,13 +52,13 @@ public class Client_DsService extends
 
 			File f = new File(params.getInitFileLocation());
 			if (!f.exists()) {
-				throw new BusinessException(
+				throw new BusinessException(ErrorCode.G_FILE_NOT_FOUND,
 						"Cannot find initial data descriptor file ("
 								+ params.getInitFileLocation() + "). ");
 			}
 
 			if (!f.canRead()) {
-				throw new BusinessException(
+				throw new BusinessException(ErrorCode.G_FILE_NOT_READABLE,
 						"Read acces not enabled for initial data descriptor file ("
 								+ params.getInitFileLocation() + ") . ");
 			}

@@ -22,6 +22,7 @@ import org.springframework.beans.BeansException;
 
 import seava.j4e.api.Constants;
 import seava.j4e.api.exceptions.BusinessException;
+import seava.j4e.api.exceptions.ErrorCode;
 import seava.j4e.api.service.job.IScheduler;
 import seava.j4e.api.session.Session;
 import seava.j4e.business.service.AbstractBusinessDelegate;
@@ -50,7 +51,8 @@ public class JobScheduler_Bd extends AbstractBusinessDelegate {
 		try {
 			quartzScheduler.deleteJobs(jobKeys);
 		} catch (SchedulerException exc) {
-			throw new BusinessException("Cannot delete quartz jobs.", exc);
+			throw new BusinessException(ErrorCode.G_RUNTIME_ERROR,
+					"Cannot delete quartz jobs", exc);
 		}
 	}
 
@@ -84,19 +86,19 @@ public class JobScheduler_Bd extends AbstractBusinessDelegate {
 
 				Object v = value;
 				if (value != null && !"".equals(value)) {
-//					if ("java.lang.String".equals(dataType)) {
-//
-//					} else if ("java.lang.Integer".equals(dataType)
-//							|| "int".equals(dataType)) {
-//						v = Integer.parseInt(value);
-//					} else if ("java.lang.Long".equals(dataType)
-//							|| "long".equals(dataType)) {
-//						v = Long.parseLong(value);
-//					} else if ("java.lang.Boolean".equals(dataType)
-//							|| "boolean".equals(dataType)) {
-//						v = Boolean.valueOf(value);
-//					} else 
-						if ("java.util.Date".equals(dataType)) {
+					// if ("java.lang.String".equals(dataType)) {
+					//
+					// } else if ("java.lang.Integer".equals(dataType)
+					// || "int".equals(dataType)) {
+					// v = Integer.parseInt(value);
+					// } else if ("java.lang.Long".equals(dataType)
+					// || "long".equals(dataType)) {
+					// v = Long.parseLong(value);
+					// } else if ("java.lang.Boolean".equals(dataType)
+					// || "boolean".equals(dataType)) {
+					// v = Boolean.valueOf(value);
+					// } else
+					if ("java.util.Date".equals(dataType)) {
 						boolean ok = false;
 						for (SimpleDateFormat df : dateFormats) {
 							try {
@@ -123,7 +125,7 @@ public class JobScheduler_Bd extends AbstractBusinessDelegate {
 			try {
 				quartzScheduler.addJob(jobDetail, true);
 			} catch (Exception exc) {
-				throw new BusinessException(
+				throw new BusinessException(ErrorCode.G_RUNTIME_ERROR,
 						"Cannot add job to quartz scheduler.", exc);
 			}
 		}
@@ -147,7 +149,8 @@ public class JobScheduler_Bd extends AbstractBusinessDelegate {
 		try {
 			quartzScheduler.unscheduleJobs(triggerKeys);
 		} catch (SchedulerException exc) {
-			throw new BusinessException("Cannot delete quartz triggers.", exc);
+			throw new BusinessException(ErrorCode.G_RUNTIME_ERROR,
+					"Cannot delete quartz triggers.", exc);
 		}
 	}
 
@@ -188,8 +191,8 @@ public class JobScheduler_Bd extends AbstractBusinessDelegate {
 				}
 
 			} catch (Exception ex) {
-				throw new BusinessException("Cannot create timer. Reason: "
-						+ ex.getMessage());
+				throw new BusinessException(ErrorCode.G_RUNTIME_ERROR,
+						"Cannot create timer ", ex);
 			}
 		}
 	}
@@ -249,7 +252,8 @@ public class JobScheduler_Bd extends AbstractBusinessDelegate {
 		} catch (BeansException e) {
 			throw e;
 		} catch (Exception e) {
-			throw new BusinessException("Cannot get scheduler.", e);
+			throw new BusinessException(ErrorCode.G_RUNTIME_ERROR,
+					"Cannot get Quartz scheduler", e);
 		}
 	}
 }

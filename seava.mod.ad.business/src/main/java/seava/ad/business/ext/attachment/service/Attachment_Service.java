@@ -9,6 +9,7 @@ import seava.ad.business.api.attachment.IAttachmentService;
 import seava.ad.domain.impl.attachment.Attachment;
 import seava.ad.domain.impl.attachment.AttachmentType;
 import seava.j4e.api.exceptions.BusinessException;
+import seava.j4e.api.exceptions.ErrorCode;
 
 /**
  * Business extensions specific for {@link Attachment} domain entity.
@@ -25,7 +26,8 @@ public class Attachment_Service extends
 		if (name == null || "".equals(name)) {
 			AttachmentType type = e.getType();
 			if (type == null) {
-				throw new BusinessException("No type specified for attachment.");
+				throw new BusinessException(ErrorCode.G_NULL_FIELD_TYPE,
+						"No type specified for attachment.");
 			}
 			if (type.getCategory().matches("link")) {
 				e.setName(e.getLocation());

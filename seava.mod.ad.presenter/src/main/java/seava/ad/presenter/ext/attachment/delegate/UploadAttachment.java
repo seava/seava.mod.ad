@@ -16,6 +16,7 @@ import seava.ad.domain.impl.attachment.Attachment;
 import seava.ad.domain.impl.attachment.AttachmentType;
 import seava.j4e.api.descriptor.IUploadedFileDescriptor;
 import seava.j4e.api.exceptions.BusinessException;
+import seava.j4e.api.exceptions.ErrorCode;
 import seava.j4e.api.service.IFileUploadService;
 import seava.j4e.presenter.service.AbstractPresenterDelegate;
 
@@ -75,7 +76,7 @@ public class UploadAttachment extends AbstractPresenterDelegate implements
 		String path = attchType.getUploadPath();
 
 		if (path == null || "".equals(path)) {
-			throw new BusinessException(
+			throw new BusinessException(ErrorCode.G_FILE_INVALID_LOCATION,
 					"No upload path specified for attachment type `"
 							+ attchType.getName() + "`");
 		}

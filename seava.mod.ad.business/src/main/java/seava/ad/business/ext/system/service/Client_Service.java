@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import seava.j4e.api.action.impex.IImportDataPackage;
 import seava.j4e.api.exceptions.BusinessException;
+import seava.j4e.api.exceptions.ErrorCode;
 import seava.ad.business.api.system.IClientService;
 import seava.ad.business.ext.system.delegate.Client_Bd;
 import seava.ad.domain.impl.system.Client;
@@ -21,8 +22,7 @@ import seava.ad.domain.impl.system.Client;
  * 
  */
 public class Client_Service extends
-		seava.ad.business.impl.system.Client_Service implements
-		IClientService {
+		seava.ad.business.impl.system.Client_Service implements IClientService {
 
 	@Override
 	@Transactional
@@ -68,27 +68,29 @@ public class Client_Service extends
 	protected void validatePath(String path, String name)
 			throws BusinessException {
 		if (path == null) {
-			throw new BusinessException(name + " path cannot be empty.");
+			throw new BusinessException(ErrorCode.G_FILE_INVALID_LOCATION, name
+					+ " path cannot be empty.");
 		}
 		File f = new File(path);
 		if (!f.isAbsolute()) {
-			throw new BusinessException(name + " path `" + path
-					+ "` must be an absolute path.");
+			throw new BusinessException(ErrorCode.G_FILE_INVALID_LOCATION, name
+					+ " path `" + path + "` must be an absolute path.");
 		}
 
 		if (!f.exists()) {
 			if (!f.mkdirs()) {
-				throw new BusinessException(name + " path `" + path
-						+ "` structure cannot be created.");
+				throw new BusinessException(ErrorCode.G_FILE_NOT_CREATABLE,
+						name + " path `" + path
+								+ "` structure cannot be created.");
 			}
 		} else {
 			if (!f.canRead()) {
-				throw new BusinessException(name + " path `" + path
-						+ "` is not read enabled.");
+				throw new BusinessException(ErrorCode.G_FILE_NOT_READABLE, name
+						+ " path `" + path + "` is not read enabled.");
 			}
 			if (!f.canWrite()) {
-				throw new BusinessException(name + " path `" + path
-						+ "` is not write enabled.");
+				throw new BusinessException(ErrorCode.G_FILE_NOT_WRITABLE, name
+						+ " path `" + path + "` is not write enabled.");
 			}
 		}
 	}

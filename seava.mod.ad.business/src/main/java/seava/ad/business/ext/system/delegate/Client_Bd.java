@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import seava.j4e.api.Constants;
 import seava.j4e.api.action.impex.IImportDataPackage;
 import seava.j4e.api.exceptions.BusinessException;
+import seava.j4e.api.exceptions.ErrorCode;
 import seava.j4e.commons.security.AppClient;
 import seava.j4e.commons.security.AppUser;
 import seava.j4e.commons.security.AppWorkspace;
@@ -135,8 +136,8 @@ public class Client_Bd extends AbstractBusinessDelegate {
 			try {
 				messageDigest = MessageDigest.getInstance("MD5");
 			} catch (NoSuchAlgorithmException e) {
-				throw new BusinessException(
-						"No MD5 algrorithm available to encode user password.");
+				throw new BusinessException(ErrorCode.G_RUNTIME_ERROR,
+						"No MD5 algrorithm available", e);
 			}
 			messageDigest.update(password.getBytes(), 0, password.length());
 			String hashedPass = new BigInteger(1, messageDigest.digest())
@@ -155,7 +156,8 @@ public class Client_Bd extends AbstractBusinessDelegate {
 						.doExecute(dataPackage);
 			}
 		} catch (Exception e) {
-			throw new BusinessException(e.getMessage(), e);
+			throw new BusinessException(ErrorCode.G_RUNTIME_ERROR,
+					e.getMessage(), e);
 		} finally {
 			Session.user.set(su);
 		}
