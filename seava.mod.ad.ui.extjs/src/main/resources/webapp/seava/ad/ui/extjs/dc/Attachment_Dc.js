@@ -11,7 +11,6 @@ Ext.define("seava.ad.ui.extjs.dc.Attachment_Dc", {
 	
 	doNew: function() {
 		
-		
 		if (this._doNewWdw_ == null ) {
 			this._doNewWdw_ = Ext.create("Ext.window.Window", {
 				width:400, 
@@ -158,8 +157,7 @@ Ext.define("seava.ad.ui.extjs.dc.Attachment_Dc$Create", {
 	_createContinue_: function() {
 		
 		var rd = this._controller_.record.data;
-		//this._controller_._doNewWdw_.close();
-		(new e4e.base.FileUploadWindow2(
+		(new e4e.base.FileUploadWindow(
 			{
 				_handler_ : "uploadAttachment",
 				_fields_ : {							 
