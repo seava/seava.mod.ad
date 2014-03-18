@@ -38,7 +38,7 @@ Ext.define("seava.ad.ui.extjs.dc.MyClient_Dc$Edit", {
 		autoScroll:true, padding:"0 30 5 0"})
 		.addPanel({ name:"col1", width:350, layout:"form"})
 		.addPanel({ name:"col3", width:220, layout:"form"})
-		.addPanel({ name:"col2", title:"Working directories", width:500, layout:"form", xtype:"fieldset", border:true, collapsible:false, defaults:{labelAlign:"right", labelWidth:120}});
+		.addPanel({ name:"col2", _hasTitle_: true, width:500, layout:"form", xtype:"fieldset", border:true, collapsible:false, defaults:{labelAlign:"right", labelWidth:120}});
 	},
 
 	/**

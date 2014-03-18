@@ -106,7 +106,7 @@ Ext.define("seava.ad.ui.extjs.dc.Client_Dc$Edit", {
 		.addPanel({ name:"main", autoScroll:true, layout: {type:"hbox", align:'top', pack:'start', defaultMargins: {right:5, left:5}},
 		autoScroll:true, padding:"0 30 5 0"})
 		.addPanel({ name:"col1", width:350, layout:"form"})
-		.addPanel({ name:"col2", title:"Working directories", width:550, layout:"form", xtype:"fieldset", border:true, collapsible:true, defaults:{labelAlign:"right", labelWidth:120}});
+		.addPanel({ name:"col2", _hasTitle_: true, width:550, layout:"form", xtype:"fieldset", border:true, collapsible:true, defaults:{labelAlign:"right", labelWidth:120}});
 	},
 
 	/**
@@ -153,8 +153,8 @@ Ext.define("seava.ad.ui.extjs.dc.Client_Dc$Create", {
 		.addPanel({ name:"main", autoScroll:true, layout: {type:"hbox", align:'top', pack:'start', defaultMargins: {right:5, left:5}},
 		autoScroll:true, padding:"0 30 5 0"})
 		.addPanel({ name:"col1", width:300, layout:"form"})
-		.addPanel({ name:"col2", title:"Administrator user", width:300, layout:"form", xtype:"fieldset", border:true, collapsible:true})
-		.addPanel({ name:"col3", title:"Working directories", width:550, layout:"form", xtype:"fieldset", border:true, collapsible:true, defaults:{labelAlign:"right", labelWidth:120}});
+		.addPanel({ name:"col2", _hasTitle_: true, width:300, layout:"form", xtype:"fieldset", border:true, collapsible:true})
+		.addPanel({ name:"col3", _hasTitle_: true, width:550, layout:"form", xtype:"fieldset", border:true, collapsible:true, defaults:{labelAlign:"right", labelWidth:120}});
 	},
 
 	/**
