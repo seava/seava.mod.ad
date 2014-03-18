@@ -91,6 +91,9 @@ Ext.define("seava.ad.ui.extjs.frame.ReportRt_Ui", {
 		var rep = this._getDc_("rep").record.data;
 		var paramDc = this._getDc_("param");
 		
+		if (!rep.queryBuilderClass) {
+			rep.queryBuilderClass = "e4e.dc.tools.DcReport";
+		}
 		
 		var b = Ext.ClassManager
 				.isCreated(rep.queryBuilderClass);
