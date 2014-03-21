@@ -93,7 +93,6 @@ Ext.define("seava.ad.ui.extjs.dc.Report_Dc$Edit", {
 		.addLov({name:"reportServer", dataIndex:"reportServer", allowBlank:false, xtype:"ad_ReportServers_Lov",
 			retFieldMapping: [{lovField:"id", dsField: "reportServerId"} ],
 			filterFieldMapping: [{lovField:"active", value: "true"} ]})
-		
 		/* =========== containers =========== */
 		.addPanel({ name:"main", autoScroll:true, layout: {type:"hbox", align:'top', pack:'start', defaultMargins: {right:5, left:5}},
 		autoScroll:true, padding:"0 30 5 0"})

@@ -103,6 +103,9 @@ Ext.define("seava.ad.ui.extjs.dc.Attachment_Dc$Create", {
 		this._getBuilder_()
 		
 		/* =========== controls =========== */
+		.addButton({name:"btnUpload", scope: this, handler: this._createContinue_, text: "Select file", _enableFn_: function(dc, rec) { return rec.data.category != 'link' ; } })
+		.addButton({name:"btnSave", scope: this, handler: this._save_, text: "Save", _enableFn_: function(dc, rec) { return rec.data.category == 'link' ; } })
+		.addButton({name:"btnCancel", scope: this, handler: this._cancel_, text: "Cancel"})
 		.addLov({name:"type", dataIndex:"type", allowBlank:false, xtype:"ad_AttachmentTypes_Lov",
 			retFieldMapping: [{lovField:"id", dsField: "typeId"} ,{lovField:"category", dsField: "category"} ],
 			filterFieldMapping: [{lovField:"targetAlias", dsField: "targetAlias"}, {lovField:"targetType", dsField: "targetType"} ],listeners:{
@@ -110,12 +113,8 @@ Ext.define("seava.ad.ui.extjs.dc.Attachment_Dc$Create", {
 		}})
 		.addTextField({ name:"name", dataIndex:"name"})
 		.addTextField({ name:"location", dataIndex:"location", _enableFn_: function(dc, rec) { return rec.data.category == 'link' ; } })
-		.addButton({name:"btnUpload", scope: this, handler: this._createContinue_, text: "Select file", _enableFn_: function(dc, rec) { return rec.data.category != 'link' ; } })
-		.addButton({name:"btnSave", scope: this, handler: this._save_, text: "Save", _enableFn_: function(dc, rec) { return rec.data.category == 'link' ; } })
-		.addButton({name:"btnCancel", scope: this, handler: this._cancel_, text: "Cancel"})
-		
 		/* =========== containers =========== */
-		.addPanel({ name:"main", autoScroll:true, layout:"form"});
+		.addPanel({ name:"main", autoScroll:true, xtype:"panel", buttons: [this._getConfig_("btnUpload"),this._getConfig_("btnSave"),this._getConfig_("btnCancel")], buttonAlign:"center", layout:"form"});
 	},
 
 	/**
@@ -124,21 +123,12 @@ Ext.define("seava.ad.ui.extjs.dc.Attachment_Dc$Create", {
 	_linkElements_: function() {
 		this._getBuilder_()
 		.addChildrenTo("main", ["type", "name", "location"]);
-		this.buttons = [this._getConfig_("btnUpload"),this._getConfig_("btnSave"),this._getConfig_("btnCancel")];
 	},
 	/* ==================== Business functions ==================== */
 	
 	onTypeChange: function() {
 		var rec = this._getController_().getRecord();		 
 		this._setFieldsEnabledState_(["location","btnUpload","btnSave"], rec);
-		/*if (rec.data.category=="link") {
-			this._get_("btnUpload").disable();
-			this._get_("btnSave").enable();
-		} else {
-			this._get_("btnUpload").enable();
-			this._get_("btnSave").disable();
-		}
-		*/
 	},
 	
 	_save_: function() {

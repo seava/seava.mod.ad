@@ -80,7 +80,6 @@ Ext.define("seava.ad.ui.extjs.dc.MyParam_Dc$InitValuesDateRange", {
 		/* =========== controls =========== */
 		.addDateField({name:"validFrom", paramIndex:"validFrom"})
 		.addDateField({name:"validTo", paramIndex:"validTo"})
-		
 		/* =========== containers =========== */
 		.addPanel({ name:"main", autoScroll:true, layout:"form"});
 	},

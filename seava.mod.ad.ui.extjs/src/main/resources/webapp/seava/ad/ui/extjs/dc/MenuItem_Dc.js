@@ -143,7 +143,6 @@ Ext.define("seava.ad.ui.extjs.dc.MenuItem_Dc$Edit", {
 			retFieldMapping: [{lovField:"id", dsField: "menuItemId"} ]})
 		.addLov({name:"menu", dataIndex:"menu", xtype:"ad_Menus_Lov",
 			retFieldMapping: [{lovField:"id", dsField: "menuId"} ]})
-		
 		/* =========== containers =========== */
 		.addPanel({ name:"main", autoScroll:true, layout: {type:"hbox", align:'top', pack:'start', defaultMargins: {right:5, left:5}},
 		autoScroll:true, padding:"0 30 5 0"})

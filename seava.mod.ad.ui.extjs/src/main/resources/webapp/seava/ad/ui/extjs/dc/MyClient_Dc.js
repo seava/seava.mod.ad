@@ -32,13 +32,12 @@ Ext.define("seava.ad.ui.extjs.dc.MyClient_Dc$Edit", {
 		.addDateField({name:"modifiedAt", dataIndex:"modifiedAt", noEdit:true })
 		.addTextField({ name:"createdBy", dataIndex:"createdBy", noEdit:true , maxLength:32})
 		.addTextField({ name:"modifiedBy", dataIndex:"modifiedBy", noEdit:true , maxLength:32})
-		
 		/* =========== containers =========== */
 		.addPanel({ name:"main", autoScroll:true, layout: {type:"hbox", align:'top', pack:'start', defaultMargins: {right:5, left:5}},
 		autoScroll:true, padding:"0 30 5 0"})
 		.addPanel({ name:"col1", width:350, layout:"form"})
 		.addPanel({ name:"col3", width:220, layout:"form"})
-		.addPanel({ name:"col2", _hasTitle_: true, width:500, layout:"form", xtype:"fieldset", border:true, collapsible:false, defaults:{labelAlign:"right", labelWidth:120}});
+		.addPanel({ name:"col2", _hasTitle_: true, width:500, xtype:"fieldset", collapsible:true, border:true, layout:"form", defaults:{labelAlign:"right", labelWidth:120}});
 	},
 
 	/**

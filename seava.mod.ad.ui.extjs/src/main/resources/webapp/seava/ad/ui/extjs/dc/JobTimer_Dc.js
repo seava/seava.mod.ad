@@ -136,7 +136,6 @@ Ext.define("seava.ad.ui.extjs.dc.JobTimer_Dc$Edit", {
 		.addCombo({ xtype:"combo", name:"repeatIntervalType", dataIndex:"repeatIntervalType", _visibleFn_: function(dc, rec) { return rec.data.type == "simple"; } , store:[ "seconds", "minutes", "hours"]})
 		.addDateTimeField({name:"startTime", dataIndex:"startTime"})
 		.addDateTimeField({name:"endTime", dataIndex:"endTime"})
-		
 		/* =========== containers =========== */
 		.addPanel({ name:"main", autoScroll:true, layout: {type:"hbox", align:'top', pack:'start', defaultMargins: {right:5, left:5}},
 		autoScroll:true, padding:"0 30 5 0"})

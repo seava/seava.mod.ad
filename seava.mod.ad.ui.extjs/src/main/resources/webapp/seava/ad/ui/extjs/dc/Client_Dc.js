@@ -101,12 +101,11 @@ Ext.define("seava.ad.ui.extjs.dc.Client_Dc$Edit", {
 		.addTextField({ name:"importPath", dataIndex:"importPath", allowBlank:false})
 		.addTextField({ name:"exportPath", dataIndex:"exportPath", allowBlank:false})
 		.addTextField({ name:"tempPath", dataIndex:"tempPath", allowBlank:false})
-		
 		/* =========== containers =========== */
 		.addPanel({ name:"main", autoScroll:true, layout: {type:"hbox", align:'top', pack:'start', defaultMargins: {right:5, left:5}},
 		autoScroll:true, padding:"0 30 5 0"})
 		.addPanel({ name:"col1", width:350, layout:"form"})
-		.addPanel({ name:"col2", _hasTitle_: true, width:550, layout:"form", xtype:"fieldset", border:true, collapsible:true, defaults:{labelAlign:"right", labelWidth:120}});
+		.addPanel({ name:"col2", _hasTitle_: true, width:550, xtype:"fieldset", collapsible:true, border:true, layout:"form", defaults:{labelAlign:"right", labelWidth:120}});
 	},
 
 	/**
@@ -148,13 +147,12 @@ Ext.define("seava.ad.ui.extjs.dc.Client_Dc$Create", {
 		.addTextField({ name:"importPath", dataIndex:"importPath", allowBlank:false})
 		.addTextField({ name:"exportPath", dataIndex:"exportPath", allowBlank:false})
 		.addTextField({ name:"tempPath", dataIndex:"tempPath", allowBlank:false})
-		
 		/* =========== containers =========== */
 		.addPanel({ name:"main", autoScroll:true, layout: {type:"hbox", align:'top', pack:'start', defaultMargins: {right:5, left:5}},
 		autoScroll:true, padding:"0 30 5 0"})
 		.addPanel({ name:"col1", width:300, layout:"form"})
-		.addPanel({ name:"col2", _hasTitle_: true, width:300, layout:"form", xtype:"fieldset", border:true, collapsible:true})
-		.addPanel({ name:"col3", _hasTitle_: true, width:550, layout:"form", xtype:"fieldset", border:true, collapsible:true, defaults:{labelAlign:"right", labelWidth:120}});
+		.addPanel({ name:"col2", _hasTitle_: true, width:300, xtype:"fieldset", collapsible:true, border:true, layout:"form"})
+		.addPanel({ name:"col3", _hasTitle_: true, width:550, xtype:"fieldset", collapsible:true, border:true, layout:"form", defaults:{labelAlign:"right", labelWidth:120}});
 	},
 
 	/**

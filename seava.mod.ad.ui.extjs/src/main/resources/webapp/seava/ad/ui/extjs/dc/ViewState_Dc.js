@@ -76,7 +76,6 @@ Ext.define("seava.ad.ui.extjs.dc.ViewState_Dc$Value", {
 		
 		/* =========== controls =========== */
 		.addDisplayFieldText({ name:"value", dataIndex:"value"})
-		
 		/* =========== containers =========== */
 		.addPanel({ name:"main", autoScroll:true, layout:"form", defaults:{labelAlign:"top"}});
 	},

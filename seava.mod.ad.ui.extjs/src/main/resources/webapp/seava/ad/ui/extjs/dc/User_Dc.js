@@ -101,12 +101,11 @@ Ext.define("seava.ad.ui.extjs.dc.User_Dc$Edit", {
 		.addCombo({ xtype:"combo", name:"thousandSeparator", dataIndex:"thousandSeparator", store:[ ".", ","]})
 		.addLov({name:"dateFormat", dataIndex:"dateFormat", xtype:"ad_DateFormats_Lov",
 			retFieldMapping: [{lovField:"id", dsField: "dateFormatId"} ]})
-		
 		/* =========== containers =========== */
 		.addPanel({ name:"main", autoScroll:true, layout: {type:"hbox", align:'top', pack:'start', defaultMargins: {right:5, left:5}},
 		autoScroll:true, padding:"0 30 5 0"})
 		.addPanel({ name:"col1", width:350, layout:"form"})
-		.addPanel({ name:"col2", _hasTitle_: true, width:280, layout:"form", xtype:"fieldset", border:true, collapsible:false});
+		.addPanel({ name:"col2", _hasTitle_: true, width:280, xtype:"fieldset", collapsible:true, border:true, layout:"form", defaults:{labelAlign:"right"}});
 	},
 
 	/**
@@ -135,7 +134,6 @@ Ext.define("seava.ad.ui.extjs.dc.User_Dc$ChangePasswordForm", {
 		/* =========== controls =========== */
 		.addTextField({ name:"newPassword", paramIndex:"newPassword", allowBlank:false, inputType:"password"})
 		.addTextField({ name:"confirmPassword", paramIndex:"confirmPassword", allowBlank:false, inputType:"password"})
-		
 		/* =========== containers =========== */
 		.addPanel({ name:"main", autoScroll:true, width:350, layout:"form"});
 	},

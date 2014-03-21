@@ -83,7 +83,6 @@ Ext.define("seava.ad.ui.extjs.dc.AccessControl_Dc$CopyRulesFromSource", {
 		.addBooleanField({ name:"skipDs", paramIndex:"skipDs"})
 		.addBooleanField({ name:"skipAsgn", paramIndex:"skipAsgn"})
 		.addBooleanField({ name:"resetRules", paramIndex:"resetRules"})
-		
 		/* =========== containers =========== */
 		.addPanel({ name:"main", autoScroll:true, layout:"form"});
 	},
