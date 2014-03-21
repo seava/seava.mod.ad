@@ -35,3 +35,12 @@ Ext.define("seava.ad.ui.extjs.ds.AccessControlDs_Ds", {
 		{name:"entityFqn", type:"string"}
 	]
 });
+
+Ext.define("seava.ad.ui.extjs.ds.AccessControlDs_DsParam", {
+	extend: 'Ext.data.Model',
+	
+	fields: [
+		{name:"withRole", type:"string", forFilter:true},
+		{name:"withRoleId", type:"string"}
+	]
+});

@@ -51,9 +51,7 @@ public class DataSource_Pd extends AbstractPresenterDelegate {
 			for (IDsDefinitions defs : list) {
 				this._process(defs, result);
 			}
-
 		}
-
 		srv.update("delete from " + DataSourceField.class.getSimpleName(), null);
 		srv.update("delete from " + DataSourceRpc.class.getSimpleName(), null);
 		srv.update("delete from " + DataSource.class.getSimpleName(), null);

@@ -7,5 +7,7 @@ Ext.define("seava.ad.i18n.ds.AccessControlDs_Ds", {
 	importAllowed__lbl: "Import",
 	insertAllowed__lbl: "Insert",
 	queryAllowed__lbl: "Query",
-	updateAllowed__lbl: "Update"
+	updateAllowed__lbl: "Update",
+	withRoleId__lbl: "Role ID",
+	withRole__lbl: "Role"
 });

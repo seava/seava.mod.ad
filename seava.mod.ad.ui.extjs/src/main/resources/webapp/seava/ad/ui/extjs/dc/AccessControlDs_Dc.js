@@ -5,6 +5,7 @@
  */
 Ext.define("seava.ad.ui.extjs.dc.AccessControlDs_Dc", {
 	extend: "e4e.dc.AbstractDc",
+	paramModel: seava.ad.ui.extjs.ds.AccessControlDs_DsParam,
 	recordModel: seava.ad.ui.extjs.ds.AccessControlDs_Ds
 });
 
@@ -24,6 +25,8 @@ Ext.define("seava.ad.ui.extjs.dc.AccessControlDs_Dc$Filter", {
 		.addLov({name:"dsName", dataIndex:"dsName", xtype:"ad_DataSourcesDs_Lov"})
 		.addLov({name:"accessControl", dataIndex:"accessControl", xtype:"ad_AccessControls_Lov",
 			retFieldMapping: [{lovField:"id", dsField: "accessControlId"} ]})
+		.addLov({name:"withRole", paramIndex:"withRole", xtype:"ad_Roles_Lov",
+			retFieldMapping: [{lovField:"id", dsParam: "withRoleId"} ]})
 		.addBooleanField({ name:"queryAllowed", dataIndex:"queryAllowed"})
 		.addBooleanField({ name:"insertAllowed", dataIndex:"insertAllowed"})
 		.addBooleanField({ name:"updateAllowed", dataIndex:"updateAllowed"})
@@ -45,7 +48,7 @@ Ext.define("seava.ad.ui.extjs.dc.AccessControlDs_Dc$Filter", {
 	_linkElements_: function() {
 		this._getBuilder_()
 		.addChildrenTo("main", ["col1", "col2", "col3"])
-		.addChildrenTo("col1", ["accessControl", "dsName"])
+		.addChildrenTo("col1", ["accessControl", "dsName", "withRole"])
 		.addChildrenTo("col2", ["queryAllowed", "importAllowed", "exportAllowed"])
 		.addChildrenTo("col3", ["insertAllowed", "updateAllowed", "deleteAllowed"]);
 	}

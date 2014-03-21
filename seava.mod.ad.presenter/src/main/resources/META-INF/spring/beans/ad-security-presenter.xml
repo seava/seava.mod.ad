@@ -174,6 +174,8 @@
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.AccessControlDs_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.AccessControlDs"/>
+		<property name="paramClass" value="seava.ad.presenter.impl.security.model.AccessControlDs_DsParam"/>
+		<property name="queryBuilderClass" value="seava.ad.presenter.impl.security.qb.AccessControlDs_DsQb" />
 	</bean>
 	
 	<!-- ==================== AccessControlDsRpc ==================== -->
