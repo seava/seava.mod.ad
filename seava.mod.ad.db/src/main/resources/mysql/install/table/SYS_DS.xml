@@ -4,59 +4,59 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="amathe" id="TBL">
+	<changeSet author="nan21" id="TBL-SYS_DS">
 		<createTable tableName="SYS_DS">
-	<column name="ACTIVE" type="int(1)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="CREATEDAT" type="datetime">
-		<constraints nullable="false"/>
-	</column>
-	<column name="CREATEDBY" type="varchar(32)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="DESCRIPTION" type="text"/>
-	<column name="ID" type="varchar(64)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="ISASGN" type="int(1)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="MODEL" type="varchar(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="MODIFIEDAT" type="datetime">
-		<constraints nullable="false"/>
-	</column>
-	<column name="MODIFIEDBY" type="varchar(32)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="NAME" type="varchar(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="NOTES" type="text"/>
-	<column name="REFID" type="varchar(64)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="VERSION" type="bigint(10)"/>
-	</createTable>
+			<column name="ACTIVE" type="int(1)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="CREATEDAT" type="datetime">
+				<constraints nullable="false"/>
+			</column>
+			<column name="CREATEDBY" type="varchar(32)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="DESCRIPTION" type="text"/>
+			<column name="ID" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="ISASGN" type="int(1)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="MODEL" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="MODIFIEDAT" type="datetime">
+				<constraints nullable="false"/>
+			</column>
+			<column name="MODIFIEDBY" type="varchar(32)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="NAME" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="NOTES" type="text"/>
+			<column name="REFID" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="VERSION" type="bigint(10)"/>
+		</createTable>
 	</changeSet>
 
-	<changeSet author="amathe" id="PK">
+	<changeSet author="nan21" id="PK-SYS_DS">
 		<addPrimaryKey 
 			constraintName="PK_SYS_DS"
 			tableName="SYS_DS"
 			columnNames="ID"/>
 	</changeSet>
 	
-	<changeSet author="amathe" id="UK-1">
+	<changeSet author="nan21" id="UK-SYS_DS-1">
 		<addUniqueConstraint
 			constraintName="UK_SYS_DS1"
 			tableName="SYS_DS"
 			columnNames="NAME"/>
 	</changeSet>
 	
-	<changeSet author="amathe" id="UK-2">
+	<changeSet author="nan21" id="UK-SYS_DS-2">
 		<addUniqueConstraint
 			constraintName="UK_SYS_DS2"
 			tableName="SYS_DS"

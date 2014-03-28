@@ -4,28 +4,28 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="amathe" id="TBL">
+	<changeSet author="nan21" id="TBL-QRTZ_JOB_DETAILS">
 		<createTable tableName="QRTZ_JOB_DETAILS">
-	<column name="DESCRIPTION" type="varchar2(400)"/>
-	<column name="IS_DURABLE" type="varchar2(1)"/>
-	<column name="IS_NONCONCURRENT" type="varchar2(1)"/>
-	<column name="IS_UPDATE_DATA" type="varchar2(1)"/>
-	<column name="JOB_CLASS_NAME" type="varchar2(255)"/>
-	<column name="JOB_DATA" type="blob"/>
-	<column name="JOB_GROUP" type="varchar2(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="JOB_NAME" type="varchar2(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="REQUESTS_RECOVERY" type="varchar2(1)"/>
-	<column name="SCHED_NAME" type="varchar2(255)">
-		<constraints nullable="false"/>
-	</column>
-	</createTable>
+			<column name="DESCRIPTION" type="varchar2(400)"/>
+			<column name="IS_DURABLE" type="varchar2(1)"/>
+			<column name="IS_NONCONCURRENT" type="varchar2(1)"/>
+			<column name="IS_UPDATE_DATA" type="varchar2(1)"/>
+			<column name="JOB_CLASS_NAME" type="varchar2(255)"/>
+			<column name="JOB_DATA" type="blob"/>
+			<column name="JOB_GROUP" type="varchar2(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="JOB_NAME" type="varchar2(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="REQUESTS_RECOVERY" type="varchar2(1)"/>
+			<column name="SCHED_NAME" type="varchar2(255)">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
 	</changeSet>
 
-	<changeSet author="amathe" id="PK">
+	<changeSet author="nan21" id="PK-QRTZ_JOB_DETAILS">
 		<addPrimaryKey 
 			constraintName="PK_QRTZ_JOB_DETAILS"
 			tableName="QRTZ_JOB_DETAILS"

@@ -4,32 +4,32 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="amathe" id="TBL">
+	<changeSet author="nan21" id="TBL-QRTZ_SIMPROP_TRIGGERS">
 		<createTable tableName="QRTZ_SIMPROP_TRIGGERS">
-	<column name="BOOL_PROP_1" type="varchar2(1)"/>
-	<column name="BOOL_PROP_2" type="varchar2(1)"/>
-	<column name="DEC_PROP_1" type="number(19,6)"/>
-	<column name="DEC_PROP_2" type="number(19,6)"/>
-	<column name="INT_PROP_1" type="number(10)"/>
-	<column name="INT_PROP_2" type="number(10)"/>
-	<column name="LONG_PROP_1" type="number(13)"/>
-	<column name="LONG_PROP_2" type="number(13)"/>
-	<column name="SCHED_NAME" type="varchar2(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="STR_PROP_1" type="varchar2(4000)"/>
-	<column name="STR_PROP_2" type="varchar2(4000)"/>
-	<column name="STR_PROP_3" type="varchar2(4000)"/>
-	<column name="TRIGGER_GROUP" type="varchar2(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="TRIGGER_NAME" type="varchar2(255)">
-		<constraints nullable="false"/>
-	</column>
-	</createTable>
+			<column name="BOOL_PROP_1" type="varchar2(1)"/>
+			<column name="BOOL_PROP_2" type="varchar2(1)"/>
+			<column name="DEC_PROP_1" type="number(19,6)"/>
+			<column name="DEC_PROP_2" type="number(19,6)"/>
+			<column name="INT_PROP_1" type="number(10)"/>
+			<column name="INT_PROP_2" type="number(10)"/>
+			<column name="LONG_PROP_1" type="number(13)"/>
+			<column name="LONG_PROP_2" type="number(13)"/>
+			<column name="SCHED_NAME" type="varchar2(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="STR_PROP_1" type="varchar2(4000)"/>
+			<column name="STR_PROP_2" type="varchar2(4000)"/>
+			<column name="STR_PROP_3" type="varchar2(4000)"/>
+			<column name="TRIGGER_GROUP" type="varchar2(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="TRIGGER_NAME" type="varchar2(255)">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
 	</changeSet>
 
-	<changeSet author="amathe" id="PK">
+	<changeSet author="nan21" id="PK-QRTZ_SIMPROP_TRIGGERS">
 		<addPrimaryKey 
 			constraintName="PK_QRTZ_SIMPROP_TRIGGERS"
 			tableName="QRTZ_SIMPROP_TRIGGERS"

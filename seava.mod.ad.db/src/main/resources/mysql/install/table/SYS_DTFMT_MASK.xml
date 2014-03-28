@@ -4,51 +4,51 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="amathe" id="TBL">
+	<changeSet author="nan21" id="TBL-SYS_DTFMT_MASK">
 		<createTable tableName="SYS_DTFMT_MASK">
-	<column name="ACTIVE" type="int(1)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="CREATEDAT" type="datetime">
-		<constraints nullable="false"/>
-	</column>
-	<column name="CREATEDBY" type="varchar(32)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="ID" type="varchar(64)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="MASK" type="varchar(32)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="MODIFIEDAT" type="datetime">
-		<constraints nullable="false"/>
-	</column>
-	<column name="MODIFIEDBY" type="varchar(32)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="NOTES" type="text"/>
-	<column name="REFID" type="varchar(64)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="VALUE" type="varchar(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="VERSION" type="bigint(10)"/>
-	<column name="DATEFORMAT_ID" type="varchar(64)">
-		<constraints nullable="false"/>
-	</column>
-	</createTable>
+			<column name="ACTIVE" type="int(1)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="CREATEDAT" type="datetime">
+				<constraints nullable="false"/>
+			</column>
+			<column name="CREATEDBY" type="varchar(32)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="ID" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="MASK" type="varchar(32)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="MODIFIEDAT" type="datetime">
+				<constraints nullable="false"/>
+			</column>
+			<column name="MODIFIEDBY" type="varchar(32)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="NOTES" type="text"/>
+			<column name="REFID" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="VALUE" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="VERSION" type="bigint(10)"/>
+			<column name="DATEFORMAT_ID" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
 	</changeSet>
 
-	<changeSet author="amathe" id="PK">
+	<changeSet author="nan21" id="PK-SYS_DTFMT_MASK">
 		<addPrimaryKey 
 			constraintName="PK_SYS_DTFMT_MASK"
 			tableName="SYS_DTFMT_MASK"
 			columnNames="ID"/>
 	</changeSet>
 	
-	<changeSet author="amathe" id="UK-1">
+	<changeSet author="nan21" id="UK-SYS_DTFMT_MASK-1">
 		<addUniqueConstraint
 			constraintName="UK_SYS_DTFMT_MASK1"
 			tableName="SYS_DTFMT_MASK"

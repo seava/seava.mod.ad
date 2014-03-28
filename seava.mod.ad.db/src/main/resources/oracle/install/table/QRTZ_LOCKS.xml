@@ -4,18 +4,18 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="amathe" id="TBL">
+	<changeSet author="nan21" id="TBL-QRTZ_LOCKS">
 		<createTable tableName="QRTZ_LOCKS">
-	<column name="LOCK_NAME" type="varchar2(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="SCHED_NAME" type="varchar2(255)">
-		<constraints nullable="false"/>
-	</column>
-	</createTable>
+			<column name="LOCK_NAME" type="varchar2(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="SCHED_NAME" type="varchar2(255)">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
 	</changeSet>
 
-	<changeSet author="amathe" id="PK">
+	<changeSet author="nan21" id="PK-QRTZ_LOCKS">
 		<addPrimaryKey 
 			constraintName="PK_QRTZ_LOCKS"
 			tableName="QRTZ_LOCKS"

@@ -4,16 +4,18 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="amathe" id="TBL">
+	<changeSet author="nan21" id="TBL-AD_USR_USRGRP">
 		<createTable tableName="AD_USR_USRGRP">
 			<column name="GROUPS_ID" type="varchar(64)">
-				<constraints nullable="false"/></column>
-	<column name="USERS_ID" type="varchar(64)">
-				<constraints nullable="false"/></column>
-	</createTable>
+				<constraints nullable="false"/>
+			</column>
+			<column name="USERS_ID" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
 	</changeSet>
 
-	<changeSet author="amathe" id="PK">
+	<changeSet author="nan21" id="PK-AD_USR_USRGRP">
 		<addPrimaryKey
 			constraintName="PK_AD_USR_USRGRP"
 			tableName="AD_USR_USRGRP"

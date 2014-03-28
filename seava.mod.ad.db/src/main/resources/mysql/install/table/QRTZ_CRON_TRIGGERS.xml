@@ -4,25 +4,25 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="amathe" id="TBL">
+	<changeSet author="nan21" id="TBL-QRTZ_CRON_TRIGGERS">
 		<createTable tableName="QRTZ_CRON_TRIGGERS">
-	<column name="CRON_EXPRESSION" type="varchar(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="SCHED_NAME" type="varchar(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="TIME_ZONE_ID" type="varchar(255)"/>
-	<column name="TRIGGER_GROUP" type="varchar(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="TRIGGER_NAME" type="varchar(255)">
-		<constraints nullable="false"/>
-	</column>
-	</createTable>
+			<column name="CRON_EXPRESSION" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="SCHED_NAME" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="TIME_ZONE_ID" type="varchar(255)"/>
+			<column name="TRIGGER_GROUP" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="TRIGGER_NAME" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
 	</changeSet>
 
-	<changeSet author="amathe" id="PK">
+	<changeSet author="nan21" id="PK-QRTZ_CRON_TRIGGERS">
 		<addPrimaryKey 
 			constraintName="PK_QRTZ_CRON_TRIGGERS"
 			tableName="QRTZ_CRON_TRIGGERS"

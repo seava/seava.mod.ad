@@ -4,20 +4,20 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="amathe" id="TBL">
+	<changeSet author="nan21" id="TBL-QRTZ_SCHEDULER_STATE">
 		<createTable tableName="QRTZ_SCHEDULER_STATE">
-	<column name="CHECKIN_INTERVAL" type="bigint(13)"/>
-	<column name="INSTANCE_NAME" type="varchar(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="LAST_CHECKIN_TIME" type="bigint(13)"/>
-	<column name="SCHED_NAME" type="varchar(255)">
-		<constraints nullable="false"/>
-	</column>
-	</createTable>
+			<column name="CHECKIN_INTERVAL" type="bigint(13)"/>
+			<column name="INSTANCE_NAME" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="LAST_CHECKIN_TIME" type="bigint(13)"/>
+			<column name="SCHED_NAME" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
 	</changeSet>
 
-	<changeSet author="amathe" id="PK">
+	<changeSet author="nan21" id="PK-QRTZ_SCHEDULER_STATE">
 		<addPrimaryKey 
 			constraintName="PK_QRTZ_SCHEDULER_STATE"
 			tableName="QRTZ_SCHEDULER_STATE"

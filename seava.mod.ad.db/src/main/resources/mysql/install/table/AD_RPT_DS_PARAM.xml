@@ -4,46 +4,46 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="amathe" id="TBL">
+	<changeSet author="nan21" id="TBL-AD_RPT_DS_PARAM">
 		<createTable tableName="AD_RPT_DS_PARAM">
-	<column name="ACTIVE" type="int(1)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="CLIENTID" type="varchar(64)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="CREATEDAT" type="datetime">
-		<constraints nullable="false"/>
-	</column>
-	<column name="CREATEDBY" type="varchar(32)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="DSFIELD" type="varchar(255)"/>
-	<column name="ID" type="varchar(64)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="MODIFIEDAT" type="datetime">
-		<constraints nullable="false"/>
-	</column>
-	<column name="MODIFIEDBY" type="varchar(32)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="NOTES" type="text"/>
-	<column name="REFID" type="varchar(64)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="STATICVALUE" type="text"/>
-	<column name="VERSION" type="bigint(10)"/>
-	<column name="DSREPORT_ID" type="varchar(64)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="REPORTPARAM_ID" type="varchar(64)">
-		<constraints nullable="false"/>
-	</column>
-	</createTable>
+			<column name="ACTIVE" type="int(1)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="CLIENTID" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="CREATEDAT" type="datetime">
+				<constraints nullable="false"/>
+			</column>
+			<column name="CREATEDBY" type="varchar(32)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="DSFIELD" type="varchar(255)"/>
+			<column name="ID" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="MODIFIEDAT" type="datetime">
+				<constraints nullable="false"/>
+			</column>
+			<column name="MODIFIEDBY" type="varchar(32)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="NOTES" type="text"/>
+			<column name="REFID" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="STATICVALUE" type="text"/>
+			<column name="VERSION" type="bigint(10)"/>
+			<column name="DSREPORT_ID" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="REPORTPARAM_ID" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
 	</changeSet>
 
-	<changeSet author="amathe" id="PK">
+	<changeSet author="nan21" id="PK-AD_RPT_DS_PARAM">
 		<addPrimaryKey 
 			constraintName="PK_AD_RPT_DS_PARAM"
 			tableName="AD_RPT_DS_PARAM"

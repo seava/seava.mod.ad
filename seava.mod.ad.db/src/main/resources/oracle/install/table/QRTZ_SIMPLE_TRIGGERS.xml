@@ -4,30 +4,30 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="amathe" id="TBL">
+	<changeSet author="nan21" id="TBL-QRTZ_SIMPLE_TRIGGERS">
 		<createTable tableName="QRTZ_SIMPLE_TRIGGERS">
-	<column name="REPEAT_COUNT" type="number(10)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="REPEAT_INTERVAL" type="number(10)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="SCHED_NAME" type="varchar2(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="TIMES_TRIGGERED" type="number(10)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="TRIGGER_GROUP" type="varchar2(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="TRIGGER_NAME" type="varchar2(255)">
-		<constraints nullable="false"/>
-	</column>
-	</createTable>
+			<column name="REPEAT_COUNT" type="number(10)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="REPEAT_INTERVAL" type="number(10)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="SCHED_NAME" type="varchar2(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="TIMES_TRIGGERED" type="number(10)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="TRIGGER_GROUP" type="varchar2(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="TRIGGER_NAME" type="varchar2(255)">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
 	</changeSet>
 
-	<changeSet author="amathe" id="PK">
+	<changeSet author="nan21" id="PK-QRTZ_SIMPLE_TRIGGERS">
 		<addPrimaryKey 
 			constraintName="PK_QRTZ_SIMPLE_TRIGGERS"
 			tableName="QRTZ_SIMPLE_TRIGGERS"

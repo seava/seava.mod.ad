@@ -4,55 +4,55 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="amathe" id="TBL">
+	<changeSet author="nan21" id="TBL-SYS_CLIENT">
 		<createTable tableName="SYS_CLIENT">
-	<column name="ACTIVE" type="int(1)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="ADMINROLE" type="varchar(32)"/>
-	<column name="CODE" type="varchar(64)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="CREATEDAT" type="datetime">
-		<constraints nullable="false"/>
-	</column>
-	<column name="CREATEDBY" type="varchar(32)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="DESCRIPTION" type="text"/>
-	<column name="EXPORTPATH" type="varchar(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="ID" type="varchar(64)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="IMPORTPATH" type="varchar(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="MODIFIEDAT" type="datetime">
-		<constraints nullable="false"/>
-	</column>
-	<column name="MODIFIEDBY" type="varchar(32)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="NAME" type="varchar(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="NOTES" type="text"/>
-	<column name="REFID" type="varchar(64)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="TEMPPATH" type="varchar(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="VERSION" type="bigint(10)"/>
-	<column name="WORKSPACEPATH" type="varchar(255)">
-		<constraints nullable="false"/>
-	</column>
-	</createTable>
+			<column name="ACTIVE" type="int(1)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="ADMINROLE" type="varchar(32)"/>
+			<column name="CODE" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="CREATEDAT" type="datetime">
+				<constraints nullable="false"/>
+			</column>
+			<column name="CREATEDBY" type="varchar(32)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="DESCRIPTION" type="text"/>
+			<column name="EXPORTPATH" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="ID" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="IMPORTPATH" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="MODIFIEDAT" type="datetime">
+				<constraints nullable="false"/>
+			</column>
+			<column name="MODIFIEDBY" type="varchar(32)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="NAME" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="NOTES" type="text"/>
+			<column name="REFID" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="TEMPPATH" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="VERSION" type="bigint(10)"/>
+			<column name="WORKSPACEPATH" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
 	</changeSet>
 
-	<changeSet author="amathe" id="PK">
+	<changeSet author="nan21" id="PK-SYS_CLIENT">
 		<addPrimaryKey 
 			constraintName="PK_SYS_CLIENT"
 			tableName="SYS_CLIENT"

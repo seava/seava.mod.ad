@@ -4,16 +4,18 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="amathe" id="TBL">
+	<changeSet author="nan21" id="TBL-AD_ROLE_MENU">
 		<createTable tableName="AD_ROLE_MENU">
 			<column name="MENUS_ID" type="varchar(64)">
-				<constraints nullable="false"/></column>
-	<column name="ROLES_ID" type="varchar(64)">
-				<constraints nullable="false"/></column>
-	</createTable>
+				<constraints nullable="false"/>
+			</column>
+			<column name="ROLES_ID" type="varchar(64)">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
 	</changeSet>
 
-	<changeSet author="amathe" id="PK">
+	<changeSet author="nan21" id="PK-AD_ROLE_MENU">
 		<addPrimaryKey
 			constraintName="PK_AD_ROLE_MENU"
 			tableName="AD_ROLE_MENU"

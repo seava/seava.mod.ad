@@ -4,18 +4,18 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="amathe" id="TBL">
+	<changeSet author="nan21" id="TBL-QRTZ_PAUSED_TRIGGER_GRPS">
 		<createTable tableName="QRTZ_PAUSED_TRIGGER_GRPS">
-	<column name="SCHED_NAME" type="varchar2(255)">
-		<constraints nullable="false"/>
-	</column>
-	<column name="TRIGGER_GROUP" type="varchar2(255)">
-		<constraints nullable="false"/>
-	</column>
-	</createTable>
+			<column name="SCHED_NAME" type="varchar2(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="TRIGGER_GROUP" type="varchar2(255)">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
 	</changeSet>
 
-	<changeSet author="amathe" id="PK">
+	<changeSet author="nan21" id="PK-QRTZ_PAUSED_TRIGGER_GRPS">
 		<addPrimaryKey 
 			constraintName="PK_QRTZ_PAUSED_TRIGGER_GRPS"
 			tableName="QRTZ_PAUSED_TRIGGER_GRPS"
