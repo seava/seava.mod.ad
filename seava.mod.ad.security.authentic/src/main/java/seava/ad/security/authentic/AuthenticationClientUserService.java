@@ -73,6 +73,10 @@ public class AuthenticationClientUserService extends AbstractSecurity implements
 			throw new UsernameNotFoundException("Invalid credentials");
 		}
 
+		if (!u.getActive()) {
+			throw new UsernameNotFoundException("Inactive user");
+		}
+		
 		if (u.getRoles().size() == 0) {
 			throw new UsernameNotFoundException(
 					"User is not allowed to connect to application.");
