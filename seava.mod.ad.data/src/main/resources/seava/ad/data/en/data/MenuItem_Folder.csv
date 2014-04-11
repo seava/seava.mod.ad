@@ -4,6 +4,6 @@ sequenceNo,name,title,menu,active
 30,ad-security,Security,ad,true
 40,ad-report,Reports,ad,true
 50,ad-scheduler,Scheduler,ad,true
-100,ad-security-user,User/Role,,true
-200,ad-security-menu,Menu,,true
-200,ad-security-acl,Access right,,true
+101,ad-security-user,User/Role,,true
+102,ad-security-menu,Menu,,true
+103,ad-security-acl,Access right,,true
