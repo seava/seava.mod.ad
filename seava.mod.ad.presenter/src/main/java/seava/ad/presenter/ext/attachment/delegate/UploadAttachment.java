@@ -25,6 +25,7 @@ public class UploadAttachment extends AbstractPresenterDelegate implements
 
 	public static final String KEY_ID = "a_id";
 	public static final String KEY_NAME = "a_name";
+	public static final String KEY_NOTES = "a_notes";
 	public static final String KEY_TYPEID = "a_typeId";
 	public static final String KEY_CATEGORY = "a_category";
 	public static final String KEY_TARGETALIAS = "a_targetAlias";
@@ -38,6 +39,7 @@ public class UploadAttachment extends AbstractPresenterDelegate implements
 		paramNames = new ArrayList<String>();
 		paramNames.add(KEY_ID);
 		paramNames.add(KEY_NAME);
+		paramNames.add(KEY_NOTES);
 		paramNames.add(KEY_TYPEID);
 		paramNames.add(KEY_CATEGORY);
 
@@ -59,8 +61,9 @@ public class UploadAttachment extends AbstractPresenterDelegate implements
 
 		String id = params.get(KEY_ID);
 		String name = params.get(KEY_NAME);
+		String notes = params.get(KEY_NOTES);
 		String typeId = params.get(KEY_TYPEID);
-		String category = params.get(KEY_CATEGORY);
+		// String category = params.get(KEY_CATEGORY);
 
 		String targetAlias = params.get(KEY_TARGETALIAS);
 		String targetRefid = params.get(KEY_TARGETREFID);
@@ -90,6 +93,7 @@ public class UploadAttachment extends AbstractPresenterDelegate implements
 			a.setType(attchType);
 			a.setFileName(fileDescriptor.getOriginalName());
 			a.setName(name);
+			a.setNotes(notes);
 			a.setActive(true);
 			a.setTargetAlias(targetAlias);
 			a.setTargetRefid(targetRefid);

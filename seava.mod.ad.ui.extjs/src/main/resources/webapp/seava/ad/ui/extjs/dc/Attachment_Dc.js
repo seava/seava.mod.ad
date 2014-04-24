@@ -14,7 +14,7 @@ Ext.define("seava.ad.ui.extjs.dc.Attachment_Dc", {
 		if (this._doNewWdw_ == null ) {
 			this._doNewWdw_ = Ext.create("Ext.window.Window", {
 				width:400, 
-				height:200, 
+				height:250, 
 				closable: false,
 				closeAction: "hide",
 				resizable:true, 
@@ -85,6 +85,7 @@ Ext.define("seava.ad.ui.extjs.dc.Attachment_Dc$List", {
 		this._getBuilder_()
 		.addTextColumn({ name:"type", dataIndex:"type", width:200})
 		.addTextColumn({ name:"name", dataIndex:"name", width:200, renderer: function(v, md, rec, ri, ci, store) {return '<a href="javascript:void(0);"  onClick=\'javascript: window.open("'+rec.data.url+'", "Attachment", "location=1,status=1,scrollbars=1,width=660,height=500");\'>'+  rec.data.name  +'</a>';} })
+		.addTextColumn({ name:"notes", dataIndex:"notes", width:130})
 		.addTextColumn({ name:"url", dataIndex:"url", hidden:true, width:100})
 		.addDefaults();
 	}
@@ -112,6 +113,7 @@ Ext.define("seava.ad.ui.extjs.dc.Attachment_Dc$Create", {
 			change:{scope:this, fn:this.onTypeChange}
 		}})
 		.addTextField({ name:"name", dataIndex:"name"})
+		.addTextArea({ name:"notes", dataIndex:"notes", height:60})
 		.addTextField({ name:"location", dataIndex:"location", _enableFn_: function(dc, rec) { return rec.data.category == 'link' ; } })
 		/* =========== containers =========== */
 		.addPanel({ name:"main", autoScroll:true, buttons: [this._getConfig_("btnUpload"),this._getConfig_("btnSave"),this._getConfig_("btnCancel")],  xtype:"panel", buttonAlign:"center", layout:"form"});
@@ -122,7 +124,7 @@ Ext.define("seava.ad.ui.extjs.dc.Attachment_Dc$Create", {
 	 */			
 	_linkElements_: function() {
 		this._getBuilder_()
-		.addChildrenTo("main", ["type", "name", "location"]);
+		.addChildrenTo("main", ["type", "name", "location", "notes"]);
 	},
 	/* ==================== Business functions ==================== */
 	
@@ -166,6 +168,10 @@ Ext.define("seava.ad.ui.extjs.dc.Attachment_Dc$Create", {
 					a_typeId : {
 						xtype : "hidden",
 						value : rd.typeId
+					},
+					a_notes : {
+						xtype : "hidden",
+						value : rd.notes
 					},
 					a_category : {
 						xtype : "hidden",
