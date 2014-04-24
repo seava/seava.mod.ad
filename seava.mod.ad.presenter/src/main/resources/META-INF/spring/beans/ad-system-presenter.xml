@@ -286,7 +286,7 @@
 	<!-- ==================== ViewState ==================== -->
 		
 	<bean id="ViewState_Ds" scope="singleton" lazy-init="true"
-		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
+		class="seava.ad.presenter.impl.system.service.ViewState_DsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.ViewState_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.ViewState"/>
 	</bean>

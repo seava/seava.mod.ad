@@ -55,12 +55,15 @@ Ext.define("seava.ad.ui.extjs.dc.FrameExtension_Dc$EditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addTextColumn({name:"frame", dataIndex:"frame", width:200})
+		.addTextColumn({name:"frame", dataIndex:"frame", width:200, 
+			editor: { xtype:"textfield"}})
 		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", align:"right" })
-		.addTextColumn({name:"fileLocation", dataIndex:"fileLocation", width:200})
+		.addTextColumn({name:"fileLocation", dataIndex:"fileLocation", width:200, 
+			editor: { xtype:"textfield"}})
 		.addBooleanColumn({name:"relativePath", dataIndex:"relativePath"})
 		.addBooleanColumn({name:"active", dataIndex:"active"})
-		.addTextColumn({name:"notes", dataIndex:"notes", width:200})
+		.addTextColumn({name:"notes", dataIndex:"notes", width:200, 
+			editor: { xtype:"textfield"}})
 		.addDefaults();
 	}
 });

@@ -11,12 +11,11 @@ Ext.define("seava.ad.ui.extjs.frame.JobLog_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("log", Ext.create(seava.ad.ui.extjs.dc.JobLog_Dc,{}))	
+		this._getBuilder_().addDc("log", Ext.create(seava.ad.ui.extjs.dc.JobLog_Dc,{}))
 		.addDc("msg", Ext.create(seava.ad.ui.extjs.dc.JobLogMessage_Dc,{}))
 		.linkDc("msg", "log",{fields:[
-			{childField:"jobLogId", parentField:"id"}]}
-		);
+					{childField:"jobLogId", parentField:"id"}]})
+		;
 	},
 
 	/**

@@ -19,18 +19,24 @@ Ext.define("seava.ad.ui.extjs.dc.ReportParam_Dc$CtxEditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addTextColumn({name:"reportCode", dataIndex:"reportCode", hidden:true, width:60, caseRestriction:"uppercase"})
+		.addTextColumn({name:"reportCode", dataIndex:"reportCode", hidden:true, width:60, caseRestriction:"uppercase", 
+			editor: { xtype:"textfield"}})
 		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", align:"right" })
-		.addTextColumn({name:"name", dataIndex:"name", width:200})
-		.addTextColumn({name:"title", dataIndex:"title", width:200})
+		.addTextColumn({name:"name", dataIndex:"name", width:200, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"title", dataIndex:"title", width:200, 
+			editor: { xtype:"textfield"}})
 		.addComboColumn({name:"dataType", dataIndex:"dataType", width:100, 
-			editor:{xtype:"combo", mode: 'local', selectOnFocus:true, triggerAction:'all', forceSelection:true, store:[ "string", "text", "integer", "decimal", "boolean", "date"]}})
-		.addTextColumn({name:"listOfValues", dataIndex:"listOfValues", width:100})
-		.addTextColumn({name:"defaultValue", dataIndex:"defaultValue", width:100})
+			editor:{xtype:"combo", mode: 'local', triggerAction:'all', forceSelection:true, store:[ "string", "text", "integer", "decimal", "boolean", "date"]}})
+		.addTextColumn({name:"listOfValues", dataIndex:"listOfValues", width:100, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"defaultValue", dataIndex:"defaultValue", width:100, 
+			editor: { xtype:"textfield"}})
 		.addBooleanColumn({name:"mandatory", dataIndex:"mandatory", width:60})
 		.addBooleanColumn({name:"noEdit", dataIndex:"noEdit", width:60})
 		.addBooleanColumn({name:"active", dataIndex:"active", width:60})
-		.addTextColumn({name:"notes", dataIndex:"notes", hidden:true, width:200})
+		.addTextColumn({name:"notes", dataIndex:"notes", hidden:true, width:200, 
+			editor: { xtype:"textfield"}})
 		.addDefaults();
 	}
 });

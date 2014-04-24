@@ -114,7 +114,7 @@ Ext.define("seava.ad.ui.extjs.dc.Attachment_Dc$Create", {
 		.addTextField({ name:"name", dataIndex:"name"})
 		.addTextField({ name:"location", dataIndex:"location", _enableFn_: function(dc, rec) { return rec.data.category == 'link' ; } })
 		/* =========== containers =========== */
-		.addPanel({ name:"main", autoScroll:true, xtype:"panel", buttons: [this._getConfig_("btnUpload"),this._getConfig_("btnSave"),this._getConfig_("btnCancel")], buttonAlign:"center", layout:"form"});
+		.addPanel({ name:"main", autoScroll:true, buttons: [this._getConfig_("btnUpload"),this._getConfig_("btnSave"),this._getConfig_("btnCancel")],  xtype:"panel", buttonAlign:"center", layout:"form"});
 	},
 
 	/**

@@ -11,8 +11,7 @@ Ext.define("seava.ad.ui.extjs.frame.Param_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("sysparam", Ext.create(seava.ad.ui.extjs.dc.Param_Dc,{}))
+		this._getBuilder_().addDc("sysparam", Ext.create(seava.ad.ui.extjs.dc.Param_Dc,{}))
 		;
 	},
 

@@ -11,12 +11,11 @@ Ext.define("seava.ad.ui.extjs.frame.DateFormat_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("fmt", Ext.create(seava.ad.ui.extjs.dc.DateFormat_Dc,{multiEdit:true}))	
-		.addDc("mask", Ext.create(seava.ad.ui.extjs.dc.DateFormatMask_Dc,{multiEdit:true}))
+		this._getBuilder_().addDc("fmt", Ext.create(seava.ad.ui.extjs.dc.DateFormat_Dc,{multiEdit: true}))
+		.addDc("mask", Ext.create(seava.ad.ui.extjs.dc.DateFormatMask_Dc,{multiEdit: true}))
 		.linkDc("mask", "fmt",{fetchMode:"auto",fields:[
-			{childField:"dateFormatId", parentField:"id"}]}
-		);
+					{childField:"dateFormatId", parentField:"id"}]})
+		;
 	},
 
 	/**

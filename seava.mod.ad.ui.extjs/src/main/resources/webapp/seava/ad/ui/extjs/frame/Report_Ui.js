@@ -11,24 +11,23 @@ Ext.define("seava.ad.ui.extjs.frame.Report_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("rep", Ext.create(seava.ad.ui.extjs.dc.Report_Dc,{}))	
-		.addDc("params", Ext.create(seava.ad.ui.extjs.dc.ReportParam_Dc,{multiEdit:true}))	
-		.addDc("paramsRt", Ext.create(seava.ad.ui.extjs.dc.ReportParamRt_Dc,{multiEdit:true}))	
-		.addDc("dsrep", Ext.create(seava.ad.ui.extjs.dc.DsReport_Dc,{multiEdit:true}))	
-		.addDc("dsparam", Ext.create(seava.ad.ui.extjs.dc.DsReportParam_Dc,{multiEdit:true}))	
-		.addDc("usage", Ext.create(seava.ad.ui.extjs.dc.DsReportUsageCtx_Dc,{multiEdit:true}))
+		this._getBuilder_().addDc("rep", Ext.create(seava.ad.ui.extjs.dc.Report_Dc,{}))
+		.addDc("params", Ext.create(seava.ad.ui.extjs.dc.ReportParam_Dc,{ multiEdit:true}))
+		.addDc("paramsRt", Ext.create(seava.ad.ui.extjs.dc.ReportParamRt_Dc,{ multiEdit:true}))
+		.addDc("dsrep", Ext.create(seava.ad.ui.extjs.dc.DsReport_Dc,{ multiEdit:true}))
+		.addDc("dsparam", Ext.create(seava.ad.ui.extjs.dc.DsReportParam_Dc,{ multiEdit:true}))
+		.addDc("usage", Ext.create(seava.ad.ui.extjs.dc.DsReportUsageCtx_Dc,{ multiEdit:true}))
 		.linkDc("params", "rep",{fields:[
-			{childField:"reportId", parentField:"id"}]}
-		).linkDc("paramsRt", "rep",{fields:[
-			{childField:"reportId", parentField:"id"}]}
-		).linkDc("dsrep", "rep",{fields:[
-			{childField:"reportId", parentField:"id"}]}
-		).linkDc("dsparam", "dsrep",{fields:[
-			{childField:"dsReportId", parentField:"id"}, {childField:"reportId", parentField:"reportId"}, {childField:"dataSource", parentField:"dataSource"}]}
-		).linkDc("usage", "dsrep",{fields:[
-			{childField:"dsReportId", parentField:"id"}, {childField:"reportId", parentField:"reportId"}]}
-		);
+					{childField:"reportId", parentField:"id"}]})
+				.linkDc("paramsRt", "rep",{fields:[
+					{childField:"reportId", parentField:"id"}]})
+				.linkDc("dsrep", "rep",{fields:[
+					{childField:"reportId", parentField:"id"}]})
+				.linkDc("dsparam", "dsrep",{fields:[
+					{childField:"dsReportId", parentField:"id"}, {childField:"reportId", parentField:"reportId"}, {childField:"dataSource", parentField:"dataSource"}]})
+				.linkDc("usage", "dsrep",{fields:[
+					{childField:"dsReportId", parentField:"id"}, {childField:"reportId", parentField:"reportId"}]})
+		;
 	},
 
 	/**
@@ -48,8 +47,7 @@ Ext.define("seava.ad.ui.extjs.frame.Report_Ui", {
 		.addDcEditGridView("dsparam", {name:"dsparamList", _hasTitle_:true, xtype:"ad_DsReportParam_Dc$CtxEditList", frame:true})
 		.addDcEditGridView("usage", {name:"usageList", _hasTitle_:true, xtype:"ad_DsReportUsageCtx_Dc$EditList", frame:true})
 		.addWindow({name:"wdwTestReport", _hasTitle_:true, width:450, height:350, closeAction:'hide', resizable:true, layout:"fit", modal:true,
-			items:[this._elems_.get("paramTest")], closable:false
-			, 
+			items:[this._elems_.get("paramTest")],  closable:false, 
 					dockedItems:[{xtype:"toolbar", ui:"footer", dock:'bottom', weight:-1,
 						items:[ this._elems_.get("btnRunReport"), this._elems_.get("btnCancelReport")]}]})
 		.addPanel({name:"main", layout:"card", activeItem:0})

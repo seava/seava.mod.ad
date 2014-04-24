@@ -21,10 +21,13 @@ Ext.define("seava.ad.ui.extjs.dc.DsReportUsageCtx_Dc$EditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addTextColumn({name:"frameName", dataIndex:"frameName", width:250})
-		.addTextColumn({name:"dcKey", dataIndex:"dcKey", width:80})
-		.addTextColumn({name:"toolbarKey", dataIndex:"toolbarKey", width:80})
-		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", align:"right", width:80 })
+		.addTextColumn({name:"frameName", dataIndex:"frameName", width:250, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"dcKey", dataIndex:"dcKey", width:80, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"toolbarKey", dataIndex:"toolbarKey", width:80, 
+			editor: { xtype:"textfield"}})
+		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", width:80, align:"right" })
 		.addDefaults();
 	}
 });

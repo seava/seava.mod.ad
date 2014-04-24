@@ -11,8 +11,7 @@ Ext.define("seava.ad.ui.extjs.frame.JobTimer_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("timer", Ext.create(seava.ad.ui.extjs.dc.JobTimer_Dc,{}))
+		this._getBuilder_().addDc("timer", Ext.create(seava.ad.ui.extjs.dc.JobTimer_Dc,{}))
 		;
 	},
 
@@ -23,8 +22,7 @@ Ext.define("seava.ad.ui.extjs.frame.JobTimer_Ui", {
 		this._getBuilder_()
 		.addDcFilterFormView("timer", {name:"timerFilter", xtype:"ad_JobTimer_Dc$Filter"})
 		.addDcGridView("timer", {name:"timerList", xtype:"ad_JobTimer_Dc$List"})
-		.addDcFormView("timer", {name:"timerEdit", width:500, xtype:"ad_JobTimer_Dc$Edit", collapsible:true
-		})
+		.addDcFormView("timer", {name:"timerEdit", width:500, xtype:"ad_JobTimer_Dc$Edit",  collapsible:true})
 		.addPanel({name:"main", layout:"border", defaults:{split:true}});
 	},
 	

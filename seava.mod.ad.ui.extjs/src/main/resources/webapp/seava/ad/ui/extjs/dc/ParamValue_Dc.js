@@ -54,9 +54,10 @@ Ext.define("seava.ad.ui.extjs.dc.ParamValue_Dc$EditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addLov({name:"sysparam", dataIndex:"sysParam", xtype:"gridcolumn", width:250, 
-			editor:{xtype:"ad_Params_Lov", selectOnFocus:true, caseRestriction:"uppercase"}})
-		.addTextColumn({name:"value", dataIndex:"value", width:350})
+		.addLov({name:"sysparam", dataIndex:"sysParam", width:250, xtype:"gridcolumn", 
+			editor:{xtype:"ad_Params_Lov", caseRestriction:"uppercase"}})
+		.addTextColumn({name:"value", dataIndex:"value", width:350, 
+			editor: { xtype:"textfield"}})
 		.addDateColumn({name:"validFrom", dataIndex:"validFrom", _mask_: Masks.DATE })
 		.addDateColumn({name:"validTo", dataIndex:"validTo", _mask_: Masks.DATE })
 		.addDefaults();
@@ -74,7 +75,8 @@ Ext.define("seava.ad.ui.extjs.dc.ParamValue_Dc$CtxEditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addTextColumn({name:"value", dataIndex:"value", width:350})
+		.addTextColumn({name:"value", dataIndex:"value", width:350, 
+			editor: { xtype:"textfield"}})
 		.addDateColumn({name:"validFrom", dataIndex:"validFrom", _mask_: Masks.DATE })
 		.addDateColumn({name:"validTo", dataIndex:"validTo", _mask_: Masks.DATE })
 		.addDefaults();

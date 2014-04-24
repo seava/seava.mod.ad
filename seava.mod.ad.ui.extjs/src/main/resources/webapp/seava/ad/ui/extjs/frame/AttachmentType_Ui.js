@@ -11,12 +11,11 @@ Ext.define("seava.ad.ui.extjs.frame.AttachmentType_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("attchType", Ext.create(seava.ad.ui.extjs.dc.AttachmentType_Dc,{multiEdit:true}))	
-		.addDc("targetRule", Ext.create(seava.ad.ui.extjs.dc.TargetRule_Dc,{multiEdit:true}))
+		this._getBuilder_().addDc("attchType", Ext.create(seava.ad.ui.extjs.dc.AttachmentType_Dc,{multiEdit: true}))
+		.addDc("targetRule", Ext.create(seava.ad.ui.extjs.dc.TargetRule_Dc,{multiEdit: true}))
 		.linkDc("targetRule", "attchType",{fields:[
-			{childField:"sourceRefId", parentField:"refid"}]}
-		);
+					{childField:"sourceRefId", parentField:"refid"}]})
+		;
 	},
 
 	/**

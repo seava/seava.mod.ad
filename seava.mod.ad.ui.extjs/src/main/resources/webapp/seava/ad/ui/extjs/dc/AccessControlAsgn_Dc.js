@@ -59,11 +59,11 @@ Ext.define("seava.ad.ui.extjs.dc.AccessControlAsgn_Dc$EditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addLov({name:"accessControl", dataIndex:"accessControl", xtype:"gridcolumn", width:200, 
-			editor:{xtype:"ad_AccessControls_Lov", selectOnFocus:true,
+		.addLov({name:"accessControl", dataIndex:"accessControl", width:200, xtype:"gridcolumn", 
+			editor:{xtype:"ad_AccessControls_Lov",
 				retFieldMapping: [{lovField:"id", dsField: "accessControlId"} ]}})
-		.addLov({name:"asgnName", dataIndex:"asgnName", xtype:"gridcolumn", width:200, 
-			editor:{xtype:"ad_DataSourcesAsgn_Lov", selectOnFocus:true}})
+		.addLov({name:"asgnName", dataIndex:"asgnName", width:200, xtype:"gridcolumn", 
+			editor:{xtype:"ad_DataSourcesAsgn_Lov"}})
 		.addBooleanColumn({name:"queryAllowed", dataIndex:"queryAllowed"})
 		.addBooleanColumn({name:"updateAllowed", dataIndex:"updateAllowed"})
 		.addTextColumn({name:"accessControlId", dataIndex:"accessControlId", hidden:true, width:100, noEdit: true})
@@ -85,8 +85,8 @@ Ext.define("seava.ad.ui.extjs.dc.AccessControlAsgn_Dc$CtxEditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addLov({name:"asgnName", dataIndex:"asgnName", xtype:"gridcolumn", width:200, 
-			editor:{xtype:"ad_DataSourcesAsgn_Lov", selectOnFocus:true}})
+		.addLov({name:"asgnName", dataIndex:"asgnName", width:200, xtype:"gridcolumn", 
+			editor:{xtype:"ad_DataSourcesAsgn_Lov"}})
 		.addBooleanColumn({name:"queryAllowed", dataIndex:"queryAllowed"})
 		.addBooleanColumn({name:"updateAllowed", dataIndex:"updateAllowed"})
 		.addTextColumn({name:"accessControlId", dataIndex:"accessControlId", hidden:true, width:100, noEdit: true})

@@ -53,8 +53,10 @@ Ext.define("seava.ad.ui.extjs.dc.DateFormat_Dc$EditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addTextColumn({name:"name", dataIndex:"name", width:200})
-		.addTextColumn({name:"description", dataIndex:"description", width:300})
+		.addTextColumn({name:"name", dataIndex:"name", width:200, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"description", dataIndex:"description", width:300, 
+			editor: { xtype:"textfield"}})
 		.addBooleanColumn({name:"active", dataIndex:"active"})
 		.addDefaults();
 	}

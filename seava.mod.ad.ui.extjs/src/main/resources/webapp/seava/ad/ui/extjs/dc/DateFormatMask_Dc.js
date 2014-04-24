@@ -57,9 +57,11 @@ Ext.define("seava.ad.ui.extjs.dc.DateFormatMask_Dc$EditList", {
 	_defineColumns_: function() {
 		this._getBuilder_()	
 		.addTextColumn({name:"dateFormat", dataIndex:"dateFormat", width:100, noEdit: true})
-		.addTextColumn({name:"mask", dataIndex:"mask", width:250, maxLength:32, caseRestriction:"uppercase", noEdit: true})
-		.addTextColumn({name:"value", dataIndex:"value", width:300})
-		.addTextColumn({name:"dateFormatId", dataIndex:"dateFormatId", hidden:true, width:100})
+		.addTextColumn({name:"mask", dataIndex:"mask", width:250, noEdit: true, maxLength:32, caseRestriction:"uppercase"})
+		.addTextColumn({name:"value", dataIndex:"value", width:300, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"dateFormatId", dataIndex:"dateFormatId", hidden:true, width:100, 
+			editor: { xtype:"textfield"}})
 		.addDefaults();
 	}
 });
@@ -77,9 +79,11 @@ Ext.define("seava.ad.ui.extjs.dc.DateFormatMask_Dc$CtxEditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addTextColumn({name:"mask", dataIndex:"mask", width:250, maxLength:32, caseRestriction:"uppercase", noEdit: true})
-		.addTextColumn({name:"value", dataIndex:"value", width:300})
-		.addTextColumn({name:"dateFormatId", dataIndex:"dateFormatId", hidden:true, width:100})
+		.addTextColumn({name:"mask", dataIndex:"mask", width:250, noEdit: true, maxLength:32, caseRestriction:"uppercase"})
+		.addTextColumn({name:"value", dataIndex:"value", width:300, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"dateFormatId", dataIndex:"dateFormatId", hidden:true, width:100, 
+			editor: { xtype:"textfield"}})
 		.addDefaults();
 	}
 });

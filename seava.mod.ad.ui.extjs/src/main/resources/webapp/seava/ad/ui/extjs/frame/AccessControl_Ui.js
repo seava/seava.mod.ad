@@ -11,18 +11,17 @@ Ext.define("seava.ad.ui.extjs.frame.AccessControl_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("ctrl", Ext.create(seava.ad.ui.extjs.dc.AccessControl_Dc,{multiEdit:true}))	
-		.addDc("dsAccess", Ext.create(seava.ad.ui.extjs.dc.AccessControlDs_Dc,{multiEdit:true}))	
-		.addDc("asgnAccess", Ext.create(seava.ad.ui.extjs.dc.AccessControlAsgn_Dc,{multiEdit:true}))	
-		.addDc("dsMtdAccess", Ext.create(seava.ad.ui.extjs.dc.AccessControlDsRpc_Dc,{multiEdit:true}))
+		this._getBuilder_().addDc("ctrl", Ext.create(seava.ad.ui.extjs.dc.AccessControl_Dc,{multiEdit: true}))
+		.addDc("dsAccess", Ext.create(seava.ad.ui.extjs.dc.AccessControlDs_Dc,{multiEdit: true}))
+		.addDc("asgnAccess", Ext.create(seava.ad.ui.extjs.dc.AccessControlAsgn_Dc,{multiEdit: true}))
+		.addDc("dsMtdAccess", Ext.create(seava.ad.ui.extjs.dc.AccessControlDsRpc_Dc,{multiEdit: true}))
 		.linkDc("dsAccess", "ctrl",{fetchMode:"auto",fields:[
-			{childField:"accessControlId", parentField:"id"}]}
-		).linkDc("asgnAccess", "ctrl",{fetchMode:"auto",fields:[
-			{childField:"accessControlId", parentField:"id"}]}
-		).linkDc("dsMtdAccess", "ctrl",{fetchMode:"auto",fields:[
-			{childField:"accessControlId", parentField:"id"}]}
-		);
+					{childField:"accessControlId", parentField:"id"}]})
+				.linkDc("asgnAccess", "ctrl",{fetchMode:"auto",fields:[
+					{childField:"accessControlId", parentField:"id"}]})
+				.linkDc("dsMtdAccess", "ctrl",{fetchMode:"auto",fields:[
+					{childField:"accessControlId", parentField:"id"}]})
+		;
 	},
 
 	/**

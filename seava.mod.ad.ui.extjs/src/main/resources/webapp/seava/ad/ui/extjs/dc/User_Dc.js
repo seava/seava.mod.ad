@@ -105,7 +105,7 @@ Ext.define("seava.ad.ui.extjs.dc.User_Dc$Edit", {
 		.addPanel({ name:"main", autoScroll:true, layout: {type:"hbox", align:'top', pack:'start', defaultMargins: {right:5, left:5}},
 		autoScroll:true, padding:"0 30 5 0"})
 		.addPanel({ name:"col1", width:350, layout:"form"})
-		.addPanel({ name:"col2", _hasTitle_: true, width:280, xtype:"fieldset", collapsible:true, border:true, layout:"form", defaults:{labelAlign:"right"}});
+		.addPanel({ name:"col2", _hasTitle_: true, width:300,  xtype:"fieldset", collapsible:true, border:true, defaults: { labelWidth:"120"}, layout:"form"});
 	},
 
 	/**

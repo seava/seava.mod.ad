@@ -21,9 +21,10 @@ Ext.define("seava.ad.ui.extjs.dc.DsReport_Dc$ReportCtxList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addTextColumn({name:"reportId", dataIndex:"reportId", hidden:true, width:100})
-		.addLov({name:"dataSource", dataIndex:"dataSource", xtype:"gridcolumn", width:200, 
-			editor:{xtype:"ad_DataSources_Lov", selectOnFocus:true, noUpdate:true}})
+		.addTextColumn({name:"reportId", dataIndex:"reportId", hidden:true, width:100, 
+			editor: { xtype:"textfield"}})
+		.addLov({name:"dataSource", dataIndex:"dataSource", width:200, noUpdate: true, xtype:"gridcolumn", 
+			editor:{xtype:"ad_DataSources_Lov", noUpdate:true}})
 		.addDefaults();
 	}
 });

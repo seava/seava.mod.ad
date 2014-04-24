@@ -51,10 +51,14 @@ Ext.define("seava.ad.ui.extjs.dc.ReportServer_Dc$EditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addTextColumn({name:"name", dataIndex:"name", width:200})
-		.addTextColumn({name:"description", dataIndex:"description", width:200})
-		.addTextColumn({name:"url", dataIndex:"url", width:250})
-		.addTextColumn({name:"queryBuilderClass", dataIndex:"queryBuilderClass", width:250})
+		.addTextColumn({name:"name", dataIndex:"name", width:200, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"description", dataIndex:"description", width:200, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"url", dataIndex:"url", width:250, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"queryBuilderClass", dataIndex:"queryBuilderClass", width:250, 
+			editor: { xtype:"textfield"}})
 		.addBooleanColumn({name:"active", dataIndex:"active"})
 		.addDefaults();
 	}

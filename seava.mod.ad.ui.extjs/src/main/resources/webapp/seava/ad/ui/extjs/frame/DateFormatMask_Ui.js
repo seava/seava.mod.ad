@@ -11,8 +11,7 @@ Ext.define("seava.ad.ui.extjs.frame.DateFormatMask_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("mask", Ext.create(seava.ad.ui.extjs.dc.DateFormatMask_Dc,{multiEdit:true}))
+		this._getBuilder_().addDc("mask", Ext.create(seava.ad.ui.extjs.dc.DateFormatMask_Dc,{multiEdit: true}))
 		;
 	},
 

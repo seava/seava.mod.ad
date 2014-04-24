@@ -11,8 +11,7 @@ Ext.define("seava.ad.ui.extjs.frame.UserGroup_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("dcGroup", Ext.create(seava.ad.ui.extjs.dc.UserGroup_Dc,{multiEdit:true}))
+		this._getBuilder_().addDc("dcGroup", Ext.create(seava.ad.ui.extjs.dc.UserGroup_Dc,{multiEdit: true}))
 		;
 	},
 

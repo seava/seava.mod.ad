@@ -11,12 +11,11 @@ Ext.define("seava.ad.ui.extjs.frame.Job_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("job", Ext.create(seava.ad.ui.extjs.dc.Job_Dc,{}))	
+		this._getBuilder_().addDc("job", Ext.create(seava.ad.ui.extjs.dc.Job_Dc,{}))
 		.addDc("params", Ext.create(seava.ad.ui.extjs.dc.JobParam_Dc,{}))
 		.linkDc("params", "job",{fetchMode:"auto",fields:[
-			{childField:"jobId", parentField:"id"}]}
-		);
+					{childField:"jobId", parentField:"id"}]})
+		;
 	},
 
 	/**

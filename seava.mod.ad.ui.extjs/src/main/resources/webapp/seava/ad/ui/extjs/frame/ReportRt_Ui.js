@@ -11,12 +11,11 @@ Ext.define("seava.ad.ui.extjs.frame.ReportRt_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("rep", Ext.create(seava.ad.ui.extjs.dc.ReportRt_Dc,{}))	
-		.addDc("param", Ext.create(seava.ad.ui.extjs.dc.ReportParamRt_Dc,{multiEdit:true}))
+		this._getBuilder_().addDc("rep", Ext.create(seava.ad.ui.extjs.dc.ReportRt_Dc,{}))
+		.addDc("param", Ext.create(seava.ad.ui.extjs.dc.ReportParamRt_Dc,{multiEdit: true}))
 		.linkDc("param", "rep",{fields:[
-			{childField:"reportId", parentField:"id"}]}
-		);
+					{childField:"reportId", parentField:"id"}]})
+		;
 	},
 
 	/**
@@ -31,8 +30,7 @@ Ext.define("seava.ad.ui.extjs.frame.ReportRt_Ui", {
 		.addDcGridView("rep", {name:"repList", width:550, xtype:"ad_ReportRt_Dc$List"})
 		.addDcEditGridView("param", {name:"paramList", xtype:"ad_ReportParamRt_Dc$List", frame:true})
 		.addWindow({name:"wdwParams", _hasTitle_:true, width:450, height:300, closeAction:'hide', resizable:true, layout:"fit", modal:true,
-			items:[this._elems_.get("paramList")], closable:false
-			, 
+			items:[this._elems_.get("paramList")],  closable:false, 
 					dockedItems:[{xtype:"toolbar", ui:"footer", dock:'bottom', weight:-1,
 						items:[ this._elems_.get("btnRunReport"), this._elems_.get("btnCancelReport")]}]})
 		.addPanel({name:"main", layout:"border", defaults:{split:true}});

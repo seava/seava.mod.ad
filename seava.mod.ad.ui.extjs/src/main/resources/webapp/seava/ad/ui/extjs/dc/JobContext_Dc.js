@@ -56,10 +56,12 @@ Ext.define("seava.ad.ui.extjs.dc.JobContext_Dc$EditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addTextColumn({name:"name", dataIndex:"name", width:200})
-		.addTextColumn({name:"description", dataIndex:"description", width:200})
-		.addLov({name:"jobName", dataIndex:"jobName", xtype:"gridcolumn", width:200, 
-			editor:{xtype:"ad_Jobs_Lov", selectOnFocus:true, noUpdate:true}})
+		.addTextColumn({name:"name", dataIndex:"name", width:200, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"description", dataIndex:"description", width:200, 
+			editor: { xtype:"textfield"}})
+		.addLov({name:"jobName", dataIndex:"jobName", width:200, noUpdate: true, xtype:"gridcolumn", 
+			editor:{xtype:"ad_Jobs_Lov", noUpdate:true}})
 		.addDefaults();
 	}
 });

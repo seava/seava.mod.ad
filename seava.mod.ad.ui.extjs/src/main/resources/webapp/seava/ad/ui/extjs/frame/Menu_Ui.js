@@ -11,9 +11,8 @@ Ext.define("seava.ad.ui.extjs.frame.Menu_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("menu", Ext.create(seava.ad.ui.extjs.dc.Menu_Dc,{multiEdit:true}))	
-		.addDc("menuitem", Ext.create(seava.ad.ui.extjs.dc.MenuItem_Dc,{multiEdit:true}))
+		this._getBuilder_().addDc("menuitem", Ext.create(seava.ad.ui.extjs.dc.MenuItem_Dc,{multiEdit: true}))
+		.addDc("menu", Ext.create(seava.ad.ui.extjs.dc.Menu_Dc,{multiEdit: true}))
 		;
 	},
 
@@ -30,13 +29,12 @@ Ext.define("seava.ad.ui.extjs.frame.Menu_Ui", {
 		.addDcEditGridView("menu", {name:"menuEditList", xtype:"ad_Menu_Dc$EditList", frame:true})
 		.addDcFilterFormView("menuitem", {name:"menuitemFilter", xtype:"ad_MenuItem_Dc$Filter"})
 		.addDcEditGridView("menuitem", {name:"menuitemList", xtype:"ad_MenuItem_Dc$EditList", frame:true})
-		.addDcFormView("menuitem", {name:"menuitemEdit", xtype:"ad_MenuItem_Dc$Edit"})
 		.addPanel({name:"main", layout:"card", activeItem:0})
 		.addPanel({name:"canvasMenu", _hasTitle_:true, preventHeader:true, isCanvas:true, layout:"border", defaults:{split:true}})
 		.addPanel({name:"canvasItem", _hasTitle_:true, preventHeader:true, isCanvas:true, layout:"border", defaults:{split:true}}).addPanel({name:"_main_with_toc_", layout:"border", id:Ext.id(), defaults:{split:true}, header:false,
 					listeners:{ activate:{scope:this,fn:function(p){p.doLayout(false,true); this.fireEvent('canvaschange', p);  } }}
 			})
-		.addToc(["canvasItem","canvasMenu"]);
+		.addToc(["canvasItem:menuitem","canvasMenu:menu"]);
 		this._mainViewName_  = "_main_with_toc_";
 		;
 	},

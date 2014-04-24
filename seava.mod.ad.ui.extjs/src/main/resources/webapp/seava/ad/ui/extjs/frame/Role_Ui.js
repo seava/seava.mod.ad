@@ -11,8 +11,7 @@ Ext.define("seava.ad.ui.extjs.frame.Role_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("rol", Ext.create(seava.ad.ui.extjs.dc.Role_Dc,{multiEdit:true}))
+		this._getBuilder_().addDc("rol", Ext.create(seava.ad.ui.extjs.dc.Role_Dc,{multiEdit: true}))
 		;
 	},
 

@@ -11,18 +11,17 @@ Ext.define("seava.ad.ui.extjs.frame.JobContext_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("job", Ext.create(seava.ad.ui.extjs.dc.JobContext_Dc,{multiEdit:true}))	
-		.addDc("params", Ext.create(seava.ad.ui.extjs.dc.JobContextParam_Dc,{multiEdit:true}))	
-		.addDc("schedule", Ext.create(seava.ad.ui.extjs.dc.JobTimer_Dc,{}))	
+		this._getBuilder_().addDc("job", Ext.create(seava.ad.ui.extjs.dc.JobContext_Dc,{multiEdit: true}))
+		.addDc("params", Ext.create(seava.ad.ui.extjs.dc.JobContextParam_Dc,{multiEdit: true}))
+		.addDc("schedule", Ext.create(seava.ad.ui.extjs.dc.JobTimer_Dc,{}))
 		.addDc("log", Ext.create(seava.ad.ui.extjs.dc.JobLog_Dc,{}))
 		.linkDc("params", "job",{fields:[
-			{childField:"jobContextId", parentField:"id"}]}
-		).linkDc("schedule", "job",{fields:[
-			{childField:"jobContextId", parentField:"id"}]}
-		).linkDc("log", "job",{fields:[
-			{childField:"jobContextId", parentField:"id"}]}
-		);
+					{childField:"jobContextId", parentField:"id"}]})
+				.linkDc("schedule", "job",{fields:[
+					{childField:"jobContextId", parentField:"id"}]})
+				.linkDc("log", "job",{fields:[
+					{childField:"jobContextId", parentField:"id"}]})
+		;
 	},
 
 	/**

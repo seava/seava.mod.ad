@@ -11,8 +11,7 @@ Ext.define("seava.ad.ui.extjs.frame.DbChangeLog_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("dblog", Ext.create(seava.ad.ui.extjs.dc.DbChangeLog_Dc,{}))
+		this._getBuilder_().addDc("dblog", Ext.create(seava.ad.ui.extjs.dc.DbChangeLog_Dc,{}))
 		;
 	},
 

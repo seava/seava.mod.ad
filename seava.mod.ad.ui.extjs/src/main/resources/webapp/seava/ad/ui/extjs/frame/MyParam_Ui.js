@@ -11,12 +11,11 @@ Ext.define("seava.ad.ui.extjs.frame.MyParam_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("param", Ext.create(seava.ad.ui.extjs.dc.MyParam_Dc,{}))	
-		.addDc("val", Ext.create(seava.ad.ui.extjs.dc.ParamValue_Dc,{multiEdit:true}))
+		this._getBuilder_().addDc("param", Ext.create(seava.ad.ui.extjs.dc.MyParam_Dc,{}))
+		.addDc("val", Ext.create(seava.ad.ui.extjs.dc.ParamValue_Dc,{ multiEdit:true}))
 		.linkDc("val", "param",{fields:[
-			{childField:"sysParam", parentField:"code"}]}
-		);
+					{childField:"sysParam", parentField:"code"}]})
+		;
 	},
 
 	/**

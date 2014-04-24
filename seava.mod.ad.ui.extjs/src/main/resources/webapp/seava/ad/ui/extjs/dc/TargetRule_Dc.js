@@ -19,8 +19,10 @@ Ext.define("seava.ad.ui.extjs.dc.TargetRule_Dc$EditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addTextColumn({name:"targetAlias", dataIndex:"targetAlias", width:200})
-		.addTextColumn({name:"targetType", dataIndex:"targetType", width:200})
+		.addTextColumn({name:"targetAlias", dataIndex:"targetAlias", width:200, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"targetType", dataIndex:"targetType", width:200, 
+			editor: { xtype:"textfield"}})
 		.addTextColumn({name:"sourceRefId", dataIndex:"sourceRefId", hidden:true, width:100, noEdit: true})
 		.addDefaults();
 	}

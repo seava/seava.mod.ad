@@ -56,9 +56,12 @@ Ext.define("seava.ad.ui.extjs.dc.Role_Dc$EditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addTextColumn({name:"code", dataIndex:"code", width:120, caseRestriction:"uppercase"})
-		.addTextColumn({name:"name", dataIndex:"name", width:200})
-		.addTextColumn({name:"description", dataIndex:"description", width:200})
+		.addTextColumn({name:"code", dataIndex:"code", width:120, caseRestriction:"uppercase", 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"name", dataIndex:"name", width:200, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"description", dataIndex:"description", width:200, 
+			editor: { xtype:"textfield"}})
 		.addBooleanColumn({name:"active", dataIndex:"active"})
 		.addDefaults();
 	}

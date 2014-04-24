@@ -11,8 +11,7 @@ Ext.define("seava.ad.ui.extjs.frame.ReportServer_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("m", Ext.create(seava.ad.ui.extjs.dc.ReportServer_Dc,{multiEdit:true}))
+		this._getBuilder_().addDc("m", Ext.create(seava.ad.ui.extjs.dc.ReportServer_Dc,{multiEdit: true}))
 		;
 	},
 

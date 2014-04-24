@@ -21,15 +21,16 @@ Ext.define("seava.ad.ui.extjs.dc.DsReportParam_Dc$CtxEditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addLov({name:"param", dataIndex:"param", xtype:"gridcolumn", width:200, 
-			editor:{xtype:"ad_ReportParams_Lov", selectOnFocus:true,
+		.addLov({name:"param", dataIndex:"param", width:200, xtype:"gridcolumn", 
+			editor:{xtype:"ad_ReportParams_Lov",
 				retFieldMapping: [{lovField:"id", dsField: "paramId"} ,{lovField:"title", dsField: "paramTitle"} ],
 				filterFieldMapping: [{lovField:"reportId", dsField: "reportId"} ]}})
 		.addTextColumn({name:"paramTitle", dataIndex:"paramTitle", width:200, noEdit: true})
-		.addLov({name:"dsField", dataIndex:"dsField", xtype:"gridcolumn", width:200, 
-			editor:{xtype:"ad_DataSourceFields_Lov", selectOnFocus:true,
+		.addLov({name:"dsField", dataIndex:"dsField", width:200, xtype:"gridcolumn", 
+			editor:{xtype:"ad_DataSourceFields_Lov",
 				filterFieldMapping: [{lovField:"dataSourceName", dsField: "dataSource"} ]}})
-		.addTextColumn({name:"staticValue", dataIndex:"staticValue", width:200})
+		.addTextColumn({name:"staticValue", dataIndex:"staticValue", width:200, 
+			editor: { xtype:"textfield"}})
 		.addDefaults();
 	}
 });

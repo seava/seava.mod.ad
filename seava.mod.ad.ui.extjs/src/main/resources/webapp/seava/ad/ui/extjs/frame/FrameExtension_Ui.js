@@ -11,8 +11,7 @@ Ext.define("seava.ad.ui.extjs.frame.FrameExtension_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("extensions", Ext.create(seava.ad.ui.extjs.dc.FrameExtension_Dc,{multiEdit:true}))
+		this._getBuilder_().addDc("extensions", Ext.create(seava.ad.ui.extjs.dc.FrameExtension_Dc,{multiEdit: true}))
 		;
 	},
 

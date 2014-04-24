@@ -11,8 +11,7 @@ Ext.define("seava.ad.ui.extjs.frame.ReportUsage_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("ru", Ext.create(seava.ad.ui.extjs.dc.DsReportUsage_Dc,{multiEdit:true}))
+		this._getBuilder_().addDc("ru", Ext.create(seava.ad.ui.extjs.dc.DsReportUsage_Dc,{multiEdit: true}))
 		;
 	},
 

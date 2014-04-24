@@ -52,13 +52,13 @@ Ext.define("seava.ad.ui.extjs.dc.AccessControlDsRpc_Dc$EditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addLov({name:"accessControl", dataIndex:"accessControl", xtype:"gridcolumn", width:200, 
-			editor:{xtype:"ad_AccessControls_Lov", selectOnFocus:true,
+		.addLov({name:"accessControl", dataIndex:"accessControl", width:200, xtype:"gridcolumn", 
+			editor:{xtype:"ad_AccessControls_Lov",
 				retFieldMapping: [{lovField:"id", dsField: "accessControlId"} ]}})
-		.addLov({name:"dsName", dataIndex:"dsName", xtype:"gridcolumn", width:200, 
-			editor:{xtype:"ad_DataSourcesDs_Lov", selectOnFocus:true}})
-		.addLov({name:"serviceMethod", dataIndex:"serviceMethod", xtype:"gridcolumn", width:200, 
-			editor:{xtype:"ad_DataSourceRpcs_Lov", selectOnFocus:true,
+		.addLov({name:"dsName", dataIndex:"dsName", width:200, xtype:"gridcolumn", 
+			editor:{xtype:"ad_DataSourcesDs_Lov"}})
+		.addLov({name:"serviceMethod", dataIndex:"serviceMethod", width:200, xtype:"gridcolumn", 
+			editor:{xtype:"ad_DataSourceRpcs_Lov",
 				filterFieldMapping: [{lovField:"dataSourceName", dsField: "dsName"} ]}})
 		.addTextColumn({name:"accessControlId", dataIndex:"accessControlId", hidden:true, width:100, noEdit: true})
 		.addDefaults();
@@ -78,10 +78,10 @@ Ext.define("seava.ad.ui.extjs.dc.AccessControlDsRpc_Dc$CtxEditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addLov({name:"dsName", dataIndex:"dsName", xtype:"gridcolumn", width:200, 
-			editor:{xtype:"ad_DataSourcesDs_Lov", selectOnFocus:true}})
-		.addLov({name:"serviceMethod", dataIndex:"serviceMethod", xtype:"gridcolumn", width:200, 
-			editor:{xtype:"ad_DataSourceRpcs_Lov", selectOnFocus:true,
+		.addLov({name:"dsName", dataIndex:"dsName", width:200, xtype:"gridcolumn", 
+			editor:{xtype:"ad_DataSourcesDs_Lov"}})
+		.addLov({name:"serviceMethod", dataIndex:"serviceMethod", width:200, xtype:"gridcolumn", 
+			editor:{xtype:"ad_DataSourceRpcs_Lov",
 				filterFieldMapping: [{lovField:"dataSourceName", dsField: "dsName"} ]}})
 		.addTextColumn({name:"accessControlId", dataIndex:"accessControlId", hidden:true, width:100, noEdit: true})
 		.addDefaults();

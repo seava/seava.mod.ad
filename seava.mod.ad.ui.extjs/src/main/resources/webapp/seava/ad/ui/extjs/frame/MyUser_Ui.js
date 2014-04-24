@@ -11,8 +11,7 @@ Ext.define("seava.ad.ui.extjs.frame.MyUser_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("usr", Ext.create(seava.ad.ui.extjs.dc.MyUser_Dc,{}))
+		this._getBuilder_().addDc("usr", Ext.create(seava.ad.ui.extjs.dc.MyUser_Dc,{}))
 		;
 	},
 

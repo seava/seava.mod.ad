@@ -11,8 +11,7 @@ Ext.define("seava.ad.ui.extjs.frame.AccessControlDs_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("dsAccess", Ext.create(seava.ad.ui.extjs.dc.AccessControlDs_Dc,{multiEdit:true}))
+		this._getBuilder_().addDc("dsAccess", Ext.create(seava.ad.ui.extjs.dc.AccessControlDs_Dc,{multiEdit: true}))
 		;
 	},
 

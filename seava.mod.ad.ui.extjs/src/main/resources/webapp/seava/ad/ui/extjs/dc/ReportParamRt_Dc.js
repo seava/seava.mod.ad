@@ -20,10 +20,11 @@ Ext.define("seava.ad.ui.extjs.dc.ReportParamRt_Dc$List", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", hidden:true, align:"right", noEdit: true })
+		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", hidden:true, noEdit: true, align:"right" })
 		.addTextColumn({name:"name", dataIndex:"name", hidden:true, width:200, noEdit: true})
 		.addTextColumn({name:"title", dataIndex:"title", width:200, noEdit: true})
-		.addTextColumn({name:"value", dataIndex:"value", width:200})
+		.addTextColumn({name:"value", dataIndex:"value", width:200, 
+			editor: { xtype:"textfield"}})
 		.addDefaults();
 	},
 	/* ==================== Business functions ==================== */

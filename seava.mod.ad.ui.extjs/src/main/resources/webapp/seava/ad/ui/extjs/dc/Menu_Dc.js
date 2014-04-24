@@ -56,12 +56,15 @@ Ext.define("seava.ad.ui.extjs.dc.Menu_Dc$EditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", align:"right", width:70 })
-		.addTextColumn({name:"name", dataIndex:"name", width:100})
-		.addTextColumn({name:"title", dataIndex:"title", width:200})
+		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", width:70, align:"right", format:"0" })
+		.addTextColumn({name:"name", dataIndex:"name", width:100, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"title", dataIndex:"title", width:200, 
+			editor: { xtype:"textfield"}})
 		.addComboColumn({name:"tag", dataIndex:"tag", width:80, 
-			editor:{xtype:"combo", mode: 'local', selectOnFocus:true, triggerAction:'all', forceSelection:true, store:[ "top", "left"]}})
-		.addTextColumn({name:"description", dataIndex:"description", width:200})
+			editor:{xtype:"combo", mode: 'local', triggerAction:'all', forceSelection:true, store:[ "top", "left"]}})
+		.addTextColumn({name:"description", dataIndex:"description", width:200, 
+			editor: { xtype:"textfield"}})
 		.addBooleanColumn({name:"active", dataIndex:"active"})
 		.addDefaults();
 	}

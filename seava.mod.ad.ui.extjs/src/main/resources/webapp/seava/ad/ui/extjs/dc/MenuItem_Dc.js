@@ -60,30 +60,6 @@ Ext.define("seava.ad.ui.extjs.dc.MenuItem_Dc$Filter", {
 	}
 });
 
-/* ================= GRID: List ================= */
-
-Ext.define("seava.ad.ui.extjs.dc.MenuItem_Dc$List", {
-	extend: "e4e.dc.view.AbstractDcvGrid",
-	alias: "widget.ad_MenuItem_Dc$List",
-
-	/**
-	 * Columns definition
-	 */
-	_defineColumns_: function() {
-		this._getBuilder_()
-		.addNumberColumn({ name:"sequenceNo", dataIndex:"sequenceNo", width:70})
-		.addTextColumn({ name:"name", dataIndex:"name", width:200})
-		.addTextColumn({ name:"title", dataIndex:"title", width:200})
-		.addTextColumn({ name:"menuItem", dataIndex:"menuItem", width:200})
-		.addTextColumn({ name:"menu", dataIndex:"menu", width:200})
-		.addTextColumn({ name:"frame", dataIndex:"frame", width:200})
-		.addTextColumn({ name:"bundle", dataIndex:"bundle", width:200})
-		.addBooleanColumn({ name:"active", dataIndex:"active"})
-		.addTextColumn({ name:"description", dataIndex:"description", width:200})
-		.addDefaults();
-	}
-});
-
 /* ================= EDIT-GRID: EditList ================= */
 
 Ext.define("seava.ad.ui.extjs.dc.MenuItem_Dc$EditList", {
@@ -96,24 +72,32 @@ Ext.define("seava.ad.ui.extjs.dc.MenuItem_Dc$EditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", align:"right", width:70, allowBlank: false })
-		.addTextColumn({name:"name", dataIndex:"name", width:150})
-		.addTextColumn({name:"title", dataIndex:"title", width:150})
-		.addLov({name:"menu", dataIndex:"menu", xtype:"gridcolumn", width:80, 
-			editor:{xtype:"ad_Menus_Lov", selectOnFocus:true,
+		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", width:70, allowBlank: false, align:"right", format:"0" })
+		.addTextColumn({name:"name", dataIndex:"name", width:150, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"title", dataIndex:"title", width:150, 
+			editor: { xtype:"textfield"}})
+		.addLov({name:"menu", dataIndex:"menu", width:80, xtype:"gridcolumn", 
+			editor:{xtype:"ad_Menus_Lov",
 				retFieldMapping: [{lovField:"id", dsField: "menuId"} ]}})
-		.addLov({name:"menuItem", dataIndex:"menuItem", xtype:"gridcolumn", width:120, 
-			editor:{xtype:"ad_MenuItems_Lov", selectOnFocus:true,
+		.addLov({name:"menuItem", dataIndex:"menuItem", width:120, xtype:"gridcolumn", 
+			editor:{xtype:"ad_MenuItems_Lov",
 				retFieldMapping: [{lovField:"id", dsField: "menuItemId"} ]}})
-		.addTextColumn({name:"frame", dataIndex:"frame", width:150})
-		.addTextColumn({name:"bundle", dataIndex:"bundle", width:150})
+		.addTextColumn({name:"frame", dataIndex:"frame", width:150, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"bundle", dataIndex:"bundle", width:150, 
+			editor: { xtype:"textfield"}})
 		.addBooleanColumn({name:"active", dataIndex:"active", width:70})
-		.addTextColumn({name:"description", dataIndex:"description", hidden:true, width:200})
+		.addTextColumn({name:"description", dataIndex:"description", hidden:true, width:200, 
+			editor: { xtype:"textfield"}})
 		.addBooleanColumn({name:"separatorBefore", dataIndex:"separatorBefore", hidden:true})
 		.addBooleanColumn({name:"separatorAfter", dataIndex:"separatorAfter", hidden:true})
-		.addTextColumn({name:"iconUrl", dataIndex:"iconUrl", hidden:true, width:100})
-		.addTextColumn({name:"menuId", dataIndex:"menuId", hidden:true, width:100})
-		.addTextColumn({name:"menuItemId", dataIndex:"menuItemId", hidden:true, width:100})
+		.addTextColumn({name:"iconUrl", dataIndex:"iconUrl", hidden:true, width:100, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"menuId", dataIndex:"menuId", hidden:true, width:100, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"menuItemId", dataIndex:"menuItemId", hidden:true, width:100, 
+			editor: { xtype:"textfield"}})
 		.addDefaults();
 	}
 });

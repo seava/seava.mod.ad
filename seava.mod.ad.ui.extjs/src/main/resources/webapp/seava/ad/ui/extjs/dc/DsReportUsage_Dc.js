@@ -62,18 +62,21 @@ Ext.define("seava.ad.ui.extjs.dc.DsReportUsage_Dc$List", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addLov({name:"report", dataIndex:"report", xtype:"gridcolumn", width:120, 
-			editor:{xtype:"ad_Reports_Lov", selectOnFocus:true, caseRestriction:"uppercase",
+		.addLov({name:"report", dataIndex:"report", width:120, xtype:"gridcolumn", 
+			editor:{xtype:"ad_Reports_Lov", caseRestriction:"uppercase",
 				retFieldMapping: [{lovField:"id", dsField: "reportId"} ,{lovField:"name", dsField: "reportName"} ]}})
 		.addTextColumn({name:"reportName", dataIndex:"reportName", width:200, noEdit: true})
-		.addLov({name:"dataSource", dataIndex:"dataSource", xtype:"gridcolumn", width:150, 
-			editor:{xtype:"ad_DsReports_Lov", selectOnFocus:true,
+		.addLov({name:"dataSource", dataIndex:"dataSource", width:150, xtype:"gridcolumn", 
+			editor:{xtype:"ad_DsReports_Lov",
 				retFieldMapping: [{lovField:"id", dsField: "dsReportId"} ],
 				filterFieldMapping: [{lovField:"reportId", dsField: "reportId"} ]}})
-		.addTextColumn({name:"frameName", dataIndex:"frameName", width:200})
-		.addTextColumn({name:"toolbarKey", dataIndex:"toolbarKey", width:120})
-		.addTextColumn({name:"dcKey", dataIndex:"dcKey", width:120})
-		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", align:"right", width:80 })
+		.addTextColumn({name:"frameName", dataIndex:"frameName", width:200, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"toolbarKey", dataIndex:"toolbarKey", width:120, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"dcKey", dataIndex:"dcKey", width:120, 
+			editor: { xtype:"textfield"}})
+		.addNumberColumn({name:"sequenceNo", dataIndex:"sequenceNo", width:80, align:"right" })
 		.addTextColumn({name:"dsReportId", dataIndex:"dsReportId", hidden:true, width:100, noEdit: true})
 		.addTextColumn({name:"reportId", dataIndex:"reportId", hidden:true, width:100, noEdit: true})
 		.addDefaults();

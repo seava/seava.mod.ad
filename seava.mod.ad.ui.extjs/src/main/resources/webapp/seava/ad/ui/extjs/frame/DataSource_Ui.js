@@ -11,15 +11,14 @@ Ext.define("seava.ad.ui.extjs.frame.DataSource_Ui", {
 	 * Data-controls definition
 	 */
 	_defineDcs_: function() {
-		this._getBuilder_()	
-		.addDc("ds", Ext.create(seava.ad.ui.extjs.dc.DataSource_Dc,{}))	
-		.addDc("fields", Ext.create(seava.ad.ui.extjs.dc.DataSourceField_Dc,{}))	
+		this._getBuilder_().addDc("ds", Ext.create(seava.ad.ui.extjs.dc.DataSource_Dc,{}))
+		.addDc("fields", Ext.create(seava.ad.ui.extjs.dc.DataSourceField_Dc,{}))
 		.addDc("rpcs", Ext.create(seava.ad.ui.extjs.dc.DataSourceRpc_Dc,{}))
 		.linkDc("fields", "ds",{fields:[
-			{childField:"dataSourceId", parentField:"id"}]}
-		).linkDc("rpcs", "ds",{fields:[
-			{childField:"dataSourceId", parentField:"id"}]}
-		);
+					{childField:"dataSourceId", parentField:"id"}]})
+				.linkDc("rpcs", "ds",{fields:[
+					{childField:"dataSourceId", parentField:"id"}]})
+		;
 	},
 
 	/**

@@ -55,12 +55,16 @@ Ext.define("seava.ad.ui.extjs.dc.AttachmentType_Dc$EditList", {
 	 */
 	_defineColumns_: function() {
 		this._getBuilder_()	
-		.addTextColumn({name:"name", dataIndex:"name", width:200})
-		.addTextColumn({name:"description", dataIndex:"description", width:200})
+		.addTextColumn({name:"name", dataIndex:"name", width:200, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"description", dataIndex:"description", width:200, 
+			editor: { xtype:"textfield"}})
 		.addComboColumn({name:"category", dataIndex:"category", width:80, 
-			editor:{xtype:"combo", mode: 'local', selectOnFocus:true, triggerAction:'all', forceSelection:true, store:[ "link", "upload"]}})
-		.addTextColumn({name:"uploadPath", dataIndex:"uploadPath", width:200})
-		.addTextColumn({name:"baseUrl", dataIndex:"baseUrl", width:100})
+			editor:{xtype:"combo", mode: 'local', triggerAction:'all', forceSelection:true, store:[ "link", "upload"]}})
+		.addTextColumn({name:"uploadPath", dataIndex:"uploadPath", width:200, 
+			editor: { xtype:"textfield"}})
+		.addTextColumn({name:"baseUrl", dataIndex:"baseUrl", width:100, 
+			editor: { xtype:"textfield"}})
 		.addBooleanColumn({name:"active", dataIndex:"active"})
 		.addDefaults();
 	}
