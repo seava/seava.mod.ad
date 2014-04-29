@@ -5,11 +5,10 @@
 	<parent>
 		<groupId>ro.seava.commons</groupId>
 		<artifactId>seava.parent.oss</artifactId>
-		<version>2.0</version>
+		<version>2.0.0-SNAPSHOT</version>
 	</parent>
 	<groupId>ro.seava.mod.ad</groupId>
 	<artifactId>seava.mod.ad</artifactId>
-	<version>2.0.0-SNAPSHOT</version>
 	<name>AD: Administration</name>
 	<description>Administration module.</description>
 	<packaging>pom</packaging>
