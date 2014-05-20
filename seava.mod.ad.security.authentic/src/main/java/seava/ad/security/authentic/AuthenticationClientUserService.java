@@ -128,7 +128,7 @@ public class AuthenticationClientUserService extends AbstractSecurity implements
 
 		if (u.getDateFormat() != null) {
 			for (DateFormatMask mask : u.getDateFormat().getMasks()) {
-				settings.setDateFormat(mask.getMask(), mask.getValue());
+				settings.setDateFormatMask(mask.getMask(), mask.getValue());
 			}
 		}
 
