@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings
+	xsi:schemaLocation="http://www.eclipse.org/eclipselink/xsds/persistence/orm xsd/eclipselink_orm_1_0.xsd"
+	xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	version="1.0">
+	
+	<entity class="seava.ad.domain.impl.attachment.Attachment" />
+	<entity class="seava.ad.domain.impl.attachment.AttachmentType" />
+	<entity class="seava.ad.domain.impl.report.DsReport" />
+	<entity class="seava.ad.domain.impl.report.DsReportParam" />
+	<entity class="seava.ad.domain.impl.report.DsReportUsage" />
+	<entity class="seava.ad.domain.impl.report.Report" />
+	<entity class="seava.ad.domain.impl.report.ReportParam" />
+	<entity class="seava.ad.domain.impl.report.ReportServer" />
+	<entity class="seava.ad.domain.impl.scheduler.JobContext" />
+	<entity class="seava.ad.domain.impl.scheduler.JobContextParam" />
+	<entity class="seava.ad.domain.impl.scheduler.JobLog" />
+	<entity class="seava.ad.domain.impl.scheduler.JobLogMessage" />
+	<entity class="seava.ad.domain.impl.scheduler.JobTimer" />
+	<entity class="seava.ad.domain.impl.scheduler.QuartzBlobTrigger" />
+	<entity class="seava.ad.domain.impl.scheduler.QuartzCalendar" />
+	<entity class="seava.ad.domain.impl.scheduler.QuartzCronTrigger" />
+	<entity class="seava.ad.domain.impl.scheduler.QuartzFiredTrigger" />
+	<entity class="seava.ad.domain.impl.scheduler.QuartzJobDetail" />
+	<entity class="seava.ad.domain.impl.scheduler.QuartzLock" />
+	<entity class="seava.ad.domain.impl.scheduler.QuartzPausedTriggerGroup" />
+	<entity class="seava.ad.domain.impl.scheduler.QuartzSchedulerState" />
+	<entity class="seava.ad.domain.impl.scheduler.QuartzSimpleTrigger" />
+	<entity class="seava.ad.domain.impl.scheduler.QuartzSimpropTrigger" />
+	<entity class="seava.ad.domain.impl.scheduler.QuartzTrigger" />
+	<entity class="seava.ad.domain.impl.security.AccessControl" />
+	<entity class="seava.ad.domain.impl.security.AccessControlAsgn" />
+	<entity class="seava.ad.domain.impl.security.AccessControlDs" />
+	<entity class="seava.ad.domain.impl.security.AccessControlDsRpc" />
+	<entity class="seava.ad.domain.impl.security.Menu" />
+	<entity class="seava.ad.domain.impl.security.MenuItem" />
+	<entity class="seava.ad.domain.impl.security.Role" />
+	<entity class="seava.ad.domain.impl.security.User" />
+	<entity class="seava.ad.domain.impl.security.UserGroup" />
+	<entity class="seava.ad.domain.impl.system.Client" />
+	<entity class="seava.ad.domain.impl.system.DataSource" />
+	<entity class="seava.ad.domain.impl.system.DataSourceField" />
+	<entity class="seava.ad.domain.impl.system.DataSourceRpc" />
+	<entity class="seava.ad.domain.impl.system.DateFormat" />
+	<entity class="seava.ad.domain.impl.system.DateFormatMask" />
+	<entity class="seava.ad.domain.impl.system.DbChangeLog" />
+	<entity class="seava.ad.domain.impl.system.FrameExtension" />
+	<entity class="seava.ad.domain.impl.system.Job" />
+	<entity class="seava.ad.domain.impl.system.JobParam" />
+	<entity class="seava.ad.domain.impl.system.Param" />
+	<entity class="seava.ad.domain.impl.system.ParamValue" />
+	<entity class="seava.ad.domain.impl.system.TargetRule" />
+	<entity class="seava.ad.domain.impl.system.ViewState" />
+</entity-mappings>
