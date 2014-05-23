@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="nan21" id="FK-AD_USR_ROLE-1">
+	<changeSet author="seava" id="FK-AD_USR_ROLE-1">
 		<addForeignKeyConstraint
 			constraintName="FK_AD_USR_ROLE1"
 			baseTableName="AD_USR_ROLE"
@@ -13,7 +13,7 @@
 			referencedColumnNames="ID"/>
 	</changeSet>
 
-	 <changeSet author="nan21" id="FK-AD_USR_ROLE-2">
+	 <changeSet author="seava" id="FK-AD_USR_ROLE-2">
 	 	<addForeignKeyConstraint
 	 		constraintName="FK_AD_USR_ROLE2"
 	 		baseTableName="AD_USR_ROLE" 

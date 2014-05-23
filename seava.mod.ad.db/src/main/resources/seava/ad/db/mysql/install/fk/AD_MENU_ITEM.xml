@@ -3,14 +3,14 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="nan21" id="FK-AD_MENU_ITEM-1">
+	<changeSet author="seava" id="FK-AD_MENU_ITEM-1">
 		<addForeignKeyConstraint constraintName="FK_AD_MENU_ITEM1"
 			baseTableName="AD_MENU_ITEM"
 			baseColumnNames="MENUITEM_ID"
 			referencedTableName="AD_MENU_ITEM"
 			referencedColumnNames="ID"/>
 	</changeSet>
-	<changeSet author="nan21" id="FK-AD_MENU_ITEM-2">
+	<changeSet author="seava" id="FK-AD_MENU_ITEM-2">
 		<addForeignKeyConstraint constraintName="FK_AD_MENU_ITEM2"
 			baseTableName="AD_MENU_ITEM"
 			baseColumnNames="MENU_ID"

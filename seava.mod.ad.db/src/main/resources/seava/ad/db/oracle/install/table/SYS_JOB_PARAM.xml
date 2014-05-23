@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="nan21" id="TBL-SYS_JOB_PARAM">
+	<changeSet author="seava" id="TBL-SYS_JOB_PARAM">
 		<createTable tableName="SYS_JOB_PARAM">
 			<column name="ACTIVE" type="number(1)">
 				<constraints nullable="false"/>
@@ -42,14 +42,14 @@
 		</createTable>
 	</changeSet>
 
-	<changeSet author="nan21" id="PK-SYS_JOB_PARAM">
+	<changeSet author="seava" id="PK-SYS_JOB_PARAM">
 		<addPrimaryKey 
 			constraintName="PK_SYS_JOB_PARAM"
 			tableName="SYS_JOB_PARAM"
 			columnNames="ID"/>
 	</changeSet>
 	
-	<changeSet author="nan21" id="UK-SYS_JOB_PARAM-1">
+	<changeSet author="seava" id="UK-SYS_JOB_PARAM-1">
 		<addUniqueConstraint
 			constraintName="UK_SYS_JOB_PARAM1"
 			tableName="SYS_JOB_PARAM"

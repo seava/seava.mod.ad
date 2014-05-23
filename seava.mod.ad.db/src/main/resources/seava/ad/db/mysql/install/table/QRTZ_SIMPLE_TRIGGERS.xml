@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="nan21" id="TBL-QRTZ_SIMPLE_TRIGGERS">
+	<changeSet author="seava" id="TBL-QRTZ_SIMPLE_TRIGGERS">
 		<createTable tableName="QRTZ_SIMPLE_TRIGGERS">
 			<column name="REPEAT_COUNT" type="int(10)">
 				<constraints nullable="false"/>
@@ -27,7 +27,7 @@
 		</createTable>
 	</changeSet>
 
-	<changeSet author="nan21" id="PK-QRTZ_SIMPLE_TRIGGERS">
+	<changeSet author="seava" id="PK-QRTZ_SIMPLE_TRIGGERS">
 		<addPrimaryKey 
 			constraintName="PK_QRTZ_SIMPLE_TRIGGERS"
 			tableName="QRTZ_SIMPLE_TRIGGERS"

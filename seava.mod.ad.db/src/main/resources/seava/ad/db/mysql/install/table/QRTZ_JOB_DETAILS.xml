@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="nan21" id="TBL-QRTZ_JOB_DETAILS">
+	<changeSet author="seava" id="TBL-QRTZ_JOB_DETAILS">
 		<createTable tableName="QRTZ_JOB_DETAILS">
 			<column name="DESCRIPTION" type="text"/>
 			<column name="IS_DURABLE" type="varchar(1)"/>
@@ -25,7 +25,7 @@
 		</createTable>
 	</changeSet>
 
-	<changeSet author="nan21" id="PK-QRTZ_JOB_DETAILS">
+	<changeSet author="seava" id="PK-QRTZ_JOB_DETAILS">
 		<addPrimaryKey 
 			constraintName="PK_QRTZ_JOB_DETAILS"
 			tableName="QRTZ_JOB_DETAILS"

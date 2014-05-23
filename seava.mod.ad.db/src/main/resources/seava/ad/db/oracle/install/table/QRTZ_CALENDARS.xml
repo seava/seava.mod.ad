@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="nan21" id="TBL-QRTZ_CALENDARS">
+	<changeSet author="seava" id="TBL-QRTZ_CALENDARS">
 		<createTable tableName="QRTZ_CALENDARS">
 			<column name="CALENDAR" type="blob">
 				<constraints nullable="false"/>
@@ -18,7 +18,7 @@
 		</createTable>
 	</changeSet>
 
-	<changeSet author="nan21" id="PK-QRTZ_CALENDARS">
+	<changeSet author="seava" id="PK-QRTZ_CALENDARS">
 		<addPrimaryKey 
 			constraintName="PK_QRTZ_CALENDARS"
 			tableName="QRTZ_CALENDARS"

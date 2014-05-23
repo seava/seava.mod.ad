@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="nan21" id="TBL-AD_FRAME_EXT">
+	<changeSet author="seava" id="TBL-AD_FRAME_EXT">
 		<createTable tableName="AD_FRAME_EXT">
 			<column name="ACTIVE" type="int(1)">
 				<constraints nullable="false"/>
@@ -47,14 +47,14 @@
 		</createTable>
 	</changeSet>
 
-	<changeSet author="nan21" id="PK-AD_FRAME_EXT">
+	<changeSet author="seava" id="PK-AD_FRAME_EXT">
 		<addPrimaryKey 
 			constraintName="PK_AD_FRAME_EXT"
 			tableName="AD_FRAME_EXT"
 			columnNames="ID"/>
 	</changeSet>
 	
-	<changeSet author="nan21" id="UK-AD_FRAME_EXT-1">
+	<changeSet author="seava" id="UK-AD_FRAME_EXT-1">
 		<addUniqueConstraint
 			constraintName="UK_AD_FRAME_EXT1"
 			tableName="AD_FRAME_EXT"

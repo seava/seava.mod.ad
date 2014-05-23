@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="nan21" id="TBL-AD_ROLE_MENUITEM">
+	<changeSet author="seava" id="TBL-AD_ROLE_MENUITEM">
 		<createTable tableName="AD_ROLE_MENUITEM">
 			<column name="MENUITEMS_ID" type="varchar2(64)">
 				<constraints nullable="false"/>
@@ -15,7 +15,7 @@
 		</createTable>
 	</changeSet>
 
-	<changeSet author="nan21" id="PK-AD_ROLE_MENUITEM">
+	<changeSet author="seava" id="PK-AD_ROLE_MENUITEM">
 		<addPrimaryKey
 			constraintName="PK_AD_ROLE_MENUITEM"
 			tableName="AD_ROLE_MENUITEM"

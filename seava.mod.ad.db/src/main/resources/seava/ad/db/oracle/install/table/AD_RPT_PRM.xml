@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="nan21" id="TBL-AD_RPT_PRM">
+	<changeSet author="seava" id="TBL-AD_RPT_PRM">
 		<createTable tableName="AD_RPT_PRM">
 			<column name="ACTIVE" type="number(1)">
 				<constraints nullable="false"/>
@@ -59,14 +59,14 @@
 		</createTable>
 	</changeSet>
 
-	<changeSet author="nan21" id="PK-AD_RPT_PRM">
+	<changeSet author="seava" id="PK-AD_RPT_PRM">
 		<addPrimaryKey 
 			constraintName="PK_AD_RPT_PRM"
 			tableName="AD_RPT_PRM"
 			columnNames="ID"/>
 	</changeSet>
 	
-	<changeSet author="nan21" id="UK-AD_RPT_PRM-1">
+	<changeSet author="seava" id="UK-AD_RPT_PRM-1">
 		<addUniqueConstraint
 			constraintName="UK_AD_RPT_PRM1"
 			tableName="AD_RPT_PRM"

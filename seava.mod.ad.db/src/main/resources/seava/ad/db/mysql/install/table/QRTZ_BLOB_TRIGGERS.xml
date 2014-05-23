@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="nan21" id="TBL-QRTZ_BLOB_TRIGGERS">
+	<changeSet author="seava" id="TBL-QRTZ_BLOB_TRIGGERS">
 		<createTable tableName="QRTZ_BLOB_TRIGGERS">
 			<column name="BLOB_DATA" type="blob"/>
 			<column name="SCHED_NAME" type="varchar(255)">
@@ -19,7 +19,7 @@
 		</createTable>
 	</changeSet>
 
-	<changeSet author="nan21" id="PK-QRTZ_BLOB_TRIGGERS">
+	<changeSet author="seava" id="PK-QRTZ_BLOB_TRIGGERS">
 		<addPrimaryKey 
 			constraintName="PK_QRTZ_BLOB_TRIGGERS"
 			tableName="QRTZ_BLOB_TRIGGERS"

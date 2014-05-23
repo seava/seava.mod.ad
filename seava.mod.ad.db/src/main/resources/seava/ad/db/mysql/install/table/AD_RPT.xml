@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="nan21" id="TBL-AD_RPT">
+	<changeSet author="seava" id="TBL-AD_RPT">
 		<createTable tableName="AD_RPT">
 			<column name="ACTIVE" type="int(1)">
 				<constraints nullable="false"/>
@@ -46,21 +46,21 @@
 		</createTable>
 	</changeSet>
 
-	<changeSet author="nan21" id="PK-AD_RPT">
+	<changeSet author="seava" id="PK-AD_RPT">
 		<addPrimaryKey 
 			constraintName="PK_AD_RPT"
 			tableName="AD_RPT"
 			columnNames="ID"/>
 	</changeSet>
 	
-	<changeSet author="nan21" id="UK-AD_RPT-1">
+	<changeSet author="seava" id="UK-AD_RPT-1">
 		<addUniqueConstraint
 			constraintName="UK_AD_RPT1"
 			tableName="AD_RPT"
 			columnNames="CLIENTID,CODE"/>
 	</changeSet>
 	
-	<changeSet author="nan21" id="UK-AD_RPT-2">
+	<changeSet author="seava" id="UK-AD_RPT-2">
 		<addUniqueConstraint
 			constraintName="UK_AD_RPT2"
 			tableName="AD_RPT"

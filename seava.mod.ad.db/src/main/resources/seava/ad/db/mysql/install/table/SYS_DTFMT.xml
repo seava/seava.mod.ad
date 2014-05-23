@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-	<changeSet author="nan21" id="TBL-SYS_DTFMT">
+	<changeSet author="seava" id="TBL-SYS_DTFMT">
 		<createTable tableName="SYS_DTFMT">
 			<column name="ACTIVE" type="int(1)">
 				<constraints nullable="false"/>
@@ -36,14 +36,14 @@
 		</createTable>
 	</changeSet>
 
-	<changeSet author="nan21" id="PK-SYS_DTFMT">
+	<changeSet author="seava" id="PK-SYS_DTFMT">
 		<addPrimaryKey 
 			constraintName="PK_SYS_DTFMT"
 			tableName="SYS_DTFMT"
 			columnNames="ID"/>
 	</changeSet>
 	
-	<changeSet author="nan21" id="UK-SYS_DTFMT-1">
+	<changeSet author="seava" id="UK-SYS_DTFMT-1">
 		<addUniqueConstraint
 			constraintName="UK_SYS_DTFMT1"
 			tableName="SYS_DTFMT"
