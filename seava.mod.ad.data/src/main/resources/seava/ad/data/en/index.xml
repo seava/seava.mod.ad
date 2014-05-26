@@ -3,32 +3,32 @@
 	<set>
 		<files>
 			<file>
-		 		<ds>Menu_Ds</ds>
+		 		<ds>ad_Menu_Ds</ds>
 		 		<file>data/Menu.csv</file>
 		    </file>
 		    <file>
-		 		<ds>MenuItem_Ds</ds>
+		 		<ds>ad_MenuItem_Ds</ds>
 		 		<file>data/MenuItem_Folder.csv</file>
 		     </file>
 		     <file>
-		 		<ds>MenuItem_Ds</ds>
+		 		<ds>ad_MenuItem_Ds</ds>
 		 		<file>data/MenuItem_Frame.csv</file>
 		     </file>
 		     <file>
-		 		<ds>MenuItem_Ds</ds>
+		 		<ds>ad_MenuItem_Ds</ds>
 		 		<file>data/MenuItem_Parent.csv</file>
 		 		<ukFieldName>name</ukFieldName>
 		     </file>
 		     <file>
-		 		<ds>UserGroup_Ds</ds>
+		 		<ds>ad_UserGroup_Ds</ds>
 		 		<file>data/UserGroup.csv</file>
 		    </file>
 		    <file>
-		 		<ds>AccessControl_Ds</ds>
+		 		<ds>ad_AccessControl_Ds</ds>
 		 		<file>data/AccessControl.csv</file>
 		    </file>
 		    <file>
-		 		<ds>AccessControlDs_Ds</ds>
+		 		<ds>ad_AccessControlDs_Ds</ds>
 		 		<file>data/AccessControlDs.csv</file>
 		    </file>
 		</files>
