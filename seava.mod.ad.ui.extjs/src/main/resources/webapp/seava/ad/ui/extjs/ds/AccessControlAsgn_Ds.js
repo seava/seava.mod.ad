@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.AccessControlAsgn_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_AccessControlAsgn_Ds"
+	},
+	
+	
 	validations: [
 		{field: "asgnName", type: 'presence'}
 	],

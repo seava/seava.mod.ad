@@ -7,6 +7,9 @@
 /* model */
 Ext.define("seava.ad.ui.extjs.asgn.User_Role_Asgn$Model", {
 	extend: 'Ext.data.Model',
+	statics: {
+		ALIAS: "ad_User_Role_Asgn"
+	},
 	fields:  [
 		{name:"id",type:"string"},
 		{name:"code",type:"string"},

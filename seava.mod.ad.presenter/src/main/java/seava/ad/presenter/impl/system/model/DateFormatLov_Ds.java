@@ -13,6 +13,8 @@ import seava.j4e.presenter.impl.model.AbstractTypeNTLov_Ds;
 @Ds(entity = DateFormat.class, sort = {@SortField(field = DateFormatLov_Ds.f_name)})
 public class DateFormatLov_Ds extends AbstractTypeNTLov_Ds<DateFormat> {
 
+	public static final String ALIAS = "ad_DateFormatLov_Ds";
+
 	public DateFormatLov_Ds() {
 		super();
 	}

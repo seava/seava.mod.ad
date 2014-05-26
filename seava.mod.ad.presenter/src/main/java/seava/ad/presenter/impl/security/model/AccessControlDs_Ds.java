@@ -18,6 +18,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 @Ds(entity = AccessControlDs.class, sort = {@SortField(field = AccessControlDs_Ds.f_dsName)})
 @RefLookups({@RefLookup(refId = AccessControlDs_Ds.f_accessControlId, namedQuery = AccessControl.NQ_FIND_BY_NAME, params = {@Param(name = "name", field = AccessControlDs_Ds.f_accessControl)})})
 public class AccessControlDs_Ds extends AbstractAuditable_Ds<AccessControlDs> {
+
+	public static final String ALIAS = "ad_AccessControlDs_Ds";
+
 	public static final String f_dsName = "dsName";
 	public static final String f_queryAllowed = "queryAllowed";
 	public static final String f_insertAllowed = "insertAllowed";

@@ -17,6 +17,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 @Ds(entity = Attachment.class)
 @RefLookups({@RefLookup(refId = Attachment_Ds.f_typeId, namedQuery = AttachmentType.NQ_FIND_BY_NAME, params = {@Param(name = "name", field = Attachment_Ds.f_type)})})
 public class Attachment_Ds extends AbstractAuditable_Ds<Attachment> {
+
+	public static final String ALIAS = "ad_Attachment_Ds";
+
 	public static final String f_targetRefid = "targetRefid";
 	public static final String f_targetAlias = "targetAlias";
 	public static final String f_targetType = "targetType";

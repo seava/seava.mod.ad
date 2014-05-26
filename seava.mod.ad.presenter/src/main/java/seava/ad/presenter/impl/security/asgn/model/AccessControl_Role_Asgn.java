@@ -14,6 +14,9 @@ import seava.j4e.presenter.model.AbstractAsgnModel;
 @Ds(entity=Role.class, sort={@SortField(field=AccessControl_Role_Asgn.f_code)})
 public class AccessControl_Role_Asgn extends AbstractAsgnModel<Role> {
 	
+	public static final String ALIAS = "ad_AccessControl_Role_Asgn";
+	
+	
 	public static final String f_id = "id";
 	public static final String f_code = "code";
 	public static final String f_name = "name";

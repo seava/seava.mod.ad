@@ -12,6 +12,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 
 @Ds(entity = JobLogMessage.class)
 public class JobLogMessage_Ds extends AbstractAuditable_Ds<JobLogMessage> {
+
+	public static final String ALIAS = "ad_JobLogMessage_Ds";
+
 	public static final String f_messageType = "messageType";
 	public static final String f_message = "message";
 	public static final String f_jobLogId = "jobLogId";

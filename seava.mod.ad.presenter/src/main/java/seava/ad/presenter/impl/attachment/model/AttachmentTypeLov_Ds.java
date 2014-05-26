@@ -13,6 +13,9 @@ import seava.j4e.presenter.impl.model.AbstractTypeLov_Ds;
 
 @Ds(entity = AttachmentType.class, sort = {@SortField(field = AttachmentTypeLov_Ds.f_name)})
 public class AttachmentTypeLov_Ds extends AbstractTypeLov_Ds<AttachmentType> {
+
+	public static final String ALIAS = "ad_AttachmentTypeLov_Ds";
+
 	public static final String f_category = "category";
 	public static final String f_targetAlias = "targetAlias";
 	public static final String f_targetType = "targetType";

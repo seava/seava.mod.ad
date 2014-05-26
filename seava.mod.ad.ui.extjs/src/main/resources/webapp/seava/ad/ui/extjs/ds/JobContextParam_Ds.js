@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.JobContextParam_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_JobContextParam_Ds"
+	},
+	
+	
 	fields: [
 		{name:"paramName", type:"string"},
 		{name:"dataType", type:"string"},

@@ -17,6 +17,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 @Ds(entity = JobContextParam.class)
 @RefLookups({@RefLookup(refId = JobContextParam_Ds.f_jobContextId, namedQuery = JobContext.NQ_FIND_BY_NAME, params = {@Param(name = "name", field = JobContextParam_Ds.f_jobContext)})})
 public class JobContextParam_Ds extends AbstractAuditable_Ds<JobContextParam> {
+
+	public static final String ALIAS = "ad_JobContextParam_Ds";
+
 	public static final String f_paramName = "paramName";
 	public static final String f_dataType = "dataType";
 	public static final String f_value = "value";

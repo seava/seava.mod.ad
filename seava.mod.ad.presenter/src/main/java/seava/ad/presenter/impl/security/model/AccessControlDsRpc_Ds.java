@@ -22,6 +22,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 public class AccessControlDsRpc_Ds
 		extends
 			AbstractAuditable_Ds<AccessControlDsRpc> {
+
+	public static final String ALIAS = "ad_AccessControlDsRpc_Ds";
+
 	public static final String f_dsName = "dsName";
 	public static final String f_serviceMethod = "serviceMethod";
 	public static final String f_accessControlId = "accessControlId";

@@ -13,6 +13,9 @@ import seava.j4e.presenter.impl.model.AbstractTypeLov_Ds;
 
 @Ds(entity = JobTimer.class, sort = {@SortField(field = JobTimerLov_Ds.f_name)})
 public class JobTimerLov_Ds extends AbstractTypeLov_Ds<JobTimer> {
+
+	public static final String ALIAS = "ad_JobTimerLov_Ds";
+
 	public static final String f_jobContextId = "jobContextId";
 	public static final String f_jobContext = "jobContext";
 	public static final String f_jobName = "jobName";

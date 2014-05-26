@@ -9,7 +9,7 @@
 	
 	<!-- ==================== User ==================== -->
 		
-	<bean id="User_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_User_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.User_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.User"/>
@@ -29,7 +29,7 @@
 	
 	<!-- ==================== UserLov ==================== -->
 		
-	<bean id="UserLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_UserLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.UserLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.User"/>
@@ -37,7 +37,7 @@
 	
 	<!-- ==================== MyUser ==================== -->
 		
-	<bean id="MyUser_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_MyUser_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.MyUser_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.User"/>
@@ -46,7 +46,7 @@
 	
 	<!-- ==================== UserGroup ==================== -->
 		
-	<bean id="UserGroup_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_UserGroup_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.UserGroup_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.UserGroup"/>
@@ -54,7 +54,7 @@
 	
 	<!-- ==================== UserGroupLov ==================== -->
 		
-	<bean id="UserGroupLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_UserGroupLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.UserGroupLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.UserGroup"/>
@@ -63,7 +63,7 @@
 	
 	<!-- ==================== Role ==================== -->
 		
-	<bean id="Role_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_Role_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.Role_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.Role"/>
@@ -71,7 +71,7 @@
 	
 	<!-- ==================== RoleLov ==================== -->
 		
-	<bean id="RoleLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_RoleLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.RoleLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.Role"/>
@@ -80,7 +80,7 @@
 	
 	<!-- ==================== Menu ==================== -->
 		
-	<bean id="Menu_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_Menu_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.Menu_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.Menu"/>
@@ -88,7 +88,7 @@
 	
 	<!-- ==================== MenuLov ==================== -->
 		
-	<bean id="MenuLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_MenuLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.MenuLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.Menu"/>
@@ -96,7 +96,7 @@
 	
 	<!-- ==================== MenuRtLov ==================== -->
 		
-	<bean id="MenuRtLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_MenuRtLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.MenuRtLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.Menu"/>
@@ -105,7 +105,7 @@
 	
 	<!-- ==================== MenuItem ==================== -->
 		
-	<bean id="MenuItem_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_MenuItem_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.MenuItem_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.MenuItem"/>
@@ -115,7 +115,7 @@
 	
 	<!-- ==================== MenuItemLov ==================== -->
 		
-	<bean id="MenuItemLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_MenuItemLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.MenuItemLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.MenuItem"/>
@@ -123,7 +123,7 @@
 	
 	<!-- ==================== MenuItemRtLov ==================== -->
 		
-	<bean id="MenuItemRtLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_MenuItemRtLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.MenuItemRtLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.MenuItem"/>
@@ -133,7 +133,7 @@
 	
 	<!-- ==================== AccessControl ==================== -->
 		
-	<bean id="AccessControl_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_AccessControl_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.AccessControl_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.AccessControl"/>
@@ -153,7 +153,7 @@
 	
 	<!-- ==================== AccessControlLov ==================== -->
 		
-	<bean id="AccessControlLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_AccessControlLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.AccessControlLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.AccessControl"/>
@@ -162,7 +162,7 @@
 	
 	<!-- ==================== AccessControlAsgn ==================== -->
 		
-	<bean id="AccessControlAsgn_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_AccessControlAsgn_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.AccessControlAsgn_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.AccessControlAsgn"/>
@@ -170,7 +170,7 @@
 	
 	<!-- ==================== AccessControlDs ==================== -->
 		
-	<bean id="AccessControlDs_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_AccessControlDs_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.AccessControlDs_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.AccessControlDs"/>
@@ -180,7 +180,7 @@
 	
 	<!-- ==================== AccessControlDsRpc ==================== -->
 		
-	<bean id="AccessControlDsRpc_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_AccessControlDsRpc_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.security.model.AccessControlDsRpc_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.security.AccessControlDsRpc"/>

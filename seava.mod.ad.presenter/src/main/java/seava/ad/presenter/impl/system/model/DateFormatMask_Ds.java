@@ -20,6 +20,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditableNT_Ds;
 		@SortField(field = DateFormatMask_Ds.f_mask)})
 @RefLookups({@RefLookup(refId = DateFormatMask_Ds.f_dateFormatId, namedQuery = DateFormat.NQ_FIND_BY_NAME, params = {@Param(name = "name", field = DateFormatMask_Ds.f_dateFormat)})})
 public class DateFormatMask_Ds extends AbstractAuditableNT_Ds<DateFormatMask> {
+
+	public static final String ALIAS = "ad_DateFormatMask_Ds";
+
 	public static final String f_mask = "mask";
 	public static final String f_value = "value";
 	public static final String f_dateFormatId = "dateFormatId";

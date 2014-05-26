@@ -13,6 +13,9 @@ import seava.j4e.presenter.impl.model.AbstractTypeWithCodeNT_Ds;
 
 @Ds(entity = Client.class, sort = {@SortField(field = Client_Ds.f_code)})
 public class Client_Ds extends AbstractTypeWithCodeNT_Ds<Client> {
+
+	public static final String ALIAS = "ad_Client_Ds";
+
 	public static final String f_workspacePath = "workspacePath";
 	public static final String f_importPath = "importPath";
 	public static final String f_exportPath = "exportPath";

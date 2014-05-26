@@ -21,6 +21,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 				@Param(name = "reportId", field = DsReportParam_Ds.f_reportId),
 				@Param(name = "name", field = DsReportParam_Ds.f_param)})})
 public class DsReportParam_Ds extends AbstractAuditable_Ds<DsReportParam> {
+
+	public static final String ALIAS = "ad_DsReportParam_Ds";
+
 	public static final String f_dsReportId = "dsReportId";
 	public static final String f_dataSource = "dataSource";
 	public static final String f_reportId = "reportId";

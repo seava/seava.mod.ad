@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.MenuItem_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_MenuItem_Ds"
+	},
+	
+	
 	validations: [
 		{field: "sequenceNo", type: 'presence'},
 		{field: "name", type: 'presence'},

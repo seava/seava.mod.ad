@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.JobTimerLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_JobTimerLov_Ds"
+	},
+	
+	
 	fields: [
 		{name:"jobContextId", type:"string"},
 		{name:"jobContext", type:"string"},

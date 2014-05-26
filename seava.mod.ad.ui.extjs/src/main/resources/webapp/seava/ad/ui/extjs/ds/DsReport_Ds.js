@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.DsReport_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_DsReport_Ds"
+	},
+	
+	
 	fields: [
 		{name:"reportId", type:"string"},
 		{name:"reportCode", type:"string"},

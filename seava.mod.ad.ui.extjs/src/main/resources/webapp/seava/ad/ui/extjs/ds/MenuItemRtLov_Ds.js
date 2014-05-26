@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.MenuItemRtLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_MenuItemRtLov_Ds"
+	},
+	
+	
 	validations: [
 			{field: "name", type: 'presence'}
 	],

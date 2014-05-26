@@ -13,6 +13,9 @@ import seava.j4e.presenter.impl.model.AbstractTypeLov_Ds;
 
 @Ds(entity = ReportParam.class, sort = {@SortField(field = ReportParamLov_Ds.f_name)})
 public class ReportParamLov_Ds extends AbstractTypeLov_Ds<ReportParam> {
+
+	public static final String ALIAS = "ad_ReportParamLov_Ds";
+
 	public static final String f_reportId = "reportId";
 	public static final String f_title = "title";
 

@@ -17,6 +17,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 @Ds(entity = DsReport.class)
 @RefLookups({@RefLookup(refId = DsReport_Ds.f_reportId, namedQuery = Report.NQ_FIND_BY_CODE, params = {@Param(name = "code", field = DsReport_Ds.f_reportCode)})})
 public class DsReport_Ds extends AbstractAuditable_Ds<DsReport> {
+
+	public static final String ALIAS = "ad_DsReport_Ds";
+
 	public static final String f_reportId = "reportId";
 	public static final String f_reportCode = "reportCode";
 	public static final String f_dataSource = "dataSource";

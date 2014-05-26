@@ -16,6 +16,9 @@ import seava.j4e.presenter.impl.model.AbstractTypeWithCode_Ds;
  */
 @Ds(entity = Report.class, sort = {@SortField(field = ReportRt_Ds.f_code)})
 public class ReportRt_Ds extends AbstractTypeWithCode_Ds<Report> {
+
+	public static final String ALIAS = "ad_ReportRt_Ds";
+
 	public static final String f_reportServerId = "reportServerId";
 	public static final String f_reportServer = "reportServer";
 	public static final String f_serverUrl = "serverUrl";

@@ -12,6 +12,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 
 @Ds(entity = FrameExtension.class)
 public class FrameExtension_Ds extends AbstractAuditable_Ds<FrameExtension> {
+
+	public static final String ALIAS = "ad_FrameExtension_Ds";
+
 	public static final String f_frame = "frame";
 	public static final String f_sequenceNo = "sequenceNo";
 	public static final String f_fileLocation = "fileLocation";

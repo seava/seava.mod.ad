@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.DataSourceFieldLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_DataSourceFieldLov_Ds"
+	},
+	
+	
 	fields: [
 		{name:"dataType", type:"string"},
 		{name:"dataSourceId", type:"string"},

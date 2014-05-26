@@ -9,7 +9,7 @@
 	
 	<!-- ==================== AttachmentType ==================== -->
 		
-	<bean id="AttachmentType_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_AttachmentType_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.attachment.model.AttachmentType_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.attachment.AttachmentType"/>
@@ -17,7 +17,7 @@
 	
 	<!-- ==================== AttachmentTypeLov ==================== -->
 		
-	<bean id="AttachmentTypeLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_AttachmentTypeLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.attachment.model.AttachmentTypeLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.attachment.AttachmentType"/>
@@ -27,7 +27,7 @@
 	
 	<!-- ==================== Attachment ==================== -->
 		
-	<bean id="Attachment_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_Attachment_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.attachment.model.Attachment_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.attachment.Attachment"/>

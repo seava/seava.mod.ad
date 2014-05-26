@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.JobLog_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_JobLog_Ds"
+	},
+	
+	
 	fields: [
 		{name:"startTime", type:"date", dateFormat:Main.MODEL_DATE_FORMAT},
 		{name:"endTime", type:"date", dateFormat:Main.MODEL_DATE_FORMAT},

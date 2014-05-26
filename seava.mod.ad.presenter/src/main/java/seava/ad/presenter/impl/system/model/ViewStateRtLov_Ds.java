@@ -13,6 +13,9 @@ import seava.j4e.presenter.impl.model.AbstractTypeLov_Ds;
 
 @Ds(entity = ViewState.class, sort = {@SortField(field = ViewStateRtLov_Ds.f_name)})
 public class ViewStateRtLov_Ds extends AbstractTypeLov_Ds<ViewState> {
+
+	public static final String ALIAS = "ad_ViewStateRtLov_Ds";
+
 	public static final String f_cmp = "cmp";
 	public static final String f_cmpType = "cmpType";
 	public static final String f_value = "value";

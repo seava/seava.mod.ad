@@ -20,6 +20,9 @@ import seava.j4e.presenter.impl.model.AbstractType_Ds;
 		@RefLookup(refId = MenuItem_Ds.f_menuItemId, namedQuery = MenuItem.NQ_FIND_BY_NAME, params = {@Param(name = "name", field = MenuItem_Ds.f_menuItem)}),
 		@RefLookup(refId = MenuItem_Ds.f_menuId, namedQuery = Menu.NQ_FIND_BY_NAME, params = {@Param(name = "name", field = MenuItem_Ds.f_menu)})})
 public class MenuItem_Ds extends AbstractType_Ds<MenuItem> {
+
+	public static final String ALIAS = "ad_MenuItem_Ds";
+
 	public static final String f_sequenceNo = "sequenceNo";
 	public static final String f_title = "title";
 	public static final String f_frame = "frame";

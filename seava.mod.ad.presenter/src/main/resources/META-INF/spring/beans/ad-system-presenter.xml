@@ -9,7 +9,7 @@
 	
 	<!-- ==================== Client ==================== -->
 		
-	<bean id="Client_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_Client_Ds" scope="singleton" lazy-init="true"
 		class="seava.ad.presenter.ext.system.service.Client_DsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.Client_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.Client"/>
@@ -18,7 +18,7 @@
 	
 	<!-- ==================== ClientLov ==================== -->
 		
-	<bean id="ClientLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_ClientLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.ClientLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.Client"/>
@@ -27,7 +27,7 @@
 	
 	<!-- ==================== MyClient ==================== -->
 		
-	<bean id="MyClient_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_MyClient_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.MyClient_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.Client"/>
@@ -36,7 +36,7 @@
 	
 	<!-- ==================== DbChangeLog ==================== -->
 		
-	<bean id="DbChangeLog_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DbChangeLog_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DbChangeLog_Ds"/>
 		<property name="filterClass" value="seava.ad.presenter.impl.system.model.DbChangeLog_DsFilter"/>
@@ -46,7 +46,7 @@
 	
 	<!-- ==================== Param ==================== -->
 		
-	<bean id="Param_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_Param_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.Param_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.Param"/>
@@ -65,7 +65,7 @@
 	
 	<!-- ==================== ParamLov ==================== -->
 		
-	<bean id="ParamLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_ParamLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.ParamLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.Param"/>
@@ -74,7 +74,7 @@
 	
 	<!-- ==================== MyParam ==================== -->
 		
-	<bean id="MyParam_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_MyParam_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.MyParam_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.Param"/>
@@ -94,7 +94,7 @@
 	
 	<!-- ==================== ParamValue ==================== -->
 		
-	<bean id="ParamValue_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_ParamValue_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.ParamValue_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.ParamValue"/>
@@ -114,7 +114,7 @@
 	
 	<!-- ==================== DataSource ==================== -->
 		
-	<bean id="DataSource_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DataSource_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSource_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.DataSource"/>
@@ -133,7 +133,7 @@
 	
 	<!-- ==================== DataSourceLov ==================== -->
 		
-	<bean id="DataSourceLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DataSourceLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSourceLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.DataSource"/>
@@ -142,7 +142,7 @@
 	
 	<!-- ==================== DataSourceDsLov ==================== -->
 		
-	<bean id="DataSourceDsLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DataSourceDsLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSourceDsLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.DataSource"/>
@@ -151,7 +151,7 @@
 	
 	<!-- ==================== DataSourceAsgnLov ==================== -->
 		
-	<bean id="DataSourceAsgnLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DataSourceAsgnLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSourceAsgnLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.DataSource"/>
@@ -160,7 +160,7 @@
 	
 	<!-- ==================== DataSourceField ==================== -->
 		
-	<bean id="DataSourceField_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DataSourceField_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSourceField_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.DataSourceField"/>
@@ -169,7 +169,7 @@
 	
 	<!-- ==================== DataSourceFieldLov ==================== -->
 		
-	<bean id="DataSourceFieldLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DataSourceFieldLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSourceFieldLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.DataSourceField"/>
@@ -178,7 +178,7 @@
 	
 	<!-- ==================== DataSourceRpc ==================== -->
 		
-	<bean id="DataSourceRpc_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DataSourceRpc_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSourceRpc_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.DataSourceRpc"/>
@@ -187,7 +187,7 @@
 	
 	<!-- ==================== DataSourceRpcLov ==================== -->
 		
-	<bean id="DataSourceRpcLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DataSourceRpcLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DataSourceRpcLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.DataSourceRpc"/>
@@ -196,7 +196,7 @@
 	
 	<!-- ==================== Job ==================== -->
 		
-	<bean id="Job_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_Job_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.Job_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.Job"/>
@@ -215,7 +215,7 @@
 	
 	<!-- ==================== JobLov ==================== -->
 		
-	<bean id="JobLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_JobLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.JobLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.Job"/>
@@ -224,7 +224,7 @@
 	
 	<!-- ==================== JobParam ==================== -->
 		
-	<bean id="JobParam_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_JobParam_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.JobParam_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.JobParam"/>
@@ -233,7 +233,7 @@
 	
 	<!-- ==================== JobParamLov ==================== -->
 		
-	<bean id="JobParamLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_JobParamLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.JobParamLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.JobParam"/>
@@ -242,7 +242,7 @@
 	
 	<!-- ==================== DateFormat ==================== -->
 		
-	<bean id="DateFormat_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DateFormat_Ds" scope="singleton" lazy-init="true"
 		class="seava.ad.presenter.ext.system.service.DateFormat_DsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DateFormat_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.DateFormat"/>
@@ -260,7 +260,7 @@
 	
 	<!-- ==================== DateFormatLov ==================== -->
 		
-	<bean id="DateFormatLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DateFormatLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DateFormatLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.DateFormat"/>
@@ -269,7 +269,7 @@
 	
 	<!-- ==================== DateFormatMask ==================== -->
 		
-	<bean id="DateFormatMask_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DateFormatMask_Ds" scope="singleton" lazy-init="true"
 		class="seava.ad.presenter.ext.system.service.DateFormatMask_DsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.DateFormatMask_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.DateFormatMask"/>
@@ -277,7 +277,7 @@
 	
 	<!-- ==================== FrameExtension ==================== -->
 		
-	<bean id="FrameExtension_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_FrameExtension_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.FrameExtension_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.FrameExtension"/>
@@ -285,7 +285,7 @@
 	
 	<!-- ==================== ViewState ==================== -->
 		
-	<bean id="ViewState_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_ViewState_Ds" scope="singleton" lazy-init="true"
 		class="seava.ad.presenter.impl.system.service.ViewState_DsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.ViewState_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.ViewState"/>
@@ -293,7 +293,7 @@
 	
 	<!-- ==================== ViewStateRtLov ==================== -->
 		
-	<bean id="ViewStateRtLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_ViewStateRtLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.ViewStateRtLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.ViewState"/>
@@ -303,7 +303,7 @@
 	
 	<!-- ==================== TargetRule ==================== -->
 		
-	<bean id="TargetRule_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_TargetRule_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.system.model.TargetRule_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.system.TargetRule"/>

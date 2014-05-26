@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.ParamLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_ParamLov_Ds"
+	},
+	
+	
 	fields: [
 		{name:"id", type:"string"},
 		{name:"code", type:"string"},

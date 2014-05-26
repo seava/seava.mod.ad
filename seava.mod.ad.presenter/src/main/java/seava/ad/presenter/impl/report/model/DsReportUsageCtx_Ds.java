@@ -15,6 +15,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 @Ds(entity = DsReportUsage.class)
 @RefLookups({@RefLookup(refId = DsReportUsageCtx_Ds.f_dsReportId)})
 public class DsReportUsageCtx_Ds extends AbstractAuditable_Ds<DsReportUsage> {
+
+	public static final String ALIAS = "ad_DsReportUsageCtx_Ds";
+
 	public static final String f_dsReportId = "dsReportId";
 	public static final String f_reportId = "reportId";
 	public static final String f_report = "report";

@@ -12,6 +12,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 
 @Ds(entity = TargetRule.class)
 public class TargetRule_Ds extends AbstractAuditable_Ds<TargetRule> {
+
+	public static final String ALIAS = "ad_TargetRule_Ds";
+
 	public static final String f_sourceRefId = "sourceRefId";
 	public static final String f_targetAlias = "targetAlias";
 	public static final String f_targetType = "targetType";

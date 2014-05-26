@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.AttachmentType_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_AttachmentType_Ds"
+	},
+	
+	
 	validations: [
 			{field: "name", type: 'presence'}
 	],

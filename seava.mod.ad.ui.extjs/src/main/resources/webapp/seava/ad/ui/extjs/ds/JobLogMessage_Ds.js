@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.JobLogMessage_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_JobLogMessage_Ds"
+	},
+	
+	
 	fields: [
 		{name:"messageType", type:"string"},
 		{name:"message", type:"string"},

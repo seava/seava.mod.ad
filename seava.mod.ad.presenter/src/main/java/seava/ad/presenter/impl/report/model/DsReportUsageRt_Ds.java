@@ -15,6 +15,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 		@SortField(field = DsReportUsageRt_Ds.f_sequenceNo),
 		@SortField(field = DsReportUsageRt_Ds.f_reportTitle)})
 public class DsReportUsageRt_Ds extends AbstractAuditable_Ds<DsReportUsage> {
+
+	public static final String ALIAS = "ad_DsReportUsageRt_Ds";
+
 	public static final String f_dsReportId = "dsReportId";
 	public static final String f_reportId = "reportId";
 	public static final String f_reportCode = "reportCode";

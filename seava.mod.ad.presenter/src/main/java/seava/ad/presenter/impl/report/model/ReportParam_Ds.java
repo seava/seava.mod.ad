@@ -18,6 +18,9 @@ import seava.j4e.presenter.impl.model.AbstractType_Ds;
 @Ds(entity = ReportParam.class, sort = {@SortField(field = ReportParam_Ds.f_name)})
 @RefLookups({@RefLookup(refId = ReportParam_Ds.f_reportId, namedQuery = Report.NQ_FIND_BY_CODE, params = {@Param(name = "code", field = ReportParam_Ds.f_reportCode)})})
 public class ReportParam_Ds extends AbstractType_Ds<ReportParam> {
+
+	public static final String ALIAS = "ad_ReportParam_Ds";
+
 	public static final String f_reportId = "reportId";
 	public static final String f_reportCode = "reportCode";
 	public static final String f_title = "title";

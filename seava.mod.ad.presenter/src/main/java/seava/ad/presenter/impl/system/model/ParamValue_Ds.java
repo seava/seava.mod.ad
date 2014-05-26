@@ -13,6 +13,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 
 @Ds(entity = ParamValue.class)
 public class ParamValue_Ds extends AbstractAuditable_Ds<ParamValue> {
+
+	public static final String ALIAS = "ad_ParamValue_Ds";
+
 	public static final String f_sysParam = "sysParam";
 	public static final String f_value = "value";
 	public static final String f_validFrom = "validFrom";

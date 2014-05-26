@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.UserGroupLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_UserGroupLov_Ds"
+	},
+	
+	
 	fields: [
 		{name:"id", type:"string"},
 		{name:"clientId", type:"string"},

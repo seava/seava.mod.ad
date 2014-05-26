@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.AccessControlLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_AccessControlLov_Ds"
+	},
+	
+	
 	fields: [
 		{name:"id", type:"string"},
 		{name:"clientId", type:"string"},

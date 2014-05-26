@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.JobLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_JobLov_Ds"
+	},
+	
+	
 	fields: [
 		{name:"id", type:"string"},
 		{name:"name", type:"string"},

@@ -13,6 +13,9 @@ import seava.j4e.presenter.impl.model.AbstractTypeNT_Ds;
 
 @Ds(entity = Job.class, sort = {@SortField(field = Job_Ds.f_name)})
 public class Job_Ds extends AbstractTypeNT_Ds<Job> {
+
+	public static final String ALIAS = "ad_Job_Ds";
+
 	public static final String f_javaClass = "javaClass";
 
 	@DsField

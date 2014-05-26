@@ -25,9 +25,9 @@ public class ExtensionProviderReports extends AbstractPresenterBaseService
 			throws Exception {
 
 		IDsService<DsReportUsageRt_Ds, DsReportUsageRt_Ds, Object> srv = this
-				.findDsService(DsReportUsageRt_Ds.class);
+				.findDsService(DsReportUsageRt_Ds.ALIAS);
 		IDsService<DsReportParamRt_Ds, DsReportParamRt_Ds, Object> srvParam = this
-				.findDsService(DsReportParamRt_Ds.class);
+				.findDsService(DsReportParamRt_Ds.ALIAS);
 
 		DsReportUsageRt_Ds filter = new DsReportUsageRt_Ds();
 		filter.setFrameName(targetFrame);

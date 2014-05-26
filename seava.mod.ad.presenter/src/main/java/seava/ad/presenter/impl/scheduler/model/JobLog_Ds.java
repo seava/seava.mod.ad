@@ -14,6 +14,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditable_Ds;
 
 @Ds(entity = JobLog.class, sort = {@SortField(field = JobLog_Ds.f_startTime, desc = true)})
 public class JobLog_Ds extends AbstractAuditable_Ds<JobLog> {
+
+	public static final String ALIAS = "ad_JobLog_Ds";
+
 	public static final String f_startTime = "startTime";
 	public static final String f_endTime = "endTime";
 	public static final String f_jobContextId = "jobContextId";

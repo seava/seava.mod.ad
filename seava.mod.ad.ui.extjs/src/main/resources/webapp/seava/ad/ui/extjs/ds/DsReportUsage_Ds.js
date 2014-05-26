@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.DsReportUsage_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_DsReportUsage_Ds"
+	},
+	
+	
 	fields: [
 		{name:"dsReportId", type:"string"},
 		{name:"dataSource", type:"string"},

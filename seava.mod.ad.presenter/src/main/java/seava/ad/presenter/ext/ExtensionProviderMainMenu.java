@@ -42,7 +42,7 @@ public class ExtensionProviderMainMenu extends AbstractPresenterBaseService
 
 	protected void addNavigationTreeMenus(StringBuffer sb) throws Exception {
 		IDsService<MenuRtLov_Ds, MenuRtLov_Ds, Object> srv = this
-				.findDsService(MenuRtLov_Ds.class.getSimpleName());
+				.findDsService(MenuRtLov_Ds.class);
 		MenuRtLov_Ds filter = new MenuRtLov_Ds();
 		filter.setActive(true);
 		filter.setTag("left");
@@ -62,7 +62,7 @@ public class ExtensionProviderMainMenu extends AbstractPresenterBaseService
 
 	protected void addNavigationTopMenus(StringBuffer sb) throws Exception {
 		IDsService<MenuRtLov_Ds, MenuRtLov_Ds, Object> srv = this
-				.findDsService(MenuRtLov_Ds.class.getSimpleName());
+				.findDsService(MenuRtLov_Ds.class);
 		MenuRtLov_Ds filter = new MenuRtLov_Ds();
 		filter.setActive(true);
 		filter.setTag("top");

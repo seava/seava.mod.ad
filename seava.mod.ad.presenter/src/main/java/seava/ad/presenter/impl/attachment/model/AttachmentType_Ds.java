@@ -13,6 +13,9 @@ import seava.j4e.presenter.impl.model.AbstractType_Ds;
 
 @Ds(entity = AttachmentType.class, sort = {@SortField(field = AttachmentType_Ds.f_name)})
 public class AttachmentType_Ds extends AbstractType_Ds<AttachmentType> {
+
+	public static final String ALIAS = "ad_AttachmentType_Ds";
+
 	public static final String f_category = "category";
 	public static final String f_uploadPath = "uploadPath";
 	public static final String f_baseUrl = "baseUrl";

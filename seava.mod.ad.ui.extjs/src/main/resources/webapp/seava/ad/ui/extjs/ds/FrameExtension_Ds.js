@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.FrameExtension_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_FrameExtension_Ds"
+	},
+	
+	
 	validations: [
 		{field: "frame", type: 'presence'},
 		{field: "sequenceNo", type: 'presence'},

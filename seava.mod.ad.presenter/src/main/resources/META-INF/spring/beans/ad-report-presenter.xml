@@ -9,7 +9,7 @@
 	
 	<!-- ==================== ReportServer ==================== -->
 		
-	<bean id="ReportServer_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_ReportServer_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.ReportServer_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.ReportServer"/>
@@ -17,7 +17,7 @@
 	
 	<!-- ==================== ReportServerLov ==================== -->
 		
-	<bean id="ReportServerLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_ReportServerLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.ReportServerLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.ReportServer"/>
@@ -26,7 +26,7 @@
 	
 	<!-- ==================== Report ==================== -->
 		
-	<bean id="Report_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_Report_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.Report_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.Report"/>
@@ -34,7 +34,7 @@
 	
 	<!-- ==================== ReportRt ==================== -->
 		
-	<bean id="ReportRt_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_ReportRt_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.ReportRt_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.Report"/>
@@ -43,7 +43,7 @@
 	
 	<!-- ==================== ReportLov ==================== -->
 		
-	<bean id="ReportLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_ReportLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.ReportLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.Report"/>
@@ -52,7 +52,7 @@
 	
 	<!-- ==================== ReportParam ==================== -->
 		
-	<bean id="ReportParam_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_ReportParam_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.ReportParam_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.ReportParam"/>
@@ -60,7 +60,7 @@
 	
 	<!-- ==================== ReportParamRt ==================== -->
 		
-	<bean id="ReportParamRt_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_ReportParamRt_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.ReportParamRt_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.ReportParam"/>
@@ -69,7 +69,7 @@
 	
 	<!-- ==================== ReportParamLov ==================== -->
 		
-	<bean id="ReportParamLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_ReportParamLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.ReportParamLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.ReportParam"/>
@@ -78,7 +78,7 @@
 	
 	<!-- ==================== DsReport ==================== -->
 		
-	<bean id="DsReport_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DsReport_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.DsReport_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.DsReport"/>
@@ -86,7 +86,7 @@
 	
 	<!-- ==================== DsReportLov ==================== -->
 		
-	<bean id="DsReportLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DsReportLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.DsReportLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.DsReport"/>
@@ -95,7 +95,7 @@
 	
 	<!-- ==================== DsReportParam ==================== -->
 		
-	<bean id="DsReportParam_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DsReportParam_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.DsReportParam_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.DsReportParam"/>
@@ -103,7 +103,7 @@
 	
 	<!-- ==================== DsReportUsage ==================== -->
 		
-	<bean id="DsReportUsage_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DsReportUsage_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.DsReportUsage_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.DsReportUsage"/>
@@ -112,7 +112,7 @@
 	
 	<!-- ==================== DsReportUsageCtx ==================== -->
 		
-	<bean id="DsReportUsageCtx_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DsReportUsageCtx_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.DsReportUsageCtx_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.DsReportUsage"/>
@@ -120,7 +120,7 @@
 	
 	<!-- ==================== DsReportUsageRt ==================== -->
 		
-	<bean id="DsReportUsageRt_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DsReportUsageRt_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.DsReportUsageRt_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.DsReportUsage"/>
@@ -129,7 +129,7 @@
 	
 	<!-- ==================== DsReportParamRt ==================== -->
 		
-	<bean id="DsReportParamRt_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_DsReportParamRt_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.report.model.DsReportParamRt_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.report.DsReportParam"/>

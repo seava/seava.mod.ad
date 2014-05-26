@@ -13,6 +13,9 @@ import seava.j4e.presenter.impl.model.AbstractTypeNT_Ds;
 
 @Ds(entity = DataSource.class, sort = {@SortField(field = DataSource_Ds.f_name)})
 public class DataSource_Ds extends AbstractTypeNT_Ds<DataSource> {
+
+	public static final String ALIAS = "ad_DataSource_Ds";
+
 	public static final String f_model = "model";
 	public static final String f_isAsgn = "isAsgn";
 

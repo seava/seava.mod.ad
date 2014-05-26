@@ -15,6 +15,9 @@ import seava.j4e.presenter.impl.model.AbstractType_Ds;
 		@SortField(field = ReportParamRt_Ds.f_sequenceNo),
 		@SortField(field = ReportParamRt_Ds.f_name)})
 public class ReportParamRt_Ds extends AbstractType_Ds<ReportParam> {
+
+	public static final String ALIAS = "ad_ReportParamRt_Ds";
+
 	public static final String f_reportId = "reportId";
 	public static final String f_report = "report";
 	public static final String f_value = "value";

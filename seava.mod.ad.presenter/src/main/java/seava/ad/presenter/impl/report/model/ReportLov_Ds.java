@@ -13,6 +13,8 @@ import seava.j4e.presenter.impl.model.AbstractTypeWithCodeLov_Ds;
 @Ds(entity = Report.class, sort = {@SortField(field = ReportLov_Ds.f_code)})
 public class ReportLov_Ds extends AbstractTypeWithCodeLov_Ds<Report> {
 
+	public static final String ALIAS = "ad_ReportLov_Ds";
+
 	public ReportLov_Ds() {
 		super();
 	}

@@ -12,6 +12,9 @@ import seava.j4e.presenter.impl.model.AbstractAuditableLov_Ds;
 
 @Ds(entity = DsReport.class)
 public class DsReportLov_Ds extends AbstractAuditableLov_Ds<DsReport> {
+
+	public static final String ALIAS = "ad_DsReportLov_Ds";
+
 	public static final String f_reportId = "reportId";
 	public static final String f_reportCode = "reportCode";
 	public static final String f_dataSource = "dataSource";

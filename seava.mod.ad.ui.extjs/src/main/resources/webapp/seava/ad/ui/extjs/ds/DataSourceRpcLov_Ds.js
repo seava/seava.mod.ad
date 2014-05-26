@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.DataSourceRpcLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_DataSourceRpcLov_Ds"
+	},
+	
+	
 	fields: [
 		{name:"dataSourceId", type:"string"},
 		{name:"dataSourceName", type:"string"},

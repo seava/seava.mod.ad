@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.DataSourceRpc_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_DataSourceRpc_Ds"
+	},
+	
+	
 	validations: [
 			{field: "name", type: 'presence'}
 	],

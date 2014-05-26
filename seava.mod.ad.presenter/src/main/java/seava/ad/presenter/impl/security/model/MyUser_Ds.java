@@ -18,6 +18,9 @@ import seava.j4e.presenter.impl.model.AbstractTypeWithCode_Ds;
 @Ds(entity = User.class, sort = {@SortField(field = MyUser_Ds.f_code)})
 @RefLookups({@RefLookup(refId = MyUser_Ds.f_dateFormatId, namedQuery = DateFormat.NQ_FIND_BY_NAME, params = {@Param(name = "name", field = MyUser_Ds.f_dateFormat)})})
 public class MyUser_Ds extends AbstractTypeWithCode_Ds<User> {
+
+	public static final String ALIAS = "ad_MyUser_Ds";
+
 	public static final String f_email = "email";
 	public static final String f_loginName = "loginName";
 	public static final String f_decimalSeparator = "decimalSeparator";

@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.TargetRule_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_TargetRule_Ds"
+	},
+	
+	
 	validations: [
 		{field: "targetAlias", type: 'presence'},
 		{field: "targetType", type: 'presence'}

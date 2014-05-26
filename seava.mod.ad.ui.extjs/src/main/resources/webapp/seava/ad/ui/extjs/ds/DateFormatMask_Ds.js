@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.DateFormatMask_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_DateFormatMask_Ds"
+	},
+	
+	
 	fields: [
 		{name:"mask", type:"string"},
 		{name:"value", type:"string"},

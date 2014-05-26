@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.User_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_User_Ds"
+	},
+	
+	
 	validations: [
 			{field: "name", type: 'presence'}
 	],

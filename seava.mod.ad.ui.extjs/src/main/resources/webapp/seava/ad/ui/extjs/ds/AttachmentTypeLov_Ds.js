@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.AttachmentTypeLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_AttachmentTypeLov_Ds"
+	},
+	
+	
 	fields: [
 		{name:"category", type:"string"},
 		{name:"targetAlias", type:"string"},

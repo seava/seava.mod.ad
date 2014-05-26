@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.RoleLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_RoleLov_Ds"
+	},
+	
+	
 	fields: [
 		{name:"id", type:"string"},
 		{name:"clientId", type:"string"},

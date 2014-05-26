@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.JobParamLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_JobParamLov_Ds"
+	},
+	
+	
 	validations: [
 			{field: "name", type: 'presence'}
 	],

@@ -14,6 +14,9 @@ import seava.j4e.presenter.model.AbstractAsgnModel;
 @Ds(entity=Menu.class, sort={@SortField(field=Role_Menu_Asgn.f_name)})
 public class Role_Menu_Asgn extends AbstractAsgnModel<Menu> {
 	
+	public static final String ALIAS = "ad_Role_Menu_Asgn";
+	
+	
 	public static final String f_id = "id";
 	public static final String f_name = "name";
 	public static final String f_title = "title";

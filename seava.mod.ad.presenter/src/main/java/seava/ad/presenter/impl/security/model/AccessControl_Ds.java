@@ -13,6 +13,8 @@ import seava.j4e.presenter.impl.model.AbstractType_Ds;
 @Ds(entity = AccessControl.class, sort = {@SortField(field = AccessControl_Ds.f_name)})
 public class AccessControl_Ds extends AbstractType_Ds<AccessControl> {
 
+	public static final String ALIAS = "ad_AccessControl_Ds";
+
 	public AccessControl_Ds() {
 		super();
 	}

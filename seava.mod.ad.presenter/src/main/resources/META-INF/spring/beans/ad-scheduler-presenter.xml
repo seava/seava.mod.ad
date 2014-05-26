@@ -9,7 +9,7 @@
 	
 	<!-- ==================== JobContext ==================== -->
 		
-	<bean id="JobContext_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_JobContext_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.scheduler.model.JobContext_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.scheduler.JobContext"/>
@@ -27,7 +27,7 @@
 	
 	<!-- ==================== JobContextLov ==================== -->
 		
-	<bean id="JobContextLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_JobContextLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.scheduler.model.JobContextLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.scheduler.JobContext"/>
@@ -36,7 +36,7 @@
 	
 	<!-- ==================== JobContextParam ==================== -->
 		
-	<bean id="JobContextParam_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_JobContextParam_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.scheduler.model.JobContextParam_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.scheduler.JobContextParam"/>
@@ -44,7 +44,7 @@
 	
 	<!-- ==================== JobTimer ==================== -->
 		
-	<bean id="JobTimer_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_JobTimer_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.scheduler.model.JobTimer_Ds"/>
 		<property name="filterClass" value="seava.ad.presenter.impl.scheduler.model.JobTimer_DsFilter"/>
@@ -53,7 +53,7 @@
 	
 	<!-- ==================== JobTimerLov ==================== -->
 		
-	<bean id="JobTimerLov_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_JobTimerLov_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.scheduler.model.JobTimerLov_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.scheduler.JobTimer"/>
@@ -62,7 +62,7 @@
 	
 	<!-- ==================== JobLog ==================== -->
 		
-	<bean id="JobLog_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_JobLog_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.scheduler.model.JobLog_Ds"/>
 		<property name="filterClass" value="seava.ad.presenter.impl.scheduler.model.JobLog_DsFilter"/>
@@ -73,7 +73,7 @@
 	
 	<!-- ==================== JobLogMessage ==================== -->
 		
-	<bean id="JobLogMessage_Ds" scope="singleton" lazy-init="true"
+	<bean id="ad_JobLogMessage_Ds" scope="singleton" lazy-init="true"
 		class="seava.j4e.presenter.service.ds.DefaultEntityDsService">
 		<property name="modelClass" value="seava.ad.presenter.impl.scheduler.model.JobLogMessage_Ds"/>
 		<property name="entityClass" value="seava.ad.domain.impl.scheduler.JobLogMessage"/>

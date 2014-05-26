@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.MenuRtLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_MenuRtLov_Ds"
+	},
+	
+	
 	fields: [
 		{name:"sequenceNo", type:"int", useNull:true},
 		{name:"title", type:"string"},

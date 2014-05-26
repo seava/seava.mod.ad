@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.DateFormat_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_DateFormat_Ds"
+	},
+	
+	
 	validations: [
 			{field: "name", type: 'presence'}
 	],

@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.MenuItemLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_MenuItemLov_Ds"
+	},
+	
+	
 	fields: [
 		{name:"title", type:"string"},
 		{name:"id", type:"string"},

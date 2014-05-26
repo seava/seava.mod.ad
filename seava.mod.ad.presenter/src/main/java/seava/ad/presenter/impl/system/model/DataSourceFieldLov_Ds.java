@@ -15,6 +15,9 @@ import seava.j4e.presenter.impl.model.AbstractTypeNTLov_Ds;
 public class DataSourceFieldLov_Ds
 		extends
 			AbstractTypeNTLov_Ds<DataSourceField> {
+
+	public static final String ALIAS = "ad_DataSourceFieldLov_Ds";
+
 	public static final String f_dataType = "dataType";
 	public static final String f_dataSourceId = "dataSourceId";
 	public static final String f_dataSourceName = "dataSourceName";

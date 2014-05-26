@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.DbChangeLog_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_DbChangeLog_Ds"
+	},
+	
+	
 	fields: [
 		{name:"id", type:"string"},
 		{name:"txid", type:"string"},

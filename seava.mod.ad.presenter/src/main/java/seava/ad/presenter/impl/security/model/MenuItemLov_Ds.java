@@ -13,6 +13,9 @@ import seava.j4e.presenter.impl.model.AbstractTypeLov_Ds;
 
 @Ds(entity = MenuItem.class, sort = {@SortField(field = MenuItemLov_Ds.f_name)})
 public class MenuItemLov_Ds extends AbstractTypeLov_Ds<MenuItem> {
+
+	public static final String ALIAS = "ad_MenuItemLov_Ds";
+
 	public static final String f_title = "title";
 
 	@DsField

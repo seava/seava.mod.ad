@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.ViewStateRtLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_ViewStateRtLov_Ds"
+	},
+	
+	
 	fields: [
 		{name:"cmp", type:"string"},
 		{name:"cmpType", type:"string"},

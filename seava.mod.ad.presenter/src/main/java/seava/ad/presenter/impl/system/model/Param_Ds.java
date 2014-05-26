@@ -13,6 +13,9 @@ import seava.j4e.presenter.impl.model.AbstractTypeWithCodeNT_Ds;
 
 @Ds(entity = Param.class, sort = {@SortField(field = Param_Ds.f_code)})
 public class Param_Ds extends AbstractTypeWithCodeNT_Ds<Param> {
+
+	public static final String ALIAS = "ad_Param_Ds";
+
 	public static final String f_defaultValue = "defaultValue";
 	public static final String f_listOfValues = "listOfValues";
 

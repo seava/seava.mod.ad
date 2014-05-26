@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.JobContextLov_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_JobContextLov_Ds"
+	},
+	
+	
 	fields: [
 		{name:"jobName", type:"string"},
 		{name:"id", type:"string"},

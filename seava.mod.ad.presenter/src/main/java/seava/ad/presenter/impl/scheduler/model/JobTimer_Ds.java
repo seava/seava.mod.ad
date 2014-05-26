@@ -19,6 +19,9 @@ import seava.j4e.presenter.impl.model.AbstractType_Ds;
 @Ds(entity = JobTimer.class, sort = {@SortField(field = JobTimer_Ds.f_name)})
 @RefLookups({@RefLookup(refId = JobTimer_Ds.f_jobContextId, namedQuery = JobContext.NQ_FIND_BY_NAME, params = {@Param(name = "name", field = JobTimer_Ds.f_jobContext)})})
 public class JobTimer_Ds extends AbstractType_Ds<JobTimer> {
+
+	public static final String ALIAS = "ad_JobTimer_Ds";
+
 	public static final String f_startTime = "startTime";
 	public static final String f_endTime = "endTime";
 	public static final String f_type = "type";

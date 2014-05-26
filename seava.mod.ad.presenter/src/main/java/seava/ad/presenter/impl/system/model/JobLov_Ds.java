@@ -13,6 +13,8 @@ import seava.j4e.presenter.impl.model.AbstractTypeNTLov_Ds;
 @Ds(entity = Job.class, sort = {@SortField(field = JobLov_Ds.f_name)})
 public class JobLov_Ds extends AbstractTypeNTLov_Ds<Job> {
 
+	public static final String ALIAS = "ad_JobLov_Ds";
+
 	public JobLov_Ds() {
 		super();
 	}

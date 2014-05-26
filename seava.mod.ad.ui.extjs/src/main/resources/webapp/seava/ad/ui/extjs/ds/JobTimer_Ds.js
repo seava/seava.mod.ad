@@ -7,6 +7,11 @@
 Ext.define("seava.ad.ui.extjs.ds.JobTimer_Ds", {
 	extend: 'Ext.data.Model',
 	
+	statics: {
+		ALIAS: "ad_JobTimer_Ds"
+	},
+	
+	
 	validations: [
 			{field: "name", type: 'presence'}
 	],
